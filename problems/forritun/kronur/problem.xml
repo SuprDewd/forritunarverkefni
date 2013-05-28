@@ -1,0 +1,32 @@
+<problem name="Krónur">
+    <description>
+        Skrifið forrit sem tekur inn fjölda 5 þúsund króna seðla, fjölda þúsund króna seðla og fjölda 500 króna seðla. Forritið á að skila heildarupphæð í krónum.
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2
+3
+1]]></input>
+            <output><![CDATA[13500]]></output>
+            <explanation>Tveir 5 þúsund króna seðlar, þrír þúsund króna seðlar og einn 500 króna seðill gera samtals 13500 krónur.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[0
+0
+1]]></input>
+            <output><![CDATA[500]]></output>
+            <explanation>Einn 500 króna seðill gerir samtals 500 krónur.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+    </tests>
+</problem>

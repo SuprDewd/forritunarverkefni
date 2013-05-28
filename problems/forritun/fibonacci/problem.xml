@@ -1,0 +1,36 @@
+<problem name="Fibonacci runan">
+    <description>
+        <p>Fibonacci runan er skilgreind þannig að hvert stak í rununni er summa stakanna tveggja sem komu á undan. Runan byrjar á tveimur ásum, og lítur þá svona út:
+
+        <ceqn>1, 1, 2, 3, 5, 8, 13, 21, 34, \ldots</ceqn>
+
+        Runan heldur svo endalaust áfram.</p>
+
+        <p>Skrifið forrit sem tekur inn heiltöluna <eqn>n</eqn>, og skilar svo <eqn>n</eqn>tu tölunni í Fibonacci rununni.</p>
+
+        <hint>Notið tvær breytur sem halda utan um síðustu tvö stök í rununni, og aðra breytu sem geymir núverandi stak. Ítrið svo svo í gegnum stökin (og uppfærið breyturnar þrjár eins og við á) þar til þið komið að <eqn>n</eqn>ta stakinu.</hint>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[4]]></input>
+            <output><![CDATA[3]]></output>
+            <explanation>Fjórða stakið í rununni er 3.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[8]]></input>
+            <output><![CDATA[21]]></output>
+            <explanation>Áttunda stakið í rununni er 21.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+    </tests>
+</problem>

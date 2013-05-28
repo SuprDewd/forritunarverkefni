@@ -1,0 +1,33 @@
+<problem name="Vegalengd">
+    <description>
+        <p>Skrifið forrit sem tekur inn tíma í sekúndum, og skilar hversu langt hlutur myndi ferðast ef hann væri í frjálsu falli í svo langan tíma. Gerið ráð fyrir að hluturinn sé kyrrstæður í upphafi, að það sé engin vindmótstaða, og að hann hafi fasta hröðun 10 metra á sekúndu vegna þyngdarafls jarðar. Notið jöfnuna:
+
+            <ceqn>vegalengd = \frac{hröðun \times tími^2}{2}</ceqn>
+        </p>
+
+        <p>Þið skuluð reikna út úr margfeldinu fyrir ofan strik áður en þið deilið með tvem. Þetta er gert vegna heiltöludeilingar.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[0]]></input>
+            <output><![CDATA[0]]></output>
+            <explanation>Eftir núll sekúndur er hluturinn búinn að ferðast núll metra.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[3]]></input>
+            <output><![CDATA[45]]></output>
+            <explanation>Eftir þrjár sekúndur er hluturinn búinn að ferðast 45 metra.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+    </tests>
+</problem>
