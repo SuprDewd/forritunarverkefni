@@ -1,0 +1,17 @@
+<problem name="Halló heimur">
+    <description>
+        <p>Skrifið forrit sem skrifar út:
+            <blockquote>Halló heimur!<br />Forritun er skemmtileg.</blockquote>
+        </p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input></input>
+            <output><![CDATA[Halló heimur!
+Forritun er skemmtileg.]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+    </tests>
+</problem>

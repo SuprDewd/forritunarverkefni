@@ -1,0 +1,28 @@
+<problem name="Svarið ekki">
+    <description>
+        <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>. Ef <eqn>n</eqn> er <eqn>42</eqn>, þá á forritið að skrifa út eftirfarandi línu:
+
+            <blockquote>Svarið við spurningunni um tilgang lífsins, alheimsins, og alls er 42.</blockquote>
+
+            Ef <eqn>n</eqn> er ekki <eqn>42</eqn>, þá á forritið að skrifa út eftirfarandi línu, þannig að <eqn>n</eqn> sé talan sem lesin var inn:
+
+            <blockquote>Svarið við spurningunni um tilgang lífsins, alheimsins, og alls er ekki <eqn>n</eqn>.</blockquote>
+        </p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[42]]></input>
+            <output><![CDATA[Svarið við spurningunni um tilgang lífsins, alheimsins, og alls er 42.]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[110]]></input>
+            <output><![CDATA[Svarið við spurningunni um tilgang lífsins, alheimsins, og alls er ekki 110.]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>
