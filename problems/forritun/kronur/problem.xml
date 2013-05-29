@@ -1,6 +1,6 @@
 <problem name="Krónur">
     <description>
-        Skrifið forrit sem tekur inn fjölda 5 þúsund króna seðla, fjölda þúsund króna seðla og fjölda 500 króna seðla. Forritið á að skila heildarupphæð í krónum.
+        <p>Skrifið forrit sem les inn fjölda 5 þúsund króna seðla, fjölda þúsund króna seðla og fjölda 500 króna seðla. Forritið á að skrifa út heildarupphæð í krónum.</p>
     </description>
     <solution include="solution.cpp" language="C++" />
     <tests timelimit="3s" memorylimit="64MB">

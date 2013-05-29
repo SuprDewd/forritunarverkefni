@@ -6,7 +6,7 @@
 
         Runan heldur svo endalaust áfram.</p>
 
-        <p>Skrifið forrit sem tekur inn heiltöluna <eqn>n</eqn>, og skilar svo <eqn>n</eqn>tu tölunni í Fibonacci rununni.</p>
+        <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>, og skrifar svo út <eqn>n</eqn>tu töluna í Fibonacci rununni.</p>
 
         <hint>Notið tvær breytur sem halda utan um síðustu tvö stök í rununni, og aðra breytu sem geymir núverandi stak. Ítrið svo svo í gegnum stökin (og uppfærið breyturnar þrjár eins og við á) þar til þið komið að <eqn>n</eqn>ta stakinu.</hint>
     </description>

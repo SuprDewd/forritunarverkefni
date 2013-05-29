@@ -1,15 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int vegalengd(int timi)
-{
-    return 10 * timi * timi / 2;
-}
-
 int main()
 {
     int n;
     cin >> n;
-    cout << vegalengd(n) << endl;
+    cout << 10 * n * n / 2 << endl;
     return 0;
 }

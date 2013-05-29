@@ -1,8 +1,11 @@
 #include<iostream>
 using namespace std;
 
-int fibonacci(int n)
+int main()
 {
+    int n;
+    cin >> n;
+
     int a = 1,
         b = 1,
         c;
@@ -14,13 +17,6 @@ int fibonacci(int n)
         b = c;
     }
 
-    return a;
-}
-
-int main()
-{
-    int n;
-    cin >> n;
-    cout << fibonacci(n) << endl;
+    cout << a << endl;
     return 0;
 }
