@@ -15,3 +15,6 @@ Hugmyndir
 
 - Netafræði
     - Vinir vina minna eru vinir mínir. Nota Union-Find tir að finna tengda þætti
+
+- Annað
+    - Finna periodicity á einföldum psuedorandom number generator
