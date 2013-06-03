@@ -102,7 +102,7 @@ def parse_xml(s, text_nodes=[]):
 
                 if s[at] == '>':
                     at += 1
-                    at, children = rec(s, at, is_text or tag in tnodes)
+                    at, children = rec(s, at, is_text or tag in tnodes or '*' in tnodes)
                     close = '</%s>' % tag
                     assert s[at:at + len(close)] == close
                     at += len(close)
