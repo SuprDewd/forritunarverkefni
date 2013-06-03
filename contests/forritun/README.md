@@ -69,8 +69,8 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
             <td>Leggja virðisaukaskatt ofan á verð og skrifa út. Nota þarf double tölur.</td>
         </tr>
         <tr>
-            <td><i>bmi</i></td>
-            <td>BMI</td>
+            <td><b>bmi</b></td>
+            <td>Body-Mass Index</td>
             <td>Reikna Body-Mass Index á manneskju og skrifa út með tveimur aukastöfum.</td>
         </tr>
         <tr>

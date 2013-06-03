@@ -1,0 +1,27 @@
+<problem name="Body-Mass Index">
+    <description>
+        <p>Skrifið forrit sem les inn þyngd (í kílóum) og hæð (í metrum). Forritið reiknar síðan og skrifar út BMI (Body-Mass Index) út frá gefnum tölum. BMI á að skrifa út með tveimur aukastöfum.</p>
+        <p>Athuga skal að skekkja upp á <eqn>10^{-2}</eqn> er leyfð í úttaki.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <checker include="checker.py" language="Python 2.7" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[85
+1.93]]></input>
+            <output><![CDATA[22.82]]></output>
+            <explanation>Manneskja sem er 85 kíló að þyngd og 1.93 metrar á hæð hefur 22.82 Body-Mass Index.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[57
+1.76]]></input>
+            <output><![CDATA[18.40]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>
