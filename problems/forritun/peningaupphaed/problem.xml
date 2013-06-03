@@ -1,4 +1,4 @@
-<problem name="Krónur">
+<problem name="Peningaupphæð">
     <description>
         <p>Skrifið forrit sem les inn fjölda 5 þúsund króna seðla, fjölda þúsund króna seðla og fjölda 500 króna seðla. Forritið á að skrifa út heildarupphæð í krónum.</p>
     </description>

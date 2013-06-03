@@ -1,0 +1,25 @@
+<problem name="Einföld formúla">
+    <description>
+        <p>Skrifið forrit sem les inn þrjár kommutölur: <eqn>x</eqn>, <eqn>y</eqn> og <eqn>z</eqn>. Forritið á að reikna upp úr eftirfarandi formúlu, og skrifa út svarið.
+
+            <ceqn>\frac{3x + y}{z + 2}</ceqn>
+        </p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[1.0
+2.0
+3.0]]></input>
+            <output><![CDATA[1.0]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[4.2
+6.0
+3.0]]></input>
+            <output><![CDATA[3.72]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+    </tests>
+</problem>

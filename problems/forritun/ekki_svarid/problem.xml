@@ -1,4 +1,4 @@
-<problem name="Svarið ekki">
+<problem name="Ekki svarið">
     <description>
         <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>. Ef <eqn>n</eqn> er <eqn>42</eqn>, þá á forritið að skrifa út eftirfarandi línu:
 
