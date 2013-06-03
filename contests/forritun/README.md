@@ -43,6 +43,21 @@ Kynning á námskeiði Kynning á tölvum og C++ forritun. C++ grunnur.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><b>hallo_heimur</b></td>
+            <td>Halló heimur</td>
+            <td>Skrifa út "<tt>Halló heimur</tt>".</td>
+        </tr>
+        <tr>
+            <td><b>svarid<b></td>
+            <td>Svarið</td>
+            <td>Lesa inn tölu og skrifa út setningu sem inniheldur töluna.</td>
+        </tr>
+        <tr>
+            <td><b>a_plus_b</b></td>
+            <td>A + B</td>
+            <td>Lesa inn tvær heiltölur og skrifa út summu þeirra.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -104,21 +119,6 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td><b>hallo_heimur</b></td>
-            <td>Halló heimur</td>
-            <td>Skrifa út "<tt>Halló heimur</tt>".</td>
-        </tr>
-        <tr>
-            <td><b>svarid<b></td>
-            <td>Svarið</td>
-            <td>Lesa inn tölu og skrifa út setningu sem inniheldur töluna.</td>
-        </tr>
-        <tr>
-            <td><b>a_plus_b</b></td>
-            <td>A + B</td>
-            <td>Lesa inn tvær heiltölur og skrifa út summu þeirra.</td>
-        </tr>
         <tr>
             <td><b>peningaupphaed</b></td>
             <td>Peningaupphæð</td>
