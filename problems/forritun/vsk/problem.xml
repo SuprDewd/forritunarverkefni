@@ -1,6 +1,6 @@
 <problem name="Virðisaukaskattur">
     <description>
-        <p>Skrifið forrit sem les inn verð á vöru (af taginu int). Forritið reiknar síðan út og skrifar á skjáinn heildarverð vörunnar þegar búið er að leggja virðisaukaskatt ofan á (af taginu double). Þið getið gert ráð fyrir að virðisaukaskattur sé 25,5%.</p>
+        <p>Skrifið forrit sem les inn verð á vöru (af taginu int). Forritið reiknar síðan og skrifar út heildarverð vörunnar þegar búið er að leggja virðisaukaskatt ofan á (af taginu double). Þið getið gert ráð fyrir að virðisaukaskattur sé 25,5%.</p>
         <p>Athuga skal að skekkja upp á <eqn>10^{-2}</eqn> er leyfð í úttaki.</p>
     </description>
     <solution include="solution.cpp" language="C++" />
