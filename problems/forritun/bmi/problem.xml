@@ -1,6 +1,7 @@
 <problem name="Body-Mass Index">
     <description>
         <p>Skrifið forrit sem les inn þyngd (í kílóum) og hæð (í metrum). Forritið reiknar síðan og skrifar út BMI (Body-Mass Index) út frá gefnum tölum. BMI á að skrifa út með tveimur aukastöfum.</p>
+        <p>Sjá um BMI <a href="http://en.wikipedia.org/wiki/Body_mass_index">hér</a>.</p>
         <p>Athuga skal að skekkja upp á <eqn>10^{-2}</eqn> er leyfð í úttaki.</p>
     </description>
     <solution include="solution.cpp" language="C++" />
