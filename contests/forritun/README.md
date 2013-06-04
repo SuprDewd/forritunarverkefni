@@ -89,8 +89,8 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
             <td>Reikna Body-Mass Index á manneskju og skrifa út með tveimur aukastöfum.</td>
         </tr>
         <tr>
-            <td><i>mynt</i></td>
-            <td>Mynt</td>
+            <td><b>myntir</b></td>
+            <td>Myntir</td>
             <td>Skipta peningaupphæð í mynt.</td>
         </tr>
     </tbody>

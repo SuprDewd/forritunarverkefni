@@ -1,0 +1,57 @@
+<problem name="Myntir">
+    <description>
+        <p>Skrifið forrit sem les inn eina heiltölu sem á að tákna peningaupphæð. Forritið skrifar síðan hvernig má búa til þessa upphæð með því að nota eftirtaldar myntir og seðla:
+
+            <ul>
+                <li>5000 kr. seðil</li>
+                <li>1000 kr. seðil</li>
+                <li>500 kr. seðil</li>
+                <li>100 kr. mynt</li>
+                <li>50 kr. mynt</li>
+                <li>10 kr. mynt</li>
+                <li>5 kr. mynt</li>
+                <li>1 kr. mynt</li>
+            </ul>
+        </p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[16706]]></input>
+            <output><![CDATA[3 x 5000 kr.
+1 x 1000 kr.
+1 x 500 kr.
+2 x 100 kr.
+1 x 5 kr.
+1 x 1 kr.]]></output>
+            <explanation>Peningaupphæðinni 16706 kr. er hægt að skipta upp í myntirnar sem sýndar eru í úttakinu.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+        <test input_include="tests/T14.in" output_include="tests/T14.out" />
+        <test input_include="tests/T15.in" output_include="tests/T15.out" />
+        <test input_include="tests/T16.in" output_include="tests/T16.out" />
+        <test input_include="tests/T17.in" output_include="tests/T17.out" />
+        <test input_include="tests/T18.in" output_include="tests/T18.out" />
+        <test input_include="tests/T19.in" output_include="tests/T19.out" />
+        <test input_include="tests/T20.in" output_include="tests/T20.out" />
+        <test input_include="tests/T21.in" output_include="tests/T21.out" />
+        <test input_include="tests/T22.in" output_include="tests/T22.out" />
+        <test input_include="tests/T23.in" output_include="tests/T23.out" />
+        <test input_include="tests/T24.in" output_include="tests/T24.out" />
+        <test input_include="tests/T25.in" output_include="tests/T25.out" />
+    </tests>
+</problem>
