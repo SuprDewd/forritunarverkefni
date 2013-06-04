@@ -1,9 +1,9 @@
 Verkefnaplan
-############
+============
 
 Vika 1
 ------
-Kynning á námskeiði Kynning á tölvum og C++ forritun. C++ grunnur.
+Kynning á námskeiði. Kynning á tölvum og C++ forritun. C++ grunnur.
 
 *Savitch*: 1.1-1.3, 2.1-2.2
 
@@ -122,7 +122,7 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
         <tr>
             <td><b>peningaupphaed</b></td>
             <td>Peningaupphæð</td>
-            <td>Taka inn fjölda 5 þúsund króna seðla, fjölda þúsund króna seðla, &hellip, og skrifa út heildarupphæð í krónum.</td>
+            <td>Taka inn fjölda 5 þúsund króna seðla, fjölda þúsund króna seðla, &hellip;, og skrifa út heildarupphæð í krónum.</td>
         </tr>
         <tr>
             <td><b>einfold_formula<b></td>
