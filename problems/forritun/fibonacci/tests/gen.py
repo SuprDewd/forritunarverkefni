@@ -6,5 +6,5 @@ def fib(n):
     return a
 
 for t, test in enumerate(tests):
-    with file('%d.in' % t, 'w') as f: f.write('%d\n' % test)
-    with file('%d.out' % t, 'w') as f: f.write('%d\n' % fib(test))
+    with file('T%d.in' % t, 'w') as f: f.write('%d\n' % test)
+    with file('T%d.out' % t, 'w') as f: f.write('%d\n' % fib(test))

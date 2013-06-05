@@ -1,4 +1,4 @@
-ENTITIES = { 'lt': '<', 'gt': '>', 'amp': '&' }
+ENTITIES = { 'lt': '<', 'gt': '>', 'amp': '&', 'quot': '"' }
 ENTITIES_rev = { v: k for k,v in ENTITIES.items() }
 
 class Text:
@@ -28,34 +28,37 @@ class Element:
                                   ''.join(map(str, self.children)),
                                   self.tag)
 
+def decode_entities(s):
+    res = ''
+    at = 0
+    cnt = len(s)
+    while True:
+        while at < cnt and s[at] != '&':
+            res += s[at]
+            at += 1
+
+        if at == cnt:
+            break
+
+        at += 1
+        buff = ''
+        while s[at] != ';':
+            buff += s[at]
+            at += 1
+
+        at += 1
+        res += ENTITIES[buff]
+
+    return res
+
+def encode_entities(s):
+    return ''.join(map(lambda c: ENTITIES_rev[c] if c in ENTITIES_rev else c, s))
+
 def parse_xml(s, text_nodes=[]):
     tnodes = set(text_nodes)
 
     def is_whitespace(c):
         return c in [ ' ', '\n' ]
-
-    def decode_entities(s):
-        res = ''
-        at = 0
-        cnt = len(s)
-        while True:
-            while at < cnt and s[at] != '&':
-                res += s[at]
-                at += 1
-
-            if at == cnt:
-                break
-
-            at += 1
-            buff = ''
-            while s[at] != ';':
-                buff += s[at]
-                at += 1
-
-            at += 1
-            res += ENTITIES[buff]
-
-        return res
 
     def rec(s, at, is_text):
         res = []
@@ -82,6 +85,7 @@ def parse_xml(s, text_nodes=[]):
                     at += 1
 
                 at += len(cdata_close)
+                res.append(Text(decode_entities(buff)))
                 continue
 
             tag = ''

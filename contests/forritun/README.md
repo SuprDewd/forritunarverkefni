@@ -155,14 +155,29 @@ Fleiri aukaverkefni
             <td>Skrifa út <tt>n</tt>tu töluna í Fibonacci rununni.</td>
         </tr>
         <tr>
-            <td><b>einfold_formula<b></td>
-            <td>Einföld formúla</td>
-            <td>Reikna upp úr einfaldri formúlu.</td>
-        </tr>
-        <tr>
             <td><b>ekki_svarid<b></td>
             <td>Ekki svarið</td>
             <td>Lesa inn tölu, og skrifa út ákveðna setningu ef talan er 42, en aðra setningu annars.</td>
+        </tr>
+        <tr>
+            <td><i>tolugildi</i></td>
+            <td>Tölugildi</td>
+            <td>Lesa inn tölu, og skrifa út tölugildi hennar. Nota if-setningar.</td>
+        </tr>
+        <tr>
+            <td><i>samanburdur</i></td>
+            <td>Samanburður</td>
+            <td>Lesa inn tvær tölur. Ef fyrri er minni en seinni á að skrifa út "<tt>Minni</tt>", ef þær eru jafnar á að skrifa út "<tt>Jafnar</tt>", en ef fyrri er stærri en seinni á að skrifa út "<tt>Stærri</tt>".</td>
+        </tr>
+        <tr>
+            <td><i>finnum_svarid</i></td>
+            <td>Finnum svarið</td>
+            <td>Lesa inn og skrifa út tölur þangað til að talan sem lesin var inn er 42. Nota while lykkju.</td>
+        </tr>
+        <tr>
+            <td><i>gaesalappir</i></td>
+            <td>Gæsalappir</td>
+            <td>Lesa inn streng og skrifa út <tt>ég las inn "<i>strengurinn</i>"</tt>. Skrifa þarf út gæsalappirnar.</td>
         </tr>
     </tbody>
 </table>

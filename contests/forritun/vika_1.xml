@@ -1,0 +1,5 @@
+<contest name="Forritun - V01" email="bjarkig12@ru.is">
+    <problem name="Aukaverkefni - Halló heimur" include="forritun/hallo_heimur" />
+    <problem name="Aukaverkefni - Svarið" include="forritun/svarid" />
+    <problem name="Aukaverkefni - A + B" include="forritun/a_plus_b" />
+</contest>

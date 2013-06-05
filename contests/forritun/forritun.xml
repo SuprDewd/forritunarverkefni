@@ -1,9 +1,0 @@
-<contest name="Forritun">
-    <problem include="forritun/kronur" />
-    <problem include="forritun/fibonacci" />
-
-    <config>
-        <mooshak>
-        </mooshak>
-    </config>
-</contest>
