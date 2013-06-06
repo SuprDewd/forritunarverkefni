@@ -58,6 +58,11 @@ Kynning á námskeiði. Kynning á tölvum og C++ forritun. C++ grunnur.
             <td>A + B</td>
             <td>Lesa inn tvær heiltölur og skrifa út summu þeirra.</td>
         </tr>
+        <tr>
+            <td><i>gaesalappir</i></td>
+            <td>Gæsalappir</td>
+            <td>Lesa inn streng og skrifa út <tt>ég las inn "<i>strengurinn</i>"</tt>. Skrifa þarf út gæsalappirnar.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -137,10 +142,50 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
     </tbody>
 </table>
 
-Fleiri aukaverkefni
----------------
+Vika 3
+------
+C++ grunnur. Flæðisstýring.
+
+*Savitch*: 2.5, 3.1-3.2, 3.3
 
 <table>
+    <caption>Dæmatímaverkefni</caption>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nafn</th>
+            <th>lýsing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>sum_positive</b></td>
+            <td>Sum of positive integers</td>
+            <td>Read a list of 10 integers. Output the sum of the positive integers, number of positive integers, and number of non-positive integers.</td>
+        </tr>
+        <tr>
+            <td><b>babylonian_algorithm</b></td>
+            <td>The Babylonian algorithm</td>
+            <td>Read an integer <tt>n</tt>. Use the Babylonian algorithm to find an approximation to the square root of <tt>n</tt>.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <caption>Skilaverkefni</caption>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nafn</th>
+            <th>lýsing</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<table>
+    <caption>Aukaverkefni</caption>
     <thead>
         <tr>
             <th>id</th>
@@ -175,55 +220,10 @@ Fleiri aukaverkefni
             <td>Lesa inn og skrifa út tölur þangað til að talan sem lesin var inn er 42. Nota while lykkju.</td>
         </tr>
         <tr>
-            <td><i>gaesalappir</i></td>
-            <td>Gæsalappir</td>
-            <td>Lesa inn streng og skrifa út <tt>ég las inn "<i>strengurinn</i>"</tt>. Skrifa þarf út gæsalappirnar.</td>
+            <td><i></i></td>
+            <td>Finnum svarið</td>
+            <td>Lesa inn og skrifa út tölur þangað til að talan sem lesin var inn er 42. Nota while lykkju.</td>
         </tr>
-    </tbody>
-</table>
-
-Vika 3
-------
-C++ grunnur. Flæðisstýring.
-
-*Savitch*: 2.5, 3.1-3.2, 3.3
-
-<table>
-    <caption>Dæmatímaverkefni</caption>
-    <thead>
-        <tr>
-            <th>id</th>
-            <th>nafn</th>
-            <th>lýsing</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-
-<table>
-    <caption>Skilaverkefni</caption>
-    <thead>
-        <tr>
-            <th>id</th>
-            <th>nafn</th>
-            <th>lýsing</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-
-<table>
-    <caption>Aukaverkefni</caption>
-    <thead>
-        <tr>
-            <th>id</th>
-            <th>nafn</th>
-            <th>lýsing</th>
-        </tr>
-    </thead>
-    <tbody>
     </tbody>
 </table>
 

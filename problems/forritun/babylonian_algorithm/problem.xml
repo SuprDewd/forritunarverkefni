@@ -1,0 +1,46 @@
+<problem name="The Babylonian algorithm">
+    <description>
+        <p>The Babylonian algorithm to compute the square root of a number <eqn>n</eqn> is as follows:
+
+            <ol>
+                <li>Make a <tt>guess</tt> at the answer (you can pick <tt>n/2</tt> as your initial guess).</li>
+                <li>Compute <tt>r = n / guess</tt></li>
+                <li>Set <tt>guess = (guess + r) / 2</tt></li>
+                <li>Go back to step 2 for as many iterations as necessary. The more that steps 2 and 3 are repeated, the closer <tt>guess</tt> will become to the square root of <tt>n</tt>.</li>
+            </ol>
+        </p>
+
+        <p>Write a program that inputs an integer for <tt>n</tt>, iterates through the Babylonian algorithm until <tt>guess</tt> is within 1% of the previous guess, and outputs the answer as a <i>double</i>.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <checker include="checker.py" language="Python 2.7" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[25]]></input>
+            <output><![CDATA[5.00001]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[2]]></input>
+            <output><![CDATA[1.41422]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+        <test input_include="tests/T14.in" output_include="tests/T14.out" />
+        <test input_include="tests/T15.in" output_include="tests/T15.out" />
+        <test input_include="tests/T16.in" output_include="tests/T16.out" />
+        <test input_include="tests/T17.in" output_include="tests/T17.out" />
+        <test input_include="tests/T18.in" output_include="tests/T18.out" />
+    </tests>
+</problem>
