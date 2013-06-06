@@ -219,11 +219,6 @@ C++ grunnur. Flæðisstýring.
             <td>Finnum svarið</td>
             <td>Lesa inn og skrifa út tölur þangað til að talan sem lesin var inn er 42. Nota while lykkju.</td>
         </tr>
-        <tr>
-            <td><i></i></td>
-            <td>Finnum svarið</td>
-            <td>Lesa inn og skrifa út tölur þangað til að talan sem lesin var inn er 42. Nota while lykkju.</td>
-        </tr>
     </tbody>
 </table>
 
