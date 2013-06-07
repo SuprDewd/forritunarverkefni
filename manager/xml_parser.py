@@ -8,6 +8,14 @@ class Text:
     def __str__(self):
         return ''.join(map(lambda c: ENTITIES_rev[c] if c in ENTITIES_rev else c, self.text))
 
+def escape_quotes(s):
+    res = ''
+    for c in s:
+        if c in ['"', '\\']:
+            res += '\\'
+        res += c
+    return res
+
 class Element:
     def __init__(self, tag, attr={}, children=[]):
         self.tag = tag
@@ -15,16 +23,8 @@ class Element:
         self.children = children
 
     def __str__(self):
-        def escape(s):
-            res = ''
-            for c in s:
-                if c in ['"', '\\']:
-                    res += '\\'
-                res += c
-            return res
-
         return '<%s%s>%s</%s>' % (self.tag,
-                                  ''.join(map(lambda (k,v): ' %s="%s"' % (k, escape(v)), self.attr.items())),
+                                  ''.join(map(lambda (k,v): ' %s="%s"' % (k, escape_quotes(v)), self.attr.items())),
                                   ''.join(map(str, self.children)),
                                   self.tag)
 

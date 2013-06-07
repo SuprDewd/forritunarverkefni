@@ -8,9 +8,11 @@ import string
 import random
 import shutil
 from zipfile import ZipFile
+import subprocess
 
 PROBLEM_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', 'problems'))
 CONTEST_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', 'contests'))
+TEX_TO_GIF = os.path.realpath(os.path.join(os.path.dirname(__file__), 'textogif'))
 
 TEXT_ELEMS = ['description', 'solution', 'checker', 'input', 'output', 'explanation']
 
@@ -205,15 +207,6 @@ def load_contest(cid):
     return contest
 
 
-def description_to_html(desc):
-    # def to_html(n):
-    #     if isinstance(n, xmlparser.Text):
-    #         return str(n)
-    #     else:
-    #         return str(n)
-
-    return str(''.join(map(str, desc)))
-
 def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=None, problem_seq_name=None, write_content_xml=True):
     xml_path = xml_path if xml_path else ''
 
@@ -227,14 +220,117 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
                                   '.py' if problem.solution.language.title().startswith('Python') else
                                   '')
 
-    set_contents(description_file, description_to_html(problem.description), path)
+    os.mkdir(os.path.join(path, 'images'))
+
+    def description_to_html(problem, img_path):
+        img_count = [ 0 ]
+        def attr_to_str(attr):
+            if not attr: return ''
+            return ''.join([' %s="%s"' % (k, xml_parser.escape_quotes(v)) for (k,v) in attr.items()])
+
+        def to_html(n, img_count):
+            if isinstance(n, xml_parser.Text):
+                return xml_parser.encode_entities(n.text)
+            else:
+                if n.tag == 'eqn':
+                    cur_img = img_count[0]
+                    img_count[0] += 1
+                    set_contents('%d.tex' % cur_img, r"""\documentclass[12pt]{article}
+\pagestyle{empty}
+\begin{document}
+\begin{displaymath}
+%(eqn)s
+\end{displaymath}
+\end{document}""" % {'eqn': ''.join(map(str, n.children))}, img_path)
+                    args = [TEX_TO_GIF, '-png', '-dpi', '120', '%d.tex' % cur_img]
+                    p = subprocess.Popen(args, cwd=img_path)
+                    p.wait()
+                    os.remove(os.path.join(img_path, '%d.tex'  % cur_img))
+                    return """<img class="eqn" src="%(path)s" alt="%(alt)s" />""" % {'path': '%d.png' % cur_img, 'alt': xml_parser.escape_quotes(''.join(map(str, n.children)))}
+                elif n.tag == 'ceqn':
+                    cur_img = img_count
+                    img_count += 1
+                    set_contents('%d.tex' % cur_img, r"""\documentclass[12pt]{article}
+\pagestyle{empty}
+\begin{document}
+\begin{displaymath}
+%(eqn)s
+\end{displaymath}
+\end{document}""" % {'eqn': ''.join(map(str, n.children))}, img_path)
+                    args = [TEX_TO_GIF, '-png', '%d.tex' % cur_img]
+                    p = subprocess.Popen(args, cwd=img_path)
+                    p.wait()
+                    os.remove(os.path.join(img_path, '%d.tex'  % cur_img))
+                    return """<div  class="ceqn-wrapper" style="text-align:center"><img class="ceqn" src="%(path)s" alt="%(alt)s" /></div>""" % {'path': '%d.png' % cur_img, 'alt': xml_parser.escape_quotes(''.join(map(str, n.children)))}
+                elif n.tag in ['img', 'br', 'hr']:
+                    return """<%(tag)s%(attrs)s />""" % {'tag': n.tag, 'attrs': attr_to_str(n.attr)}
+                else:
+                    return """<%(tag)s%(attrs)s>%(content)s</%(tag)s>""" % {'tag': n.tag, 'attrs': attr_to_str(n.attr), 'content': ''.join([ to_html(c, img_count) for c in n.children ])}
+
+        ts = ""
+        for i, test in enumerate(problem.tests):
+            if test.example:
+                ts += """<h2>Example %(i)d</h2>
+            <table class="sample">
+                <thead>
+                    <tr>
+                        <th>input</th>
+                        <th>output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre>%(input)s</pre>
+                        </td>
+                        <td>
+                            <pre>%(output)s</pre>
+                        </td>
+                    </tr>
+                    %(explanation)s
+                </tbody>
+            </table>
+
+                """ % { 'i': i+1, 'input': xml_parser.encode_entities(test.input), 'output': xml_parser.encode_entities(test.output), 'explanation': ('<tr><td colspan="2">%s</td></tr>' % xml_parser.encode_entities(test.explanation)) if test.explanation else '' }
+
+        html = """<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <title>%(title)s</title>
+            <style>
+                body { background: white; }
+                h1, h2, table.sample th { color: black; }
+                h2 { margin-bottom: 0; }
+                p { text-align: justify; }
+                .center { text-align: center; }
+                table.sample { min-width: 700px; border-collapse: collapse; }
+                table.sample th, table.sample td { border: 1px solid black; }
+                table.sample td { vertical-align: top; padding: 3px; }
+                table.sample pre { margin: 0; }
+                tt { font-size: 1.1em; }
+            </style>
+        </head>
+        <body>
+            <h1>%(title)s</h1>
+
+            %(description)s
+
+            %(tests)s
+        </body>
+    </html>
+        """ % {'title': xml_parser.encode_entities(problem.name), 'description': ''.join([ to_html(c, img_count) for c in problem.description ]), 'tests': ts }
+
+        return html
+        # return str(''.join(map(str, desc)))
+
+    set_contents(description_file, description_to_html(problem, os.path.join(path, 'images')), path)
     set_contents(solution_file, problem.solution.code, path)
 
     if problem.checker:
         set_contents(checker_file, problem.checker.code, path)
 
-    if not os.path.exists(os.path.join(path, 'tests')):
-        os.mkdir(os.path.join(path, 'tests'))
+    os.mkdir(os.path.join(path, 'tests'))
     tests = ""
     timelimit = None
     for i, t in enumerate(problem.tests):
@@ -242,8 +338,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
             timelimit = t.timelimit
         elif t.timelimit:
             timelimit = max(timelimit, t.timelimit)
-        if not os.path.exists(os.path.join(path, 'tests/T%d' % i)):
-            os.mkdir(os.path.join(path, 'tests/T%d' % i))
+        os.mkdir(os.path.join(path, 'tests/T%d' % i))
         set_contents('tests/T%d/input' % i, t.input, path)
         set_contents('tests/T%d/output' % i, t.output, path)
         tests += """
@@ -315,14 +410,12 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
 
 def export_contest(contest, path):
 
-    if not os.path.exists(os.path.join(path, 'problems')):
-        os.mkdir(os.path.join(path, 'problems'))
+    os.mkdir(os.path.join(path, 'problems'))
     problems = ""
     for i, p in enumerate(contest.problems):
         prob_id = "%03d_%s" % (i, p.id.replace('/', '_'))
         prob_dir = os.path.join(path, 'problems', prob_id)
-        if not os.path.exists(prob_dir):
-            os.mkdir(prob_dir)
+        os.mkdir(prob_dir)
         problems += export_problem(p, prob_dir, add_xmlns=False, add_xml_header=False, xml_path="problems", problem_seq_name=prob_id, write_content_xml=False)
 
     xml = """<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
