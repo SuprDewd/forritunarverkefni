@@ -195,11 +195,6 @@ C++ grunnur. Flæðisstýring.
     </thead>
     <tbody>
         <tr>
-            <td><b>fibonacci</b></td>
-            <td>Fibonacci runan</td>
-            <td>Skrifa út <tt>n</tt>tu töluna í Fibonacci rununni.</td>
-        </tr>
-        <tr>
             <td><b>ekki_svarid<b></td>
             <td>Ekki svarið</td>
             <td>Lesa inn tölu, og skrifa út ákveðna setningu ef talan er 42, en aðra setningu annars.</td>
@@ -238,6 +233,16 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><i>pascal_triangle</i></td>
+            <td>Pascal þríhyrningurinn</td>
+            <td>Lesa inn <tt>n</tt> og skrifa út fyrstu <tt>n</tt> raðirnar í Pascal þríhyrningnum.</td>
+        </tr>
+        <tr>
+            <td><i>prime_numbers</i></td>
+            <td>Frumtölur</td>
+            <td>Lesa inn <tt>a</tt> og <tt>b</tt> og skrifa út allar frumtölur á milli <tt>a</tt> og <tt>b</tt>.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -264,6 +269,16 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><i>factorial</i></td>
+            <td>Factorial</td>
+            <td>Lesa inn <tt>n</tt> og skrifa út <tt>n!</tt> (<tt>n</tt> hrópmerkt)</td>
+        </tr>
+        <tr>
+            <td><b>fibonacci</b></td>
+            <td>Fibonacci runan</td>
+            <td>Skrifa út <tt>n</tt>tu töluna í Fibonacci rununni.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -328,6 +343,16 @@ Meira um föll. Straumar og grunnatriði skráarvinnslu. Skilaverkefni II skila�
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><i>time_notation</i></td>
+            <td>Time notation</td>
+            <td>Breyta "24-hour notation" í "12-hour notation".</td>
+        </tr>
+        <tr>
+            <td><i>hefja_i_veldi</i></td>
+            <td>Hefja í veldi</td>
+            <td>Lesa inn <tt>a, b</tt> og skrifa út <tt>a^b</tt>.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -373,6 +398,16 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><i>haekkandi_rod</i></td>
+            <td>Hækkandi röð</td>
+            <td>Lesa inn 5 heiltölur, og segja til um hvort þær séu í hækkandi röð eða ekki.</td>
+        </tr>
+        <tr>
+            <td><i>standard_deviation</i></td>
+            <td>Standard deviation</td>
+            <td>Lesa inn <tt>n</tt>, og svo <tt>n</tt> double tölur. Reikna út standard deviation af tölunum.</td>
+        </tr>
     </tbody>
 </table>
 

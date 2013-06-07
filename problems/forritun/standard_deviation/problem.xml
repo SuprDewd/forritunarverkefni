@@ -1,0 +1,38 @@
+<problem name="Standard deviation">
+    <description>
+        <p>The standard deviation of a list of numbers is a measure of how much the numbers deviate from the average. If the standard deviation is small, the numbers are clustered close to the average. If the standard deviation is large, the numbers are scattered far from the average. If the standard deviation is large, the numbers are scattered far from the average. The standard deviation, <eqn>S</eqn>, of a list of <eqn>N</eqn> numbers <eqn>x</eqn> is defined as follows:
+
+            <ceqn>S = \sqrt{\frac{\sum_{i=1}^N (x_i - \bar{x})^2}{N}}</ceqn>
+
+            where <eqn>x</eqn> is the average of the <eqn>N</eqn> numbers <eqn>x_1, x_2, \ldots, x_N</eqn>.</p>
+
+        <p>Write a program that takes as input the integer <eqn>0 &lt; N \leq 10</eqn> followed by <eqn>N</eqn> lines containing the floating point numbers <eqn>x_i</eqn>. The program should output a single line containing <eqn>S</eqn>. The returned answer must be within <eqn>10^{-3}</eqn> from the correct answer.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <checker include="checker.py" language="Python 2.7" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[4
+1.0
+5.0
+-1.4
+3.9]]></input>
+            <output><![CDATA[2.50537]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[2
+3.1415926535
+3.1415926535]]></input>
+            <output><![CDATA[0.0]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+    </tests>
+</problem>
