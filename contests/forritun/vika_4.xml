@@ -1,0 +1,7 @@
+<contest name="Forritun - V04" email="bjarkig12@ru.is">
+    <problem enabled="false" name="Dæmatímaverkefni: Pascal þríhyrningurinn" include="forritun/pascal_triangle" />
+    <problem enabled="false" name="Dæmatímaverkefni: Frumtölur" include="forritun/prime_numbers" />
+
+    <problem enabled="false" name="Aukaverkefni: Factorial" include="forritun/factorial" />
+    <problem enabled="false" name="Aukaverkefni: Fibonacci runan" include="forritun/fibonacci" />
+</contest>

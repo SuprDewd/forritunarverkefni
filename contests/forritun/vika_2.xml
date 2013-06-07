@@ -1,0 +1,9 @@
+<contest name="Forritun - V02" email="bjarkig12@ru.is">
+    <problem name="Dæmatímaverkefni: Virðisaukaskattur" include="forritun/vsk" />
+    <problem name="Dæmatímaverkefni: Body-Mass Index" include="forritun/bmi" />
+    <problem name="Dæmatímaverkefni: Myntir" include="forritun/myntir" />
+
+    <problem name="Aukaverkefni: Peningaupphæð" include="forritun/peningaupphaed" />
+    <problem name="Aukaverkefni: Einföld formúla" include="forritun/einfold_formula" />
+    <problem name="Aukaverkefni: Vegalengd" include="forritun/vegalengd" />
+</contest>

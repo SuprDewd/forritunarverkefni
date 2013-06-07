@@ -404,7 +404,7 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td>Lesa inn 5 heiltölur, og segja til um hvort þær séu í hækkandi röð eða ekki.</td>
         </tr>
         <tr>
-            <td><i>standard_deviation</i></td>
+            <td><b>standard_deviation</b></td>
             <td>Standard deviation</td>
             <td>Lesa inn <tt>n</tt>, og svo <tt>n</tt> double tölur. Reikna út standard deviation af tölunum.</td>
         </tr>

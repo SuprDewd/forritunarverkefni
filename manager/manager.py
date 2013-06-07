@@ -140,7 +140,7 @@ def _parse_problem(pid, tree, p_dir):
                     if test.timelimit: test.timelimit = _convert_timelimit_str(test.timelimit)
                     test.memorylimit = n2.attr.get('memorylimit') or memorylimit
                     if test.memorylimit: test.memorylimit = _convert_memorylimit_str(test.memorylimit)
-                    test.example = n2.attr.get('example', 'False') == 'True'
+                    test.example = n2.attr.get('example', 'false').lower() == 'true'
                     for n3 in n2.children:
                         if n3.tag == 'input':
                             test.input = ''.join(map(str, n3.children))
@@ -195,6 +195,9 @@ def load_contest(cid):
 
     for n1 in tree[0].children:
         if n1.tag == 'problem':
+            if 'enabled' in n1.attr and n1.attr['enabled'].lower() == 'false':
+                continue
+
             if 'include' in n1.attr:
                 problem = load_problem(n1.attr['include'])
                 contest.problems.append(problem)
@@ -228,40 +231,32 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
             if not attr: return ''
             return ''.join([' %s="%s"' % (k, xml_parser.escape_quotes(v)) for (k,v) in attr.items()])
 
-        def to_html(n, img_count):
+        def to_html(n, img_count, entities=True):
             if isinstance(n, xml_parser.Text):
-                return xml_parser.encode_entities(n.text)
+                return xml_parser.encode_entities(n.text) if entities else n.text
             else:
-                if n.tag == 'eqn':
+                if n.tag == 'eqn' or n.tag == 'ceqn':
+                    centered = n.tag == 'ceqn'
+
                     cur_img = img_count[0]
                     img_count[0] += 1
                     set_contents('%d.tex' % cur_img, r"""\documentclass[12pt]{article}
 \pagestyle{empty}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \begin{document}
 \begin{displaymath}
 %(eqn)s
 \end{displaymath}
-\end{document}""" % {'eqn': ''.join(map(str, n.children))}, img_path)
-                    args = [TEX_TO_GIF, '-png', '-dpi', '120', '%d.tex' % cur_img]
-                    p = subprocess.Popen(args, cwd=img_path)
-                    p.wait()
-                    os.remove(os.path.join(img_path, '%d.tex'  % cur_img))
-                    return """<img class="eqn" src="%(path)s" alt="%(alt)s" />""" % {'path': '%d.png' % cur_img, 'alt': xml_parser.escape_quotes(''.join(map(str, n.children)))}
-                elif n.tag == 'ceqn':
-                    cur_img = img_count
-                    img_count += 1
-                    set_contents('%d.tex' % cur_img, r"""\documentclass[12pt]{article}
-\pagestyle{empty}
-\begin{document}
-\begin{displaymath}
-%(eqn)s
-\end{displaymath}
-\end{document}""" % {'eqn': ''.join(map(str, n.children))}, img_path)
-                    args = [TEX_TO_GIF, '-png', '%d.tex' % cur_img]
-                    p = subprocess.Popen(args, cwd=img_path)
-                    p.wait()
-                    os.remove(os.path.join(img_path, '%d.tex'  % cur_img))
-                    return """<div  class="ceqn-wrapper" style="text-align:center"><img class="ceqn" src="%(path)s" alt="%(alt)s" /></div>""" % {'path': '%d.png' % cur_img, 'alt': xml_parser.escape_quotes(''.join(map(str, n.children)))}
+\end{document}""" % {'eqn': ''.join([ to_html(m, img_count, False) for m in n.children])}, img_path)
+                    args = [TEX_TO_GIF, '-png', '-dpi', '200' if centered else '150', '%d.tex' % cur_img]
+                    p = subprocess.Popen(args, cwd=img_path, stderr=subprocess.PIPE)
+                    (_, pout) = p.communicate()
+                    os.remove(os.path.join(img_path, '%d.tex' % cur_img))
+                    res = pout.split('\n')[-2].replace("<img", '<img class="%s"' % n.tag).replace(">", "/>")
+                    if centered:
+                        res = """<div  class="ceqn-wrapper" style="text-align:center">%(content)s</div>""" % {'content': res}
+                    return res
                 elif n.tag in ['img', 'br', 'hr']:
                     return """<%(tag)s%(attrs)s />""" % {'tag': n.tag, 'attrs': attr_to_str(n.attr)}
                 else:
@@ -293,15 +288,12 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
 
                 """ % { 'i': i+1, 'input': xml_parser.encode_entities(test.input), 'output': xml_parser.encode_entities(test.output), 'explanation': ('<tr><td colspan="2">%s</td></tr>' % xml_parser.encode_entities(test.explanation)) if test.explanation else '' }
 
-        html = """<!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8" />
-            <title>%(title)s</title>
+        html = """
+            <meta charset="utf-8" />
             <style>
-                body { background: white; }
+                #current_problem, #Base { background: white; }
                 h1, h2, table.sample th { color: black; }
-                h2 { margin-bottom: 0; }
+                h2 { margin-bottom: 5px; margin-top: 15px; }
                 p { text-align: justify; }
                 .center { text-align: center; }
                 table.sample { min-width: 700px; border-collapse: collapse; }
@@ -310,16 +302,12 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
                 table.sample pre { margin: 0; }
                 tt { font-size: 1.1em; }
             </style>
-        </head>
-        <body>
-            <h1>%(title)s</h1>
 
-            %(description)s
-
-            %(tests)s
-        </body>
-    </html>
-        """ % {'title': xml_parser.encode_entities(problem.name), 'description': ''.join([ to_html(c, img_count) for c in problem.description ]), 'tests': ts }
+            <div id="current_problem">
+                <h1>%(title)s</h1>
+                %(description)s
+                %(tests)s
+            </div>""" % {'title': xml_parser.encode_entities(problem.name), 'description': ''.join([ to_html(c, img_count) for c in problem.description ]), 'tests': ts }
 
         return html
         # return str(''.join(map(str, desc)))
@@ -389,9 +377,9 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
      </Tests>
 </Problem>
 """ % { 'xmlns': ('xmlns="http://www.ncc.up.pt/mooshak/"' if add_xmlns else '') + " " + ("""xml:id="%s" """ % '.'.join([xml_path, problem_seq_name]) if problem_seq_name else ""),
-        'img_path': '.'.join([ part for part in [xml_path, problem_seq_name, 'tests'] if part ]),
-        'tests_path': '.'.join([xml_path, 'images']) if xml_path else 'images',
-        'id': problem_seq_name,
+        'img_path': '.'.join([ part for part in [xml_path, problem_seq_name, 'images'] if part ]),
+        'tests_path': '.'.join([ part for part in [xml_path, problem_seq_name, 'tests'] if part ]),
+        'id': problem_seq_name.split('_')[0],
         'name': xml_parser.encode_entities(problem.name),
         'description': description_file,
         'solution': solution_file,

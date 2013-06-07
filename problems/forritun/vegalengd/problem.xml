@@ -2,7 +2,7 @@
     <description>
         <p>Skrifið forrit sem les inn tíma í sekúndum, og skrifar út hversu langt hlutur myndi ferðast ef hann væri í frjálsu falli í svo langan tíma. Gerið ráð fyrir að hluturinn sé kyrrstæður í upphafi, að það sé engin vindmótstaða, og að hann hafi fasta hröðun 10 metra á sekúndu vegna þyngdarafls jarðar. Notið jöfnuna:
 
-            <ceqn>vegalengd = \frac{hröðun \times tími^2}{2}</ceqn>
+            <ceqn>\textrm{vegalengd} = \frac{\textrm{hröðun} \times \textrm{tími}^2}{2}</ceqn>
         </p>
 
         <p>Þið skuluð reikna út úr margfeldinu fyrir ofan strik áður en þið deilið með tveim. Þetta er gert vegna heiltöludeilingar.</p>

@@ -1,0 +1,4 @@
+<contest name="Forritun - V06" email="bjarkig12@ru.is">
+    <problem enabled="false" name="Dæmatímaverkefni: Time notation" include="forritun/time_notation" />
+    <problem enabled="false" name="Dæmatímaverkefni: Hefja í veldi" include="forritun/hefja_i_veldi" />
+</contest>

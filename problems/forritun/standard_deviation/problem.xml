@@ -1,6 +1,6 @@
 <problem name="Standard deviation">
     <description>
-        <p>The standard deviation of a list of numbers is a measure of how much the numbers deviate from the average. If the standard deviation is small, the numbers are clustered close to the average. If the standard deviation is large, the numbers are scattered far from the average. If the standard deviation is large, the numbers are scattered far from the average. The standard deviation, <eqn>S</eqn>, of a list of <eqn>N</eqn> numbers <eqn>x</eqn> is defined as follows:
+        <p>The standard deviation of a list of numbers is a measure of how much the numbers deviate from the average. If the standard deviation is small, the numbers are clustered close to the average. If the standard deviation is large, the numbers are scattered far from the average. The standard deviation, <eqn>S</eqn>, of a list of <eqn>N</eqn> numbers <eqn>x</eqn> is defined as follows:
 
             <ceqn>S = \sqrt{\frac{\sum_{i=1}^N (x_i - \bar{x})^2}{N}}</ceqn>
 
