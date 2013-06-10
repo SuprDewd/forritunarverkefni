@@ -59,7 +59,7 @@ Kynning á námskeiði. Kynning á tölvum og C++ forritun. C++ grunnur.
             <td>Lesa inn tvær heiltölur og skrifa út summu þeirra.</td>
         </tr>
         <tr>
-            <td><i>gaesalappir</i></td>
+            <td><b>gaesalappir</b></td>
             <td>Gæsalappir</td>
             <td>Lesa inn streng og skrifa út <tt>ég las inn "<i>strengurinn</i>"</tt>. Skrifa þarf út gæsalappirnar.</td>
         </tr>
@@ -239,12 +239,12 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
     </thead>
     <tbody>
         <tr>
-            <td><i>pascal_triangle</i></td>
+            <td><b>pascal_triangle</i></td>
             <td>Pascal þríhyrningurinn</td>
             <td>Lesa inn <tt>n</tt> og skrifa út fyrstu <tt>n</tt> raðirnar í Pascal þríhyrningnum.</td>
         </tr>
         <tr>
-            <td><i>prime_numbers</i></td>
+            <td><b>prime_numbers</b></td>
             <td>Frumtölur</td>
             <td>Lesa inn <tt>a</tt> og <tt>b</tt> og skrifa út allar frumtölur á milli <tt>a</tt> og <tt>b</tt>.</td>
         </tr>
@@ -275,7 +275,7 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
     </thead>
     <tbody>
         <tr>
-            <td><i>factorial</i></td>
+            <td><b>factorial</b></td>
             <td>Factorial</td>
             <td>Lesa inn <tt>n</tt> og skrifa út <tt>n!</tt> (<tt>n</tt> hrópmerkt)</td>
         </tr>
@@ -439,6 +439,9 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
         </tr>
     </thead>
     <tbody>
+        <td><i>magic_square</i></td>
+        <td>Magic square</td>
+        <td>Skrifa forrit sem les inn tvívítt fylki og segir hvort það sé magic square.</td>
     </tbody>
 </table>
 

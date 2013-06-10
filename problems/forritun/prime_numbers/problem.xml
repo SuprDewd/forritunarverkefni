@@ -1,0 +1,28 @@
+<problem name="Frumtölur">
+    <description>
+        <p>Frumtala er heiltala, stærri en 1, sem er bara deilanleg með 1 og sjálfri sér. Fyrstu fimm frumtölurnar eru <eqn>2, 3, 5, 7, 11</eqn>.</p>
+        <p>Skrifið forrit sem les inn tvær heiltölur <eqn>a, b</eqn>. Forritið á að skrifa út allar frumtölur á lokaða bilinu <eqn>\[a,b\]</eqn>, í hækkandi röð.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2 11]]></input>
+            <output><![CDATA[2
+3
+5
+7
+11]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[10 20]]></input>
+            <output><![CDATA[11
+13
+17
+19]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+    </tests>
+</problem>

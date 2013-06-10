@@ -1,0 +1,28 @@
+<problem name="Pascal þríhyrningurinn">
+    <description>
+        <p>Pascal-þríhyrningurinn er óendanlega stór þríhyrningur af heiltölum, skilgreindur þannig að efst í þríhyrningnum er talan 1, og er talan 1 svo í fyrsta og síðasta dálki hverrar raðar. Tölur annarstaðar í þríhyrningnum eru fengnar með því að leggja saman tölurnar tvær fyrir ofan hana. Fyrstu fimm raðirnar í þríhyrningnum líta þá svona út:
+
+            <ceqn>\begin{tabular}{ccccccccc} &amp; &amp; &amp; &amp; 1\\noalign{\smallskip\smallskip} $n=1$:&amp; &amp; &amp; &amp; 1 &amp; &amp; 1\\noalign{\smallskip\smallskip} &amp; &amp; 1 &amp; &amp; 2 &amp; &amp; 1\\noalign{\smallskip\smallskip} &amp; 1 &amp; &amp; 3 &amp; &amp; 3 &amp; &amp; 1\\noalign{\smallskip\smallskip} 1 &amp; &amp; 4 &amp; &amp; 6 &amp; &amp; 4 &amp; &amp; 1\\noalign{\smallskip\smallskip} \end{tabular}</ceqn>
+    </p>
+
+        <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>. Forritið á að skrifa út fyrstu <eqn>n</eqn> raðirnar í Pascal þríhyrningnum.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <checker include="checker.py" language="Python2" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[5]]></input>
+            <output><![CDATA[1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

@@ -1,0 +1,32 @@
+<problem name="Frumtölur">
+    <description>
+        <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>, og skrifar út <eqn>n!</eqn> (<eqn>n</eqn> hrópmerkt). Notið eftirfarandi skilgreiningu á <eqn>n!</eqn>:
+            <ceqn>n! = 1 \times 2 \times 3 \times \dotsm \times (n-1) \times n</ceqn>
+        </p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3]]></input>
+            <output><![CDATA[6]]></output>
+            <explanation><ceqn>3! = 1\times 2 \times 3 = 6</ceqn></explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[6]]></input>
+            <output><![CDATA[720]]></output>
+            <explanation><ceqn>6! = 1\times 2 \times 3 \times 4 \times 5 \times 6 = 720</ceqn></explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+    </tests>
+</problem>
