@@ -200,19 +200,24 @@ C++ grunnur. Flæðisstýring.
             <td>Lesa inn tölu, og skrifa út ákveðna setningu ef talan er 42, en aðra setningu annars.</td>
         </tr>
         <tr>
-            <td><i>tolugildi</i></td>
+            <td><b>tolugildi</b></td>
             <td>Tölugildi</td>
             <td>Lesa inn tölu, og skrifa út tölugildi hennar. Nota if-setningar.</td>
         </tr>
         <tr>
-            <td><i>samanburdur</i></td>
+            <td><b>samanburdur</b></td>
             <td>Samanburður</td>
             <td>Lesa inn tvær tölur. Ef fyrri er minni en seinni á að skrifa út "<tt>Minni</tt>", ef þær eru jafnar á að skrifa út "<tt>Jafnar</tt>", en ef fyrri er stærri en seinni á að skrifa út "<tt>Stærri</tt>".</td>
         </tr>
         <tr>
-            <td><i>finnum_svarid</i></td>
+            <td><b>finnum_svarid<bi></td>
             <td>Finnum svarið</td>
             <td>Lesa inn og skrifa út tölur þangað til að talan sem lesin var inn er 42. Nota while lykkju.</td>
+        </tr>
+        <tr>
+            <td><b>hashmat_the_brave_warrior</b></td>
+            <td>Hashmat the Brave Warrior</td>
+            <td>Lesa inn <tt>n</tt> pör af tölum og skrifa út mismun þeirra.</td>
         </tr>
     </tbody>
 </table>

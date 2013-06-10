@@ -1,0 +1,30 @@
+<problem name="Samanburður">
+    <description>
+        <p>Skrifið forrit sem les inn tvær heiltölur. Forritið á að bera tölurnar saman og skrifa út "<tt>minni</tt>", ef fyrri talan er minni en seinni talan, "<tt>jafnar</tt>" ef tölurnar eru jafnar, og "<tt>stærri</tt>" ef fyrri talan er stærri en seinni talan.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3 5]]></input>
+            <output><![CDATA[minni]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[18 18]]></input>
+            <output><![CDATA[jafnar]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[129 10]]></input>
+            <output><![CDATA[stærri]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+    </tests>
+</problem>

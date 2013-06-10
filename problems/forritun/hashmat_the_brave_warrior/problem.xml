@@ -1,0 +1,25 @@
+<problem name="Hashmat the Brave Warrior">
+    <description>
+        <p>Hashmat is a brave warrior who, with his group of young soldiers, moves from one place to another to fight against his opponents. Before fighting he just calculates one thing, the difference between his soldier number and the opponent's soldier number. From this difference he decides whether to fight or not. Hashmat's soldier number is never greater than his opponent's.</p>
+
+        <h2>Input</h2>
+        <p>The first line of input contains a single integer, <eqn>n</eqn>, denoting the number of test cases. Each of the next <eqn>n</eqn> lines describes a test case. Each test case consists of two positive integers, the number of soldiers in Hashmat's army and his opponent's army or vice versa.</p>
+ 
+        <h2>Output</h2>
+        <p>For each test case, print the difference of number of soldiers between Hashmat's army and his opponent's army. Each output should be in a separate line.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3
+10 12
+10 14
+100 200]]></input>
+            <output><![CDATA[2
+4
+100]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+    </tests>
+</problem>

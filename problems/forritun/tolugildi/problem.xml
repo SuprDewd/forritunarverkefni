@@ -1,0 +1,41 @@
+<problem name="Tölugildi">
+    <description>
+        <p>Skrifið forrit sem finnur les inn eina heiltölu <eqn>n</eqn>. Forritið á að skrifa út tölugildi <tt>n</tt>. </p>
+        <p>Tölugildi tölunnar <eqn>n</eqn> er táknað með <eqn>|n|</eqn> og er skilgreint sem
+            <ceqn>|n| = \left{
+\begin{array}{ll}
+n  &amp; \mbox{if } n \geq 0 \
+-n &amp; \mbox{if } n &lt; 0
+\end{array}
+\right.</ceqn>
+        </p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[15]]></input>
+            <output><![CDATA[15]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[-32]]></input>
+            <output><![CDATA[32]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+        <test input_include="tests/T14.in" output_include="tests/T14.out" />
+        <test input_include="tests/T15.in" output_include="tests/T15.out" />
+        <test input_include="tests/T16.in" output_include="tests/T16.out" />
+    </tests>
+</problem>
