@@ -1,0 +1,36 @@
+<problem name="Time notation">
+    <description>
+        <p>Time is usually written in either <a href="http://en.wikipedia.org/wiki/12-hour_clock">12-hour notation</a> or <a href="http://en.wikipedia.org/wiki/24-hour_clock">24-hour notation</a>. Write a program that inputs two integers, that represent the hour and minute of the day, respectively, in 24-hour notation. The program should output the equivalent time in 12-hour notation. See examples for exact output format.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[7 5]]></input>
+            <output><![CDATA[7:05 AM]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[13 49]]></input>
+            <output><![CDATA[1:49 PM]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[0 25]]></input>
+            <output><![CDATA[12:25 AM]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+        <test input_include="tests/T14.in" output_include="tests/T14.out" />
+        <test input_include="tests/T15.in" output_include="tests/T15.out" />
+    </tests>
+</problem>

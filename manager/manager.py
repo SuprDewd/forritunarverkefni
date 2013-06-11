@@ -257,6 +257,8 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
                     if centered:
                         res = """<div  class="ceqn-wrapper" style="text-align:center">%(content)s</div>""" % {'content': res}
                     return res
+                elif n.tag == 'hint':
+                    return """<div class="hint">%s</div>""" % (''.join([ to_html(c, img_count) for c in n.children ]))
                 elif n.tag in ['img', 'br', 'hr']:
                     return """<%(tag)s%(attrs)s />""" % {'tag': n.tag, 'attrs': attr_to_str(n.attr)}
                 else:
