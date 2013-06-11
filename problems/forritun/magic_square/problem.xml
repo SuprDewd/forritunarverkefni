@@ -1,0 +1,36 @@
+<problem name="Galdraferningur">
+    <description>
+        <p>Tvívítt fylki af stærð <eqn>n\times n</eqn> er kallað <i>galdraferningur</i> ef tölurnar í hverri röð, hverjum dálki, og hvorri hornalínu, summa upp í sömu tölu. Sem dæmi má taka eftirfarandi <eqn>3\times 3</eqn> galdraferning, en hver röð/dálkur/hornalína summar upp í 15.
+            <img src="images/msq.png" alt="galdraferningur" />
+        </p>
+        <p>Skrifið forrit sem les inn töluna <eqn>n</eqn>. Á eftir henni fylgja <eqn>n</eqn> línur, og hver þeirra inniheldur <eqn>n</eqn> heiltölur. Þessar tölur tákna tvívítt fylki af stærð <eqn>n\times n</eqn>. Forritið á að segja til um hvort að tvívíða fylkið sé galdraferningur eða ekki.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3
+2 7 6
+9 5 1
+4 3 8]]></input>
+            <output><![CDATA[galdraferningur]]></output>
+            <explanation>Þetta er galdraferningurinn sem sýndur er á myndinni að ofan.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[4
+1 2 3 4
+2 3 4 1
+3 4 1 2
+4 3 1 2]]></input>
+            <output><![CDATA[ekki galdraferningur]]></output>
+            <explanation>Hver röð hefur summuna <eqn>1+2+3+4=10</eqn>, en sem dæmi hefur aðal skálínan summuna <eqn>1+3+1+2=7</eqn>. Fylkið er því ekki galdraferningur.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+    </tests>
+</problem>

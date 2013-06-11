@@ -1,0 +1,29 @@
+<problem name="Hækkandi röð">
+    <description>
+        <p>Skrifið forrit sem les inn 5 heiltölur. Forritið á að segja til um hvort heiltölurnar séu í hækkandi röð.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[1 2 5 3 8]]></input>
+            <output><![CDATA[ekki hækkandi röð]]></output>
+            <explanation>Talan 3 kemur á eftir tölunni 5 og eru tölurnar því ekki í hækkandi röð.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[1 2 5 8 9]]></input>
+            <output><![CDATA[hækkandi röð]]></output>
+            <explanation>Tölurnar eru í hækkandi röð.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+    </tests>
+</problem>

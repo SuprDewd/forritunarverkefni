@@ -404,7 +404,7 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
     </thead>
     <tbody>
         <tr>
-            <td><i>haekkandi_rod</i></td>
+            <td><b>haekkandi_rod</b></td>
             <td>Hækkandi röð</td>
             <td>Lesa inn 5 heiltölur, og segja til um hvort þær séu í hækkandi röð eða ekki.</td>
         </tr>
@@ -439,8 +439,8 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
         </tr>
     </thead>
     <tbody>
-        <td><i>magic_square</i></td>
-        <td>Magic square</td>
+        <td><b>magic_square</b></td>
+        <td>Galdraferningur</td>
         <td>Skrifa forrit sem les inn tvívítt fylki og segir hvort það sé magic square.</td>
     </tbody>
 </table>
