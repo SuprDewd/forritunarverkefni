@@ -284,6 +284,11 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
             <td>Fibonacci runan</td>
             <td>Skrifa út <tt>n</tt>tu töluna í Fibonacci rununni.</td>
         </tr>
+        <tr>
+            <td><b>lodari</b></td>
+            <td>Lóðarí</td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
 
@@ -384,6 +389,16 @@ Meira um föll. Straumar og grunnatriði skráarvinnslu. Skilaverkefni II skila�
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><i>celebrity_jeopardy</i></td>
+            <td>Celebrity jeopardy</td>
+            <td>Skrifa allt input yfir í output (echo).</td>
+        </tr>
+        <tr>
+            <td><i>tex_quotes</i></td>
+            <td>TeX Quotes</td>
+            <td>Breyta venjulegum gæsalöppum í TeX gæsalappir.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -761,5 +776,50 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
         </tr>
     </thead>
     <tbody>
+    </tbody>
+</table>
+
+Óflokkuð Aukaverkefni
+-------
+
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nafn</th>
+            <th>lýsing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>biskupinn</b></td>
+            <td>Biskupinn</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>flisalagnir</b></td>
+            <td>Flísalagnir</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>radhverfur</b></td>
+            <td>Raðhverfur</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>lestir</b></td>
+            <td>Lestir</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>sjalfsalastud</b></td>
+            <td>Sjálfsalastuð</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>klukkadur</b></td>
+            <td>Klukkaður</td>
+            <td></td>
+        </tr>
     </tbody>
 </table>

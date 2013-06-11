@@ -1,0 +1,59 @@
+<problem name="Raðhverfur">
+    <description>
+		<p>Í <eqn>3\times 3</eqn> skákborði höfum við 9 klukkur sem hafa aðeins mínútuvísa, sem vísa
+ýmist á 12, 3, 6 eða 9. Markmið ykkar er að láta vísa allra klukknanna benda á
+12.</p>
+
+		<p>Því miður getið þið ekki hreyft vísana á klukkunum að vild, því aðeins er
+leyfilegt að hreyfa vísa klukknanna með því að beita ákveðnum <i>hreyfingum</i>.
+Hreyfing felst í því að snúa ákveðnu hlutmengi af klukkum 90&deg; réttsælis. Þið
+megið beita hreyfingunum í hvaða röð sem er og eins oft og þið viljið.</p>
+
+		<h2>Inntak</h2>
+		<p>Inntakið byrjar á einni heiltölu <eqn>1 \leq C \leq 100</eqn>, sem gefur fjölda prófunartilvika sem á eftir koma. Á eftir
+þessari línu kemur auð lína.</p>
+
+		<p>Sérhvert prófunartilvik byrjar á línu sem inniheldur eina heiltölu <eqn>1 \leq M \leq 9</eqn>, sem er fjöldi leyfilegra
+hreyfinga. Á eftir því koma svo lýsingar á hreyfingunum. Sérhverri hreyfingu er lýst með <eqn>3\times 3</eqn> bitum
+(þ.e. <eqn>0</eqn> eða <eqn>1</eqn>), í þremur línum. Ef að biti í hreyfingarlýsingu er <eqn>1</eqn>, þá þýðir það að klukkunni á
+samsvarandi stað á skákborðinu er snúið, sé hreyfingunni beitt; annars, ef bitinn er <eqn>0</eqn>, er klukkunni
+ekki snúið. Auð lína kemur á eftir sérhverri hreyfingarlýsingu.</p>
+
+		<p>Næst kemur lína sem inniheldur eina heiltölu <eqn>1 \leq T \leq 100</eqn>, sem er fjöldi prófana. Fyrir sérhverja
+prófun er svo upphafsstöðunni lýst. Sérhverri upphafsstöðu er lýst með <eqn>3\times 3</eqn> heiltölum, sem gefa
+upphafsstöðu vísa allra 9 klukknanna, og geta því ýmist verið 12, 3, 6 eða 9. Á eftir sérhverri lýsingu á
+upphafsstöðu kemur auð lína.</p>
+
+		<h2>Úttak</h2>
+		<p>Fyrir sérhverja prófun skrifið þið út eina línu sem inniheldur eina heiltölu, sem er minnsti fjöldi
+hreyfinga sem beita þarf á klukkurnar til að allar sýni 12, eða <tt>&ldquo;NOT POSSIBLE&rdquo;</tt> ef það er ekki
+mögulegt.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[1
+
+2
+1 0 0
+0 1 0
+0 0 1
+
+1 0 1
+0 1 0
+1 0 1
+
+2
+3 12 6
+12 3 12
+6 12 3
+
+3 12 9
+12 3 12
+6 12 3]]></input>
+            <output><![CDATA[3
+NOT POSSIBLE]]></output>
+        </test>
+        <test input_include="tests/1.in" output_include="tests/1.out" />
+    </tests>
+</problem>

@@ -1,0 +1,40 @@
+<problem name="Raðhverfur">
+    <description>
+		<p>Eins og þið eflaust vitið, þá eru lestir samansettar úr mörgum vögnum. Sömu lestirnar eru oft nýttar í
+mörg verkefni, en sama röð vagna hentar ekki alltaf í öll verkefni. Því hafa verið opnaðar sérstakar
+lestarstöðvar sem endurraða vögnum lestanna.</p>
+
+		<p>Nú hefur ein slík lestarstöð sett sig í samband við ykkur til að fá lausn á vandamáli. Til að endurraða
+lestunum hefur hún yfir að ráða einum krana sem getur tekið upp tvo samliggjandi vagna og víxlað
+röð þeirra. Þessi aðgerð er kölluð <i>víxlun</i>. Kranamennirnir krefjast hárra launa, svo að hver víxlun er
+mjög dýr fyrir lestarstöðina. Lestarstöðin hefur því ráðið ykkur til að finna minnsta mögulega fjölda
+víxlana, sem beita þarf á þær lestir sem koma inn á stöðina, þannig að röð vagnanna sé rétt.</p>
+
+		<h2>Inntak</h2>
+		<p>Inntakið byrjar á einni heiltölu <eqn>T</eqn>, sem gefur fjölda prófunartilvika sem á eftir koma. Fyrsta lína hvers
+prófunartilviks inniheldur eina heiltölu <eqn>1 \leq C \leq 100</eqn>, sem gefur fjölda vagna í lestinni. Önnur línan
+inniheldur svo tölurnar frá <eqn>1</eqn> upp í <eqn>C</eqn>, aðskildar með einu orðabili, og lýsa þær núverandi röð
+vagnanna. Eftir endurröðun vagnanna á vagn <eqn>1</eqn> að vera fremstur, á eftir honum kemur svo vagn <eqn>2</eqn>,
+o.s.frv.</p>
+		
+		<h2>Úttak</h2>
+		<p>Fyrir sérhvert prófunartilvik skrifið þið út eina línu sem inniheldur eina heiltölu sem gefur minnsta
+mögulega fjölda víxlana sem þarf að beita á lestina til að röð vagnanna sé rétt.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3
+3
+1 3 2
+4
+4 3 2 1
+2
+2 1]]></input>
+            <output><![CDATA[1
+6
+1]]></output>
+        </test>
+        <test input_include="tests/1.in" output_include="tests/1.out" />
+    </tests>
+</problem>

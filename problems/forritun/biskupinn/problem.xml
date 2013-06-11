@@ -1,0 +1,49 @@
+<problem name="Biskupinn">
+    <description>
+		<p>Í þessu verkefni ímyndum við okkur að við séum með <eqn>N\times N</eqn> skákborð og
+jafnframt ímyndum við okkur að það sé aðeins einn leikmaður á borðinu, þ.e.
+biskupinn. Staðsetningar, eða reitir, á skákborðinu eru táknaðar með raðpari <eqn>(r,c)</eqn>, þ.a. <eqn>1 \leq r,c \leq N</eqn>, þar sem <eqn>r</eqn> segir til um í hvaða röð reiturinn er og <eqn>c</eqn> segir til um í hvaða dálki reiturinn er. Staðsetningin <eqn>(1,1)</eqn> vísar þá til reitsins
+sem er neðst í vinstra horninu og <eqn>(N,N)</eqn> vísar til reitsins efst í hægra horninu.</p>
+
+		<p>Verkefni ykkar er nú að finna fæstu mögulegu hreyfingar sem þarf til að koma biskupnum á ákveðinn
+reit á skákborðinu, ef það er yfir höfuð hægt. Hreyfingar biskupsins eru eins og í hefðbundinni skák,
+þ.e. hann getur ferðast á ská eins marga reiti og vera vill.</p>
+
+		<h2>Inntak</h2>
+		<p>Inntakið byrjar á einni heiltölu <eqn>C</eqn>, sem gefur fjölda prófunartilvika sem á eftir koma. Á eftir þessari línu
+kemur auð lína, og að auki kemur auð lína milli prófunartilvika.</p>
+
+		<p>Fyrsta lína hvers prófunartilviks inniheldur eina heiltölu <eqn>1 \leq T \leq 100</eqn>, sem gefur fjölda prófana í því
+prófunartilviki. Önnur línan inniheldur eina heiltölu <eqn>1 \leq N \leq 100000000</eqn> (stærð skákborðsins er <eqn>N\times N</eqn>). Á eftir þeirri línu koma svo <eqn>T</eqn> línur, hver með einni prófun. Hver lína inniheldur fjórar
+heiltölur, aðskildar með einu orðabili. Fyrstu tvær tölurnar gefa röð og dálk biskupsins og seinni tvær
+gefa röð og dálk reitsins sem að biskupinn vill komast á.</p>
+
+		<h2>Úttak</h2>
+		<p>Fyrir sérhverja prófun, á að skrifa út eina línu. Línan á að innihalda eina heiltölu, sem gefur minnsta
+fjölda hreifinga sem þarf til að færa biskupinn á gefna reitinn, eða <tt>&ldquo;impossible&rdquo;</tt> ef ómögulegt er
+fyrir biskupinn að komast á reitinn.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2
+
+3
+8
+3 6 6 3
+4 2 2 3
+7 2 1 4
+
+2
+6
+1 2 6 5
+2 3 5 1]]></input>
+            <output><![CDATA[1
+impossible
+2
+2
+impossible]]></output>
+        </test>
+        <test input_include="tests/1.in" output_include="tests/1.out" />
+    </tests>
+</problem>

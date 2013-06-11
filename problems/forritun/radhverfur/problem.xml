@@ -1,0 +1,41 @@
+<problem name="Raðhverfur">
+    <description>
+		<p>Raðhverfa er umröðun orðs, nafns eða setningar þannig að efniviðurinn fái nýja merkingu. Íslenska
+orðið gaman getur með raðhverfingu orðið sögnin að magna. Raðhverfing er ekki mikið stunduð á
+íslensku, en er vinsæl íþrótt í sumum tungumálum. Við myndun raðhverfa er yfirleitt litið fram hjá
+bilum og greinamerkjum.</p>
+
+		<p>Verkefni ykkar er að finna raðhverfur gefinnar setningar í gefnu setningasafni. Athugið að setning í
+okkar tilfelli</p>
+
+		<h2>Inntak</h2>
+		<p>Inntakið byrjar á einni heiltölu <eqn>T</eqn>, sem gefur fjölda prófunartilvika sem á eftir koma. Á eftir þessari línu
+kemur auð lína.</p>
+	
+		<p>Fyrsta lína hvers prófunartilviks inniheldur eina heiltölu <eqn>1 \leq W \leq 100</eqn>, sem gefur fjölda setninga í
+setningasafninu. Önnur línan inniheldur setningu, sem við köllum <eqn>b</eqn>. Á eftir þeirri línu koma <eqn>W</eqn> línur
+með setningum setningasafnsins. Setningarnar innihalda ekkert annað en orðabil og enska lágstafi.</p>
+		
+		<h2>Úttak</h2>
+		<p>Fyrir sérhverja setningu, <eqn>s</eqn>, í setningasafni hvers prófunartilviks á að skrifa út eina línu, sem inniheldur
+<tt>&ldquo;Yes&rdquo;</tt>, ef <eqn>s</eqn> er raðhverfa <eqn>b</eqn>, annars <tt>&ldquo;No&rdquo;</tt>.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[1
+
+4
+game
+mega
+gem
+a gem
+gaame]]></input>
+            <output><![CDATA[Yes
+No
+Yes
+No]]></output>
+        </test>
+        <test input_include="tests/1.in" output_include="tests/1.out" />
+    </tests>
+</problem>

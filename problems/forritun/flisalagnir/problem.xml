@@ -1,0 +1,57 @@
+<problem name="Flísalagnir">
+    <description>
+		<p>Fúsi forritari hefur ákveðið að flísaleggja baðið heima hjá sér. Konan hans Fúsa,
+Kolla kerfisfræðingur, fær að sjálfsögðu að ráða hvernig flísar fara á baðið, en
+hún er mjög óákveðin. Til að auðvelda henni valið á flísum, þá ákveður Fúsi að
+það sem hún þurfi er forrit sem sýnir henni hvernig flísarnar munu líta út eftir
+að þær hafa verið lagðar. Fúsi er aftur á móti mjög upptekinn í augnablikinu
+þannig að hann biður ykkur um að útbúa forritið fyrir sig.</p>
+
+		<p>Fúsi og Kolla hafa ákveðið að flísaleggja með ferhyrningslaga flísum sem settar eru saman úr minni,
+jafn stórum ferningslaga flísum, sem við köllum hlutflísar. Hlutflísarnar mynda því ákveðið mynstur í
+stóru flísinni, sem við köllum grunnflís. Allar grunnflísar af sömu tegund innihalda sama mynstur.</p>
+
+		<h2>Inntak</h2>
+		<p>Inntakið byrjar á einni heiltölu <eqn>0 \leq T \leq 100</eqn>, sem gefur fjölda prófunartilvika sem á eftir koma. Á eftir
+þessari línu kemur auð lína, og að auki kemur auð lína milli prófunartilvika.</p>
+
+		<p>Fyrsta lína hvers prófunartilviks inniheldur tvær heiltölur <eqn>1 \leq h_t, w_t \leq 50</eqn>, sem gefa hæð og breidd
+grunnflísarinnar í hlutflísum. Á eftir koma <eqn>h_>t</eqn>
+línur, sem hver inniheldur <eqn>w_t</eqn>
+stafi, og táknar hver stafur
+hlutflís í grunnflísinni. Á eftir því kemur ein lína, sem inniheldur tvær tölur <eqn>1 \leq h_a, w_a \leq 1000</eqn>, sem
+gefa hæð og breidd flatarins sem á að flísaleggja, í hlutflísum.</p>
+
+		<h2>Úttak</h2>
+		<p>Fyrir sérhvert prófunartilvik þá skrifið þið út flötinn, eins og hann lítur út þegar búið er að flísaleggja
+hann með gefinni grunnflís. Á eftir úttaki fyrir sérhvert prófunartilvik á að koma auð lína.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2
+
+3 3
+abc
+def
+ghi
+7 7
+
+2 3
+xyz
+tuv
+2 2]]></input>
+            <output><![CDATA[abcabca
+defdefd
+ghighig
+abcabca
+defdefd
+ghighig
+abcabca
+
+xy
+tu]]></output>
+        </test>
+        <test input_include="tests/1.in" output_include="tests/1.out" />
+    </tests>
+</problem>

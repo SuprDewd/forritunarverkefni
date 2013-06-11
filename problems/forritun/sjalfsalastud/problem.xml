@@ -1,0 +1,39 @@
+<problem name="Raðhverfur">
+    <description>
+		<p>Í Háskólanum í Reykjavík eru stundaðar miklar rannsóknir innan tölvunarfræði.
+Til að halda rannsakendum virkum og þægum, þá þarf að gefa þeim mikið Kók og
+það fellur á deildarforseta tölvunarfræðideildar að fara í sjálfsalann og kaupa Kók
+fyrir alla starfsmenn deildarinnar. Þar sem deildarforseti er mjög upptekinn, þá
+kaupir hann yfirleitt fleiri en eina flösku í hverri ferð.</p>
+
+		<p>Sjálfsalarnir í HR taka aðeins 100 kr, 50 kr og 10 kr peninga, og þeir gefa til baka í eins fáum myntum
+og mögulegt er. Vegna mikilvægi rannsóknanna, sem fram fara í tölvunarfræðideildinni, hefur HR
+samið um það að fá Kókflöskuna á 80 kr. Deildarforseta finnst mjög leiðinlegt að setja peninga í
+sjálfsala, þannig að hann biður ykkur að skrifa forrit sem, að gefnum fjölda flaska sem hann þarf að
+kaupa og þann fjölda sem hann hefur af hverri mynt, finnur minnsta mögulega fjölda mynta sem
+hann þarf að setja í sjálfsalann til að fá allar flöskurnar.</p>
+
+		<h2>Inntak</h2>
+		<p>Inntakið byrjar á einni heiltölu <eqn>T</eqn>, sem gefur fjölda prófunartilvika sem á eftir koma. Á eftir koma <eqn>T</eqn>
+línur, sem hver inniheldur eitt prófunartilvik. Sérhvert prófunartilvik inniheldur fjórar heiltölur,
+aðskildar af einu orðabili. Fyrsta talan <eqn>1 \leq C \leq 150</eqn> er fjöldi flaska sem deildarforseti ætlar að kaupa.
+Næstu þrjár tölurnar <eqn>n_{10}</eqn>, <eqn>n_{50}</eqn> og <eqn>n_{100}</eqn> eru fjöldi 10 kr, 50 kr og 100 kr mynta, þar sem <eqn>0 \leq n_{10} \leq 500, 0 \leq n_{50} \leq 100</eqn> og <eqn>0 \leq n_{100} \leq 50</eqn>.</p>
+		
+		<h2>Úttak</h2>
+		<p>Fyrir sérhvert prófunartilvik, skrifið út eina línu sem inniheldur minnsta fjölda mynta sem
+deildarforseti þarf að setja í sjálfsalann.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3
+2 2 1 1
+2 1 4 1
+20 200 3 0]]></input>
+            <output><![CDATA[5
+3
+148]]></output>
+        </test>
+        <test input_include="tests/1.in" output_include="tests/1.out" />
+    </tests>
+</problem>

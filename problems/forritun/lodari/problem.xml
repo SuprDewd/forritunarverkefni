@@ -1,0 +1,24 @@
+<problem name="Lóðarí">
+    <description>
+        <p>Sveitarfélag nokkurt á austurlandi hefur nýlega hafið að selja ferningslaga lóðir. Lóðirnar liggja allar í beinni línu frá norðri til suðurs, en vegna skipulagsmistaka, þá er engin lóð jafn stór og önnur, því fyrir sérhverja lóð, þá er lóðin fyrir sunnan hana einum metra lengri á hvorn kant. Þetta hefur valdið bæjaryfirvöldum miklum höfuðverk og þið hafið verið kölluð til aðstoðar.</p>
+
+        <p>Þið fáið það hlutverk að skrifa forrit sem að reiknar muninn á flatarmáli samliggjandi lóða. Það er, að gefinni hliðarlengd lóðar (sem er ekki syðsta lóðin), þá eigið þið að reikna út hversu mörgum fermetrum stærri lóðin er fyrir sunnan gefnu lóðina.</p>
+
+        <h2>Inntak</h2>
+        <p>Inntakið byrjar á einni heiltölu <eqn>C</eqn>, sem gefur fjölda prófunartilvika sem á eftir koma. Hvert prófunartilvik samanstendur af einni línu sem inniheldur eina heiltölu <eqn>1 \leq x \leq 100000</eqn>, sem gefur hliðarlengd lóðar.</p>
+
+        <h2>Úttak</h2>
+        <p>Fyrir sérhvert prófunartilvik á að skrifa út eina línu sem inniheldur eina heiltölu, sem gefur hversu mörgum fermetrum lóðin fyrir sunnan gefnu lóðina er stærri en gefna lóðin.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2
+3
+8]]></input>
+            <output><![CDATA[7
+17]]></output>
+        </test>
+        <test input_include="tests/1.in" output_include="tests/1.out" />
+    </tests>
+</problem>
