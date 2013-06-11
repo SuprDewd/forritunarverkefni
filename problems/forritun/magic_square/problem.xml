@@ -1,7 +1,7 @@
 <problem name="Galdraferningur">
     <description>
         <p>Tvívítt fylki af stærð <eqn>n\times n</eqn> er kallað <i>galdraferningur</i> ef tölurnar í hverri röð, hverjum dálki, og hvorri hornalínu, summa upp í sömu tölu. Sem dæmi má taka eftirfarandi <eqn>3\times 3</eqn> galdraferning, en hver röð/dálkur/hornalína summar upp í 15.
-            <img src="images/msq.png" alt="galdraferningur" />
+            <img src="images/msq.png" alt="galdraferningur" pos="center" />
         </p>
         <p>Skrifið forrit sem les inn töluna <eqn>n</eqn>. Á eftir henni fylgja <eqn>n</eqn> línur, og hver þeirra inniheldur <eqn>n</eqn> heiltölur. Þessar tölur tákna tvívítt fylki af stærð <eqn>n\times n</eqn>. Forritið á að segja til um hvort að tvívíða fylkið sé galdraferningur eða ekki.</p>
     </description>

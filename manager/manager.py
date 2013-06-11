@@ -50,19 +50,21 @@ class Problem:
             self.example = example
             self.explanation = explanation
 
-    def __init__(self, id, description=None, solution=None, checker=None, tests=None):
+    def __init__(self, id, description=None, solution=None, checker=None, tests=None, path=None):
         self.id = self.name = id
         self.description = None
         self.solution = None
         self.checker = None
         self.tests = tests if tests else []
+        self.path = path
 
 class Contest:
-    def __init__(self, id, name=None, email=None, problems=None):
+    def __init__(self, id, name=None, email=None, problems=None, path=None):
         self.id = id
         self.name = name
         self.email = email
         self.problems = problems if problems else []
+        self.path = path
 
 def _convert_timelimit_str(s):
     i = 0
@@ -89,7 +91,7 @@ def _parse_problem(pid, tree, p_dir):
     assert len(tree) == 1
     assert tree[0].tag == 'problem'
 
-    problem = Problem(pid)
+    problem = Problem(pid, path=p_dir)
     if 'name' in tree[0].attr:
         problem.name = tree[0].attr['name']
 
@@ -135,7 +137,7 @@ def _parse_problem(pid, tree, p_dir):
                     if 'output_include' in n2.attr:
                         test.output = get_contents(n2.attr['output_include'], p_dir)
                     if 'explanation_include' in n2.attr:
-                        test.explanation = get_contents(n2.attr['explanation_include'], p_dir)
+                        test.explanation = [xml_parser.Text(get_contents(n2.attr['explanation_include'], p_dir))]
                     test.timelimit = n2.attr.get('timelimit') or timelimit
                     if test.timelimit: test.timelimit = _convert_timelimit_str(test.timelimit)
                     test.memorylimit = n2.attr.get('memorylimit') or memorylimit
@@ -147,7 +149,7 @@ def _parse_problem(pid, tree, p_dir):
                         elif n3.tag == 'output':
                             test.output = ''.join(map(str, n3.children))
                         elif n3.tag == 'explanation':
-                            test.explanation = ''.join(map(str, n3.children))
+                            test.explanation = n3.children
 
     return problem
 
@@ -186,7 +188,7 @@ def load_contest(cid):
     assert len(tree) == 1
     assert tree[0].tag == 'contest'
 
-    contest = Contest(cid)
+    contest = Contest(cid, path=c_dir)
     if 'name' in tree[0].attr:
         contest.name = tree[0].attr['name']
 
@@ -257,6 +259,22 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
                     if centered:
                         res = """<div  class="ceqn-wrapper" style="text-align:center">%(content)s</div>""" % {'content': res}
                     return res
+                elif n.tag == 'img':
+                    cur_img = img_count[0]
+                    img_count[0] += 1
+                    _, ext = os.path.splitext(n.attr['src'])
+                    ext = ext.lstrip('.')
+                    shutil.copyfile(os.path.join(problem.path, n.attr['src']), os.path.join(img_path, '%d.%s' % (cur_img, ext)))
+                    res = """<img src="%s" alt="%s" />""" % ('%d.%s' % (cur_img, ext), n.attr['alt'] if 'alt' in n.attr else n.attr['src'])
+                    if 'pos' in n.attr:
+                        if n.attr['pos'] == 'left':
+                            res = """<div style="float:left">%s</div> """ % res
+                        elif n.attr['pos'] == 'right':
+                            res = """<div style="float:right">%s</div> """ % res
+                        elif n.attr['pos'] == 'center':
+                            res = """<div style="text-align:center">%s</div> """ % res
+
+                    return res
                 elif n.tag == 'hint':
                     return """<div class="hint">%s</div>""" % (''.join([ to_html(c, img_count) for c in n.children ]))
                 elif n.tag in ['img', 'br', 'hr']:
@@ -288,7 +306,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
                 </tbody>
             </table>
 
-                """ % { 'i': i+1, 'input': xml_parser.encode_entities(test.input), 'output': xml_parser.encode_entities(test.output), 'explanation': ('<tr><td colspan="2">%s</td></tr>' % xml_parser.encode_entities(test.explanation)) if test.explanation else '' }
+                """ % { 'i': i+1, 'input': xml_parser.encode_entities(test.input), 'output': xml_parser.encode_entities(test.output), 'explanation': ('<tr><td colspan="2" class="explanation">%s</td></tr>' % ''.join([ to_html(c, img_count) for c in test.explanation ])) if test.explanation else '' }
 
         html = """
             <meta charset="utf-8" />
@@ -301,6 +319,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
                 table.sample { min-width: 700px; border-collapse: collapse; }
                 table.sample th, table.sample td { border: 1px solid black; }
                 table.sample td { vertical-align: top; padding: 3px; }
+                table.sample td.explanation { padding: 10px; }
                 table.sample pre { margin: 0; }
                 tt { font-size: 1.1em; }
             </style>

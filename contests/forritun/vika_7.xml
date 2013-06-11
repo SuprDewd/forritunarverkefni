@@ -1,4 +1,5 @@
 <contest name="Forritun - V07" email="bjarkig12@ru.is">
-    <problem enabled="false" name="Dæmatímaverkefni: Hækkandi röð" include="forritun/haekkandi_rod" />
+    <problem name="Dæmatímaverkefni: Hækkandi röð" include="forritun/haekkandi_rod" />
     <problem name="Dæmatímaverkefni: Standard deviation" include="forritun/standard_deviation" />
+    <problem name="Aukaverkefni: Galdraferningur" include="forritun/magic_square" />
 </contest>
