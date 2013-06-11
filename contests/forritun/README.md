@@ -349,12 +349,12 @@ Meira um föll. Straumar og grunnatriði skráarvinnslu. Skilaverkefni II skila�
     </thead>
     <tbody>
         <tr>
-            <td><i>time_notation</i></td>
+            <td><b>time_notation</b></td>
             <td>Time notation</td>
             <td>Breyta "24-hour notation" í "12-hour notation".</td>
         </tr>
         <tr>
-            <td><i>hefja_i_veldi</i></td>
+            <td><b>hefja_i_veldi</b></td>
             <td>Hefja í veldi</td>
             <td>Lesa inn <tt>a, b</tt> og skrifa út <tt>a^b</tt>.</td>
         </tr>

@@ -1,0 +1,32 @@
+<problem name="Hefja í veldi">
+    <description>
+        <p>Skrifið forrit sem les inn tvær heiltölur <eqn>b</eqn> og <eqn>e</eqn>. Forritið á að skrifa út <eqn>b^e</eqn>.</p>
+        <p>Athuga skal að skekkja upp á <eqn>10^{-4}</eqn> er leyfð í úttaki.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <solution include="checker.py" language="Python2" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[5 3]]></input>
+            <output><![CDATA[125]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[-4 -2]]></input>
+            <output><![CDATA[0.0625]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+    </tests>
+</problem>
