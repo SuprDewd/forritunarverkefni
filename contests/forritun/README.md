@@ -61,7 +61,7 @@ Kynning á námskeiði. Kynning á tölvum og C++ forritun. C++ grunnur.
         <tr>
             <td><b>gaesalappir</b></td>
             <td>Gæsalappir</td>
-            <td>Lesa inn streng og skrifa út <tt>ég las inn "<i>strengurinn</i>"</tt>. Skrifa þarf út gæsalappirnar.</td>
+            <td>Lesa inn tölu og skrifa út <tt>ég las inn "<i>talan</i>"</tt>. Skrifa þarf út gæsalappirnar.</td>
         </tr>
     </tbody>
 </table>

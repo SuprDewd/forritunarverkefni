@@ -1,18 +1,18 @@
 <problem name="Gæsalappir">
     <description>
-        <p>Skrifið forrit sem les inn eitt orð. Forritið á að skrifa út
-            <blockquote>ég las inn "<i>orðið</i>"</blockquote>
-            þar sem <i>orðið</i> er orðið sem lesið var inn. Athuga skal að skrifa á út gæsalappirnar.</p>
+        <p>Skrifið forrit sem les inn tölu. Forritið á að skrifa út
+            <blockquote>ég las inn "<i>talan</i>"</blockquote>
+            þar sem <i>talan</i> er talan sem lesin var inn. Athuga skal að skrifa á út gæsalappirnar.</p>
     </description>
     <solution include="solution.cpp" language="C++" />
     <tests timelimit="3s" memorylimit="64MB">
         <test example="true">
-            <input><![CDATA[prufa]]></input>
-            <output><![CDATA[ég las inn "prufa"]]></output>
+            <input><![CDATA[10]]></input>
+            <output><![CDATA[ég las inn "10"]]></output>
         </test>
         <test example="true">
-            <input><![CDATA[test]]></input>
-            <output><![CDATA[ég las inn "test"]]></output>
+            <input><![CDATA[1337]]></input>
+            <output><![CDATA[ég las inn "1337"]]></output>
         </test>
         <test input_include="tests/T0.in" output_include="tests/T0.out" />
         <test input_include="tests/T1.in" output_include="tests/T1.out" />

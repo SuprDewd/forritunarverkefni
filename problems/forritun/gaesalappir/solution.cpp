@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    string word;
-    cin >> word;
-    cout << "ég las inn \"" << word << "\"" << endl;
+    int n;
+    cin >> n;
+    cout << "ég las inn \"" << n << "\"" << endl;
     return 0;
 }
