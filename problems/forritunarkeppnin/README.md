@@ -18,3 +18,4 @@ Hugmyndir
 
 - Annað
     - Finna periodicity á einföldum psuedorandom number generator
+    - Subway bátar. Taka inn lista af pöntunum (stærð og brauð) og skrifa út minnsta fjölda brauða af hverri týpu þarf að nota. Hálf brauð eru nýtt.
