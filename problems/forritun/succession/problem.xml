@@ -1,0 +1,66 @@
+<problem name="Succession">
+    <description>
+		<p>The king in Utopia has died without an heir. Now several nobles in the country claim the throne. The country law states that if the ruler has no heir, the person who is most related to the founder of the country should rule.</p>
+		<p>To determine who is most related we measure the amount of blood in the veins of a claimant that comes from the founder. A person gets half the blood from the father and the other half from the mother. A child to the founder would have <tt>1/2</tt> royal blood, that child's child with another parent who is not of royal lineage would have <tt>1/4</tt> royal blood, and so on. The person with most blood from the founder is the one most related.</p>
+
+		<h2>Input specifications</h2>
+<p>The first line contains two integers, <tt>N</tt> (<tt>2 &le; N &le; 50</tt>) and <tt>M</tt> (<tt>2 &le; M &le; 50</tt>).<br />
+The second line contains the name of the founder of Utopia.<br />
+Then follows <tt>N</tt> lines describing a family relation. Each such line contains three names, separated with a single space. The first name is a child and the remaining two names are the parents of the child.<br />
+Then follows <tt>M</tt> lines containing the names of those who claims the throne.<br />
+All names in the input will be between <tt>1</tt> and <tt>10</tt> characters long and only contain the lowercase English letters <tt>&lsquo;a&rsquo;-&lsquo;z&rsquo;</tt>. The founder will not appear among the claimants, nor be described as a child to someone else.</p>
+
+<h2>Output specifications</h2>
+<p>A single line containing the name of the claimant with most blood from the founder. The input will be constructed so that the answer is unique.<br />
+<i>The family relations may not be realistic when considering sex, age etc. However, every child will have two unique parents and no one will be a descendent from themselves. No one will be listed as a child twice.</i></p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[9 2
+edwardi
+charlesi edwardi diana
+philip charlesi mistress
+wilhelm mary philip
+matthew wilhelm helen
+edwardii charlesi laura
+alice laura charlesi
+helen alice bernard
+henrii edwardii roxane
+charlesii elizabeth henrii
+charlesii
+matthew]]></input>
+            <output><![CDATA[matthew]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[4 5
+andrew
+betsy andrew flora
+carol andrew betsy
+dora andrew carol
+elena andrew dora
+carol
+dora
+elena
+flora
+gloria]]></input>
+            <output><![CDATA[elena]]></output>
+        </test>
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+        <test input_include="tests/T14.in" output_include="tests/T14.out" />
+        <test input_include="tests/T15.in" output_include="tests/T15.out" />
+        <test input_include="tests/T16.in" output_include="tests/T16.out" />
+    </tests>
+</problem>

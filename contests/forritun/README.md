@@ -219,6 +219,16 @@ C++ grunnur. Flæðisstýring.
             <td>Hashmat the Brave Warrior</td>
             <td>Lesa inn <tt>n</tt> pör af tölum og skrifa út mismun þeirra.</td>
         </tr>
+        <tr>
+            <td><b>margfoldun</b></td>
+            <td>Margfoldun</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>thyngdarflokkur</b></td>
+            <td>Þyngdarflokkur</td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
 
@@ -287,6 +297,21 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
         <tr>
             <td><b>lodari</b></td>
             <td>Lóðarí</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>malt_guzzler</b></td>
+            <td>Malt Guzzler</td>
+            <td>Finna hversu marga drykki maðurinn drekkur ef hann fer með tómu drykkina í endurvinnslu. (ad-hoc, simulation, math)</td>
+        </tr>
+        <tr>
+            <td><b>pyramidi</b></td>
+            <td>Pýramídi</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>frumtolur</b></td>
+            <td>Frumtolur</td>
             <td></td>
         </tr>
     </tbody>
@@ -454,9 +479,46 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
         </tr>
     </thead>
     <tbody>
-        <td><b>magic_square</b></td>
-        <td>Galdraferningur</td>
-        <td>Skrifa forrit sem les inn tvívítt fylki og segir hvort það sé magic square.</td>
+        <tr>
+            <td><b>magic_square</b></td>
+            <td>Galdraferningur</td>
+            <td>Skrifa forrit sem les inn tvívítt fylki og segir hvort það sé magic square.</td>
+        </tr>
+        <tr>
+            <td><b>flisalagnir</b></td>
+            <td>Flísalagnir</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>sierpinski_triangle</b></td>
+            <td>Sierpinski Triangle</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>tic_tac_toe</b></td>
+            <td>Tic Tac Toe</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>befunge_loop</b></td>
+            <td>Befunge Loop</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>klukkadur</b></td>
+            <td>Klukkaður</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>maurar</b></td>
+            <td>Maurar</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>pattern_matching_in_a_matrix</b></td>
+            <td>Pattern matching in a matrix</td>
+            <td>Leita að mynstri í fylki.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -506,6 +568,31 @@ C strengir. String klasinn. Vektorar. Skilaverkefni IV lagt fyrir.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><b>count_words_chars</b></td>
+            <td>Count Words and Characters</td>
+            <td>Lesa inn línu. Skrifa út fjölda orða og hversu oft hver stafur kemur fyrir.</td>
+        </tr>
+        <tr>
+            <td><b>radhverfur</b></td>
+            <td>Raðhverfur</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>help_a_phd_candidate</b></td>
+            <td>Help a PhD candidate out!</td>
+            <td>Leggja saman tölur ef strengur er samlagning, skrifa eitthvað út annars. (parsing, addition)</td>
+        </tr>
+        <tr>
+            <td><b>skemmtilegar_setningar</b></td>
+            <td>Skemmtilegar Setningar</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>breytunafn</b></td>
+            <td>Breytunafn</td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
 
@@ -551,6 +638,16 @@ Bendar. Kvikleg fylki.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><b>integer_inquiry</b></td>
+            <td>Integer Inquiry</td>
+            <td>Leggja saman mjög stórar tölur.</td>
+        </tr>
+        <tr>
+            <td><b>counting_inversions</b></td>
+            <td>Counting Inversions</td>
+            <td>Telja fjölda inversions í fylki.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -797,16 +894,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td></td>
         </tr>
         <tr>
-            <td><b>flisalagnir</b></td>
-            <td>Flísalagnir</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><b>radhverfur</b></td>
-            <td>Raðhverfur</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><b>lestir</b></td>
             <td>Lestir</td>
             <td></td>
@@ -817,9 +904,94 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td></td>
         </tr>
         <tr>
-            <td><b>klukkadur</b></td>
-            <td>Klukkaður</td>
+            <td><b>tengdur_listi</b></td>
+            <td>Tengdur Listi</td>
             <td></td>
+        </tr>
+        <tr>
+            <td><b>oendanleg_runa</b></td>
+            <td>Óendanleg Runa</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>fermats_last_theorem</b></td>
+            <td>Fermat's Last Theorem</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>konunglegur_matur</b></td>
+            <td>Konunglegur Matur</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>fatahengi_sveins_litla</b></td>
+            <td>Fatahengi Sveins Litla</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>bitmask</b></td>
+            <td>Bitmask</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>sort</b></td>
+            <td>Sort</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>samliggjandi_tolur</b></td>
+            <td>Samliggjandi Tölur</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>sqrt</b></td>
+            <td>Sqrt</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>fostudagurinn_threttandi</b></td>
+            <td>Föstudagurinn Þrettándi</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>brackets</b></td>
+            <td>Brackets</td>
+            <td>Segja til um hvort strengur af svigum sé balanced.</td>
+        </tr>
+        <tr>
+            <td><b>brackets_and_parentheses</b></td>
+            <td>Brackets and Parentheses</td>
+            <td>Segja til um hvort strengur af mismunandi svigum sé balanced.</td>
+        </tr>
+        <tr>
+            <td><b>max_min_average</b></td>
+            <td>Max-Min-Average</td>
+            <td>Finn max/min/average af gefnum tölum.</td>
+        </tr>
+        <tr>
+            <td><b>marvelous_mazes</b></td>
+            <td>Marvelous Mazes</td>
+            <td>Lesa inn þjappaða útgáfu af völundarhúsi. Teikna svo út völundarhúsið.</td>
+        </tr>
+        <tr>
+            <td><b>card_trick</b></td>
+            <td>Card Trick</td>
+            <td>Herma eftir spilatrikki afturábak. (double-ended queue)</td>
+        </tr>
+        <tr>
+            <td><b>flags</b></td>
+            <td>Flags</td>
+            <td>Telja fjölda mögulegra litana í flaggi. (counting, dp)</td>
+        </tr>
+        <tr>
+            <td><b>succession</b></td>
+            <td>Succession</td>
+            <td>Finna hversu vel manneskja er skild annari manneskju í fjölskylduneti.</td>
+        </tr>
+        <tr>
+            <td><b>connect</b></td>
+            <td>Connect</td>
+            <td>Tengja víra á prentplötu á sem ódýrastan hátt. (bfs)</td>
         </tr>
     </tbody>
 </table>

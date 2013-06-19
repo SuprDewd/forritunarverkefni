@@ -1,0 +1,41 @@
+<problem name="Max-Min-Average">
+    <description>
+<p>You are to find the maxima, minima and average values of integer lists.</p>
+
+
+<h3>Input specification</h3> 
+
+<p>The first line of the input contains a single integer 0 &le; <i>N</i> &le; 100 indicating how 
+	many test cases your program will test. Each test case consists of two lines, 
+	the first containing a single integer, 1 &le; <i>k</i> &le; 100, the length of the list. 
+	The second line contains the <i>k</i> integers of the list.</p>
+
+<h3>Output specifications</h3>
+
+	<p>For each test case, output the maximum of the list, prefixed by &quot;<tt>Max: </tt>&quot;, the 
+		minimum of the list, prefixed by &quot;<tt>Min: </tt>&quot;, and the average of the list rounded to 
+		two decimal places, prefixed by &quot;<tt>Average: </tt>&quot;. The output for two 
+		consecutive test cases is separated by a blank line.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2
+5
+1 12 32 13 7
+3
+3 4 1]]></input>
+            <output><![CDATA[Max: 32
+Min: 1
+Average: 13.00
+
+Max: 4
+Min: 1
+Average: 2.67]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+    </tests>
+</problem>

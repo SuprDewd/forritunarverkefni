@@ -1,0 +1,41 @@
+<problem name="Counting Inversions">
+    <description>
+<p>
+An <i>inversion</i> in an array of numbers is a pair of
+elements that are out of order. For example, the array [3 1 2 4]
+contains two inversions: the pairs (3,1) and (3,2).
+An array sorted in non-decreasing order contains no
+inversions.
+</p>
+
+
+<p>The task of this problem is to simply count the number of
+  inversions in a sequence of integers.
+</p>
+
+<h3>Input specification</h3>
+
+<p>Each input consists of two lines.
+The first line contains an integer <i>n</i>, denoting the number of elements.
+The second line contains <i>n</i> integers, forming an array.
+The value of <i>n</i> is at most 1000.
+</p>
+
+<h3>Output specifications</h3>
+
+<p>Output one line (ending with a newline) containing the number of
+inversions in the input array.
+</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[6
+1 4 3 2 6 5]]></input>
+            <output><![CDATA[4]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+    </tests>
+</problem>

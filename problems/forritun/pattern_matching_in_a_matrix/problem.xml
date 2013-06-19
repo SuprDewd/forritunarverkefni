@@ -1,0 +1,63 @@
+<problem name="Pattern matching in a matrix">
+    <description>
+<p>
+
+Digital photos are represented as a 2-dimensional array of pixels. 
+A basic operation in computer vision, graphics, and signal processing is to search for a given pattern in the picture. These patterns can be defined in various ways. 
+</p>
+
+<p>
+The task of this assignment is to search for a given pattern in a
+2-D matrix. The pattern is a small two-dimensional <i>k-by-k</i> matrix that is
+given as part of the input. We say that a pattern <i>matches</i> the
+input <i>A</i> at location <i>(i,j)</i> if at least 80 percent of the
+values of the <i>k-by-k</i> submatrix starting at 
+
+<i>(i,j)</i> (i.e., the submatrix with corners given by <i>A[i,j],
+  A[i,j+k-1], A[i+k-1,j], A[i+k-1,j+k-1]</i>) match the corresponding
+  values in the pattern. In particular, the pattern matrix P must fit
+  fully within the boundaries of the input matrix A.
+</p>
+
+
+<h3>Input specification</h3>
+
+<p>The first input line consists of two integers <i>n</i> and <i>k</i>,
+  where <i>n</i> denotes the
+  dimension of the square matrix A and <i>k</i> is the dimension of
+  the pattern matrix P.
+The next <i>n</i> lines contain the elements of A in row-major order.
+The final <i>k</i> lines contain the elements of P in row-major order.
+The numbers satisfy 1 &leq; <i>k</i> &lt; <i>n</i> &leq; 20.
+
+</p>
+
+<h3>Output specifications</h3>
+
+<p>For each match of pattern P in the matrix A, output one line
+containing two integers <i>i</i> and <i>j</i>, denoting the location
+  of the match, separated by a single space.
+</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[4 2
+1 2 3 4
+1 2 4 5
+2 3 1 2
+4 5 2 3
+1 2
+2 3]]></input>
+            <output><![CDATA[1 0
+2 2]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[3 -6]]></input>
+            <output><![CDATA[-3]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+    </tests>
+</problem>

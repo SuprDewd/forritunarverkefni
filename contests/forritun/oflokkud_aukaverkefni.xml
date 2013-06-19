@@ -1,0 +1,22 @@
+<contest name="Forritun - Óflokkuð Aukaverkefni" email="bjarkig12@ru.is">
+    <problem name="01_TengdurListi" include="forritun/01_TengdurListi" />
+    <problem name="02_OendanlegRuna" include="forritun/02_OendanlegRuna" />
+    <problem name="03_FermatsLastTheorem" include="forritun/03_FermatsLastTheorem" />
+    <problem name="04_SierpinskiTriangle" include="forritun/04_SierpinskiTriangle" />
+    <problem name="05_KonunglegurMatur" include="forritun/05_KonunglegurMatur" />
+    <problem name="06_Frumtolur" include="forritun/06_Frumtolur" />
+    <problem name="07_FatahengiSveinsLitla" include="forritun/07_FatahengiSveinsLitla" />
+    <problem name="08_SkemmtilegarSetningar" include="forritun/08_SkemmtilegarSetningar" />
+    <problem name="09_TicTacToe" include="forritun/09_TicTacToe" />
+    <problem name="10_Bitmask" include="forritun/10_Bitmask" />
+    <problem name="11_Sort" include="forritun/11_Sort" />
+    <problem name="12_Thyngdarflokkur" include="forritun/12_Thyngdarflokkur" />
+    <problem name="13_Breytunafn" include="forritun/13_Breytunafn" />
+    <problem name="14_SamliggjandiTolur" include="forritun/14_SamliggjandiTolur" />
+    <problem name="15_Margfoldun" include="forritun/15_Margfoldun" />
+    <problem name="16_Sqrt" include="forritun/16_Sqrt" />
+    <problem name="17_BefungeLoop" include="forritun/17_BefungeLoop" />
+    <problem name="18_FostudagurinnThrettandi" include="forritun/18_FostudagurinnThrettandi" />
+    <problem name="19_Maurar" include="forritun/19_Maurar" />
+    <problem name="20_Pyramidi" include="forritun/20_Pyramidi" />
+</contest>

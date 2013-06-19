@@ -1,0 +1,49 @@
+<problem name="Malt Guzzler">
+    <description>
+<p>
+Joe is an absolutely obsessive malt drinker,
+he simply cannot get enough. Most annoyingly
+though, he almost never has any money, so his
+only obvious legal way to obtain more malt is
+to take the money he gets when he recycles
+empty malt bottles to buy new ones. In addition
+to the empty bottles resulting from his own
+consumption he sometimes finds empty bottles in
+the street. One day he was extra thirsty, so he
+actually drank malts until he couldn't afford a
+new one.
+</p>
+
+<h3>Input specification</h3>
+
+<p>
+Three non-negative integers e; f; c, where e &lt; 1000 equals the number of empty malt
+bottles in Joe's possession at the start of the day, f &lt; 1000 the number of empty malt
+bottles found during the day, and 1 &lt; c &lt; 2000 the number of empty bottles required to
+buy a new malt.
+</p>
+
+<h3>Output specifications</h3>
+
+<p>
+How many malts did Joe drink on his extra thirsty day?
+</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[9 0 3]]></input>
+            <output><![CDATA[4]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[5 5 2]]></input>
+            <output><![CDATA[9]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

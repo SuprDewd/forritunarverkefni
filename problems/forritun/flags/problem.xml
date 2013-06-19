@@ -1,0 +1,41 @@
+<problem name="Flags">
+    <description>
+		<p>On the Day of the Flag of Russia a shop-owner decided to decorate the show-window of his shop with textile stripes of white, blue and red colors. He wants to satisfy the following conditions:</p>
+		<ol>
+			<li>Stripes of the same color cannot be placed next to each other.</li>
+			<li>A blue stripe must always be placed between a white and a red or between a red and a white one.</li>
+		</ol>
+		<p>Determine the number of the ways to fulfill his wish.</p>
+		<p><b>Example.</b> For <tt>N = 3</tt> result is following:</p>
+		<img pos="center" src="images/flags.png" />
+		<h2>Input specifications</h2>
+		<p><tt>N</tt>, the number of the stripes, <tt>1 &leq; N &leq; 45</tt>.</p>
+		<h2>Output specifications</h2>
+		<p><tt>M</tt>, the number of the ways to decorate the shop-window.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3]]></input>
+            <output><![CDATA[4]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+        <test input_include="tests/T14.in" output_include="tests/T14.out" />
+        <test input_include="tests/T15.in" output_include="tests/T15.out" />
+        <test input_include="tests/T16.in" output_include="tests/T16.out" />
+        <test input_include="tests/T17.in" output_include="tests/T17.out" />
+    </tests>
+</problem>

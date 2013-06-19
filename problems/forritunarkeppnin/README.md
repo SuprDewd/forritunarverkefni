@@ -19,3 +19,6 @@ Hugmyndir
 - Annað
     - Finna periodicity á einföldum psuedorandom number generator
     - Subway bátar. Taka inn lista af pöntunum (stærð og brauð) og skrifa út minnsta fjölda brauða af hverri týpu þarf að nota. Hálf brauð eru nýtt.
+    - Taka inn scoreboard, svipað og er fyrir aftan dæmi á UVa, og dagsetningu. Skrifa út hvernig scoreboardið leit út á gefinni tímasetningu.
+    - Snúa tening eftir borði. Skila hvernig teningurinn snýr.
+    - Speglasalur. 2D grid með speglum, gera eitthvað sniðugt.

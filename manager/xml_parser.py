@@ -6,6 +6,9 @@ class Text:
         self.text = text
 
     def __str__(self):
+        return self.text
+
+    def __repr__(self):
         return ''.join(map(lambda c: ENTITIES_rev[c] if c in ENTITIES_rev else c, self.text))
 
 def escape_quotes(s):
@@ -26,6 +29,12 @@ class Element:
         return '<%s%s>%s</%s>' % (self.tag,
                                   ''.join(map(lambda (k,v): ' %s="%s"' % (k, escape_quotes(v)), self.attr.items())),
                                   ''.join(map(str, self.children)),
+                                  self.tag)
+
+    def __repr__(self):
+        return '<%s%s>%s</%s>' % (self.tag,
+                                  ''.join(map(lambda (k,v): ' %s="%s"' % (k, escape_quotes(v)), self.attr.items())),
+                                  ''.join(map(repr, self.children)),
                                   self.tag)
 
 def decode_entities(s):
@@ -52,9 +61,9 @@ def decode_entities(s):
     return res
 
 def encode_entities(s):
-    return ''.join(map(lambda c: ENTITIES_rev[c] if c in ENTITIES_rev else c, s))
+    return ''.join(map(lambda c: '&%s;' % ENTITIES_rev[c] if c in ENTITIES_rev else c, s))
 
-def parse_xml(s, text_nodes=[]):
+def parse_xml(s, text_nodes=[], decode=False):
     tnodes = set(text_nodes)
 
     def is_whitespace(c):
@@ -65,11 +74,12 @@ def parse_xml(s, text_nodes=[]):
         while True:
             buff = ''
             while at < len(s) and s[at] != '<':
+                assert s[at] != '>'
                 buff += s[at]
                 at += 1
 
             if is_text:
-                res.append(Text(decode_entities(buff)))
+                res.append(Text(decode_entities(buff) if decode else buff))
 
             if at >= len(s) or s[at+1] == '/':
                 break
@@ -85,12 +95,12 @@ def parse_xml(s, text_nodes=[]):
                     at += 1
 
                 at += len(cdata_close)
-                res.append(Text(decode_entities(buff)))
+                res.append(Text(buff))
                 continue
 
             tag = ''
             at += 1
-            while not is_whitespace(s[at]) and s[at] != '>':
+            while not is_whitespace(s[at]) and s[at] != '>' and s[at] != '/':
                 tag += s[at]
                 at += 1
 

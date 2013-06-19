@@ -1,0 +1,90 @@
+<problem name="Connect">
+    <description>
+		<p>When constructing electric circuits one has to connect pairs of points using wire, preferable as short as possible.
+In this problem we have an empty circuit board of size <tt>N &times; M</tt> where we want to connect the two points <tt>A<sub>1</sub></tt> and <tt>A<sub>2</sub></tt>
+with each other using one wire, and the two points <tt>B<sub>1</sub></tt> and <tt>B<sub>2</sub></tt> with each other using another wire.
+The wires must go along the horizontal and vertical edges of the grid (see figure), and the two wires may not share a common vertex.
+Determine the minimum length of wire needed to do so. The wire may not go outside the circuit board.</p>
+
+        <img pos="center" src="images/connect.png" alt="connect" />
+
+<h2>Input specifications</h2>
+<p>The first line contains two integers, <tt>N</tt> (<tt>2 &le; N &le; 100</tt>) and <tt>M</tt> (<tt>2 &le; M &le; 100</tt>), the grid size of the circuit board.<br />
+Then follows four lines containing the coordinates for the points <tt>A<sub>1</sub></tt>, <tt>A<sub>2</sub></tt>, <tt>B<sub>1</sub></tt> and <tt>B<sub>2</sub></tt>, respectively. Each coordinate pair will be described using two integers and will correspond to an intersection point in the grid. The first coordinate will be between <tt>0</tt> and <tt>N</tt> inclusive and the second coordinate between <tt>0</tt> and <tt>M</tt> inclusive. All coordinate pairs will be unique.</p>
+
+<h2>Output specifications</h2>
+<p>A single line containing the minimum length of wire needed to connect the points, or &ldquo;<tt>IMPOSSIBLE</tt>&rdquo; if it's not possible to do so.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[6 6
+2 1
+5 4
+4 0
+4 5]]></input>
+            <output><![CDATA[15]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[6 3
+2 3
+4 0
+0 2
+6 1]]></input>
+            <output><![CDATA[IMPOSSIBLE]]></output>
+        </test>
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+        <test input_include="tests/T13.in" output_include="tests/T13.out" />
+        <test input_include="tests/T14.in" output_include="tests/T14.out" />
+        <test input_include="tests/T15.in" output_include="tests/T15.out" />
+        <test input_include="tests/T16.in" output_include="tests/T16.out" />
+        <test input_include="tests/T17.in" output_include="tests/T17.out" />
+        <test input_include="tests/T18.in" output_include="tests/T18.out" />
+        <test input_include="tests/T19.in" output_include="tests/T19.out" />
+        <test input_include="tests/T20.in" output_include="tests/T20.out" />
+        <test input_include="tests/T21.in" output_include="tests/T21.out" />
+        <test input_include="tests/T22.in" output_include="tests/T22.out" />
+        <test input_include="tests/T23.in" output_include="tests/T23.out" />
+        <test input_include="tests/T24.in" output_include="tests/T24.out" />
+        <test input_include="tests/T25.in" output_include="tests/T25.out" />
+        <test input_include="tests/T26.in" output_include="tests/T26.out" />
+        <test input_include="tests/T27.in" output_include="tests/T27.out" />
+        <test input_include="tests/T28.in" output_include="tests/T28.out" />
+        <test input_include="tests/T29.in" output_include="tests/T29.out" />
+        <test input_include="tests/T30.in" output_include="tests/T30.out" />
+        <test input_include="tests/T31.in" output_include="tests/T31.out" />
+        <test input_include="tests/T32.in" output_include="tests/T32.out" />
+        <test input_include="tests/T33.in" output_include="tests/T33.out" />
+        <test input_include="tests/T34.in" output_include="tests/T34.out" />
+        <test input_include="tests/T35.in" output_include="tests/T35.out" />
+        <test input_include="tests/T36.in" output_include="tests/T36.out" />
+        <test input_include="tests/T37.in" output_include="tests/T37.out" />
+        <test input_include="tests/T38.in" output_include="tests/T38.out" />
+        <test input_include="tests/T39.in" output_include="tests/T39.out" />
+        <test input_include="tests/T40.in" output_include="tests/T40.out" />
+        <test input_include="tests/T41.in" output_include="tests/T41.out" />
+        <test input_include="tests/T42.in" output_include="tests/T42.out" />
+        <test input_include="tests/T43.in" output_include="tests/T43.out" />
+        <test input_include="tests/T44.in" output_include="tests/T44.out" />
+        <test input_include="tests/T45.in" output_include="tests/T45.out" />
+        <test input_include="tests/T46.in" output_include="tests/T46.out" />
+        <test input_include="tests/T47.in" output_include="tests/T47.out" />
+        <test input_include="tests/T48.in" output_include="tests/T48.out" />
+        <test input_include="tests/T49.in" output_include="tests/T49.out" />
+        <test input_include="tests/T50.in" output_include="tests/T50.out" />
+        <test input_include="tests/T51.in" output_include="tests/T51.out" />
+        <test input_include="tests/T52.in" output_include="tests/T52.out" />
+        <test input_include="tests/T53.in" output_include="tests/T53.out" />
+    </tests>
+</problem>

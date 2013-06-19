@@ -1,0 +1,27 @@
+<problem name="Count Words and Characters">
+    <description>
+        <p>Write a program that will read in a line of text and output the number of occurrences of each letter. Define a word to be any string of letters that is delimited at each end by either whitespace, a period, a comma, or the beginning or end of the line. You can assume that the input consists entirely of letters, whitespace, commas, and periods. When outputting the number of letters that occur in a line, be sure to count upper- and lowercase versions of a letter as the same letter. Output the letters in alphabetical order and list only those letters that do occur in the input line.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[I say Hi.]]></input>
+            <output><![CDATA[3 words
+1 a
+1 h
+2 i
+1 s
+1 y]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+    </tests>
+</problem>

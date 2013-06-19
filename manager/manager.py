@@ -179,7 +179,7 @@ def load_contest(cid):
                  os.path.join(CONTEST_DIR, cid, cid + '.xml') ]:
         if os.path.exists(loc):
             c_dir = os.path.dirname(loc)
-            tree = parse_xml(get_contents(loc), TEXT_ELEMS)
+            tree = parse_xml(get_contents(loc), TEXT_ELEMS, decode=False)
             break
 
     if not c_dir:
@@ -233,7 +233,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
             if not attr: return ''
             return ''.join([' %s="%s"' % (k, xml_parser.escape_quotes(v)) for (k,v) in attr.items()])
 
-        def to_html(n, img_count, entities=True):
+        def to_html(n, img_count, entities=False):
             if isinstance(n, xml_parser.Text):
                 return xml_parser.encode_entities(n.text) if entities else n.text
             else:
@@ -250,7 +250,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
 \begin{displaymath}
 %(eqn)s
 \end{displaymath}
-\end{document}""" % {'eqn': ''.join([ to_html(m, img_count, False) for m in n.children])}, img_path)
+\end{document}""" % {'eqn': ''.join([ to_html(m, img_count, False, entities=True) for m in n.children])}, img_path)
                     args = [TEX_TO_GIF, '-png', '-dpi', '200' if centered else '150', '%d.tex' % cur_img]
                     p = subprocess.Popen(args, cwd=img_path, stderr=subprocess.PIPE)
                     (_, pout) = p.communicate()

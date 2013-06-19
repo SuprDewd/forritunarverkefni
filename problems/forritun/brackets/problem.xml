@@ -1,0 +1,27 @@
+<problem name="Brackets">
+    <description>
+		<p>One of the most basic instincts of every programmer is the ability to determine if a string of brackets is balanced,
+	       that is, whether it consists entirely of pairs of opening/closing brackets (in that order), none of which mis-nest.
+
+	       Your job is to write a program that determines if a string of brackets is balanced.</p>
+		<h2>Input specifications</h2>
+		<p>The first line of input contains a single integer, <tt>N</tt>. In each of the next <tt>N</tt> lines is a string of opening brackets &lsquo;<tt>{</tt>&rsquo; and closing brackets &lsquo;<tt>}</tt>&rsquo;. The length of each string is between <tt>1</tt> and <tt>1000</tt> characters.</p>
+		<h2>Output specifications</h2>
+		<p>For each of the <tt>N</tt> lines containing a string, print &ldquo;<tt>Balanced</tt>&rdquo; if it is balanced, and &ldquo;<tt>Not Balanced</tt>&rdquo; if it's not balanced.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3
+{{}{{}{}}}{}
+{{}}}{}
+{]]></input>
+            <output><![CDATA[Balanced
+Not Balanced
+Not Balanced]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+    </tests>
+</problem>

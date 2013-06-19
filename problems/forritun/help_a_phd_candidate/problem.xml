@@ -1,0 +1,30 @@
+<problem name="Help a PhD candidate out!">
+    <description>
+		<p>Jon Marius forgot how to add two numbers while doing research for his PhD. And now he has a long list of addition problems that he needs to solve, in addition to his computer science ones! Can you help him?</p>
+		<p>On his current list Jon Marius has two kinds of problems: addition problems on the form &ldquo;<tt>a + b</tt>&rdquo; and the ever returning problem &ldquo;<tt>P=NP</tt>&rdquo;. Jon Marius is a quite distracted person, so he might have so solve this last problem several times, since he keeps forgetting the solution. Also, he would like to solve these problems by himself, so you should skip these.</p>
+
+		<img pos="center" src="images/venstad.jpg" alt="venstad" />
+
+		<h2>Input specifications</h2>
+		<p>The first line of input will be a single integer <tt>N</tt> (<tt>1 &le; N &le; 1000</tt>) denoting the number of testcases.<br />
+		Then follow <tt>N</tt> lines with either &ldquo;<tt>P=NP</tt>&rdquo; or an addition problem on the form &ldquo;<tt>a+b</tt>&rdquo;, where <tt>a, b &in; [0, 1000]</tt> are integers.</p>
+
+		<h2>Output specifications</h2>
+		<p>Output the result of each addition. For lines containing &ldquo;<tt>P=NP</tt>&rdquo;, output &ldquo;<tt>skipped</tt>&rdquo;.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[4
+2+2
+1+2
+P=NP
+0+0]]></input>
+            <output><![CDATA[4
+3
+skipped
+0]]></output>
+        </test>
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+    </tests>
+</problem>
