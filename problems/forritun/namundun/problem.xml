@@ -1,0 +1,16 @@
+<problem name="Námundun">
+    <description>
+        <p>Skrifið forrit sem les inn kommutölu. Forritið birtir svo töluna námundaða að næstu heiltölu. Ef brotahluti kommutölunnar er minni en <eqn>0.5</eqn> á að námunda niður, en ef brotahluti kommutölunnar er stærri eða jafn <eqn>0.5</eqn> á að námunda upp.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test example="true" input_include="tests/T6.in" output_include="tests/T6.out" />
+    </tests>
+</problem>

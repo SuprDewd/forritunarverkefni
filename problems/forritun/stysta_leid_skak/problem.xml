@@ -1,0 +1,20 @@
+<problem name="Stysta leið í skák">
+    <description>
+
+        <p>Við erum með venjulegt skákborð af stærð <eqn>8\times 8</eqn>. Raðir skákborðsins eru merktar með tölustöfunum <eqn>1</eqn> til <eqn>8</eqn> (í hækkandi röð), og dálkar skákborðsins eru merktir með bókstöfunum <tt>a</tt> til <tt>h</tt> (í hækkandi stafrófsröð). Þá getum við talað um reiti með rithætti eins og &ldquo;<tt>e5</tt>&rdqou;, en það merkir reitinn sem er staðsettur í dálki <tt>e</tt> og röð <eqn>5</eqn>.</p>
+
+        <p>Við erum líka með einn riddara. Riddarar geta tekið skref sem eru í laginu eins og stafurinn <tt>L</tt>. Þeir geta gengið áfram um tvo reiti í einhverja af fjórum aðal áttunum (ekki á ská), og tekið svo eitt skref í aðra hvora áttina sem er hornétt á áttina sem hann fór fyrst í. Athuga skal að riddarinn má ekki taka skref útaf skákborðinu. Þetta er eins og hefðbunda hreyfingin sem riddari getur tekið í hefðbundinni skák.</p>
+
+        <p>Skrifið forrit sem les inn upphafsreit riddarans og endareit riddarans. Forritið á að finna stystu leið fyrir riddarann til að fara frá upphafsreitinum til endareitsins. Ef fleiri en ein leið kemur til greina er nóg að skrifa út eina þeirra. Leiðinni á að vera lýst með reitunum sem riddarinn á að fara á, í sömu röð og hann fer á þá.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

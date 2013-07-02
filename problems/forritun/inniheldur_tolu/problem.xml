@@ -1,0 +1,16 @@
+<problem name="Inniheldur tölu">
+    <description>
+        <p>Skrifið forrit sem les inn eina línu, og athugar hvort að línan innihaldi heiltölu. Heiltala er runa af tölustöfum (&lsquo;0&rsquo; til &lsquo;9&rsquo;), sem má byrja á einum mínus (&lsquo;-&rsquo;). Heiltala má ekki vera hluti af orði, og verður því að vera að minnsta kosti eitt bil á milli heiltölunnar og annara orða. Forritið á að skrifa út &ldquo;Já&rdquo; ef línan inniheldur heiltölu, en &ldquo;Nei&rdquo; annars.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test example="true" input_include="tests/T6.in" output_include="tests/T6.out" />
+    </tests>
+</problem>

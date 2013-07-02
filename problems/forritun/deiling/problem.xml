@@ -1,0 +1,14 @@
+<problem name="Deiling">
+    <description>
+        <p>Búið til forrit sem spyr um tvær heiltölur. Forritið á svo að skrifa út hversu oft seinni talan gengur upp í fyrri töluna, og svo hve mikill afgangur er eftir við deilinguna. Ef enginn afgangur er eftir, þá á forritið að birta það.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

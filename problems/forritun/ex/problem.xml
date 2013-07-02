@@ -1,0 +1,21 @@
+<problem name="e^x">
+    <description>
+        <p>Stærðfræðilega talan <eqn>e</eqn> er um það bil <eqn>2.718281828\ldots</eqn></p>
+        <p>Þessa tölu er hægt að reikna með óendanlegu summunni <ceqn>e = \frac{1}{0!} + \frac{1}{1!} + \frac{1}{2!} + \dotsm + \frac{1}{n!} + \dotsm</ceqn></p>
+        <p>Þessi formúla er sértilvik af formúlunni til að reikna <eqn>e^x</eqn> þegar <eqn>x = 1</eqn>, en sú formúla er óendanlega summan <ceqn>e^x = \frac{x^0}{0!} + \frac{x^1}{1!} + \frac{x^2}{2!} + \dotsm + \frac{x^n}{n!} + \dotsm</ceqn></p>
+
+        <p>Skrifið forrit sem spyr um kommutöluna <eqn>x</eqn> (<eqn>x &gt; 0</eqn>) og reiknar nálgun á <eqn>e^x</eqn> með því að nota 20 fyrstu liðina í formúlunni að ofan. Forritið skrifar svo útkomuna á skjáinn, námundað að fjórum aukastöfum.</p>
+
+        <p>Athuga skal að <eqn>n!</eqn>, eða <eqn>n</eqn> hrópmerkt (e. factorial), er margfeldið af fyrstu <eqn>n</eqn> náttúrulegu tölunum, svo <eqn>n! = 1\cdot 2\cdot \dotsm \cdot (n-1) \cdot n</eqn>. Þegar <eqn>n=0</eqn>, þá er <eqn>n!</eqn> skilgreint sem <eqn>1</eqn>.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

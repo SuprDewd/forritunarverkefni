@@ -1,0 +1,17 @@
+<problem name="Stigatafla">
+    <description>
+        <p>Í íþróttahúsum eru oft stórar stigatöflur þar sem stig hvors liðs er gefið upp. Skjárinn, sem stigin eru birt á, er hægt að hugsa um sem töflu af ljósaperum, þar sem hver tölustafur tekur <eqn>5</eqn> raðir og <eqn>3</eqn> dálka af ljósaperum. Kveikt og slökkt er á perum til að mynda tölustafi.</p>
+
+        <p>Skrifið forrit sem les inn jákvæða heiltölu og teiknar hana út eins og taflan myndi birta hana, þar sem stafurinn <tt>@</tt> merkir kveikt ljós og bil táknar slökkt ljós. Einn dálkur af slökktum perum eru á milli hverra tölustafa.</p>
+
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

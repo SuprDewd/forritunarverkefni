@@ -1,0 +1,12 @@
+<problem name="Dagatal">
+    <description>
+        <p>Skrifið forrit sem teiknar út dagatal fyrir einn mánuð. Forritið byrjar á að lesa inn fjölda daga í mánuðinum, og svo númer dagsins sem mánuðurinn byrjar á (1 fyrir sunnudag, 2 fyrir mánudag, og svo framvegis). Dagatalið sem forritið prentar út á að líta út eins og dagatalið í dæminu að neðan.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+    </tests>
+</problem>

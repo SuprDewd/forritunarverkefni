@@ -1,0 +1,16 @@
+<problem name="Afmælissöngurinn">
+    <description>
+        <p>Skrifið forrit sem spyr notanda um nafn, aldur og kyn (þar sem kyn er annaðhvort &ldquo;<tt>kk</tt>&rdquo; eða &ldquo;<tt>kvk</tt>&rdquo;).
+	Forritið á svo að skrifa út afmælissönginn með nafninu og aldrinum sem slegið var inn.
+    Nota skal hann/hún eftir því sem við á.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

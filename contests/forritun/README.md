@@ -49,6 +49,11 @@ Kynning á námskeiði. Kynning á tölvum og C++ forritun. C++ grunnur.
             <td>Skrifa út "<tt>Halló heimur</tt>".</td>
         </tr>
         <tr>
+            <td><b>hallo_heimur_2</b></td>
+            <td>Halló heimur</td>
+            <td>Skrifa út "Halló heimur".</td>
+        </tr>
+        <tr>
             <td><b>svarid<b></td>
             <td>Svarið</td>
             <td>Lesa inn tölu og skrifa út setningu sem inniheldur töluna.</td>
@@ -285,6 +290,11 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
     </thead>
     <tbody>
         <tr>
+            <td><b>nidurteljari</b></td>
+            <td>Niðurtalning</td>
+            <td>Telja niður og skrifa út "BÚMM". (ad-hoc, loop)</td>
+        </tr>
+        <tr>
             <td><b>factorial</b></td>
             <td>Factorial</td>
             <td>Lesa inn <tt>n</tt> og skrifa út <tt>n!</tt> (<tt>n</tt> hrópmerkt)</td>
@@ -313,6 +323,21 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
             <td><b>frumtolur</b></td>
             <td>Frumtolur</td>
             <td></td>
+        </tr>
+        <tr>
+            <td><b>veldi_af_2</b></td>
+            <td>Veldi af 2</td>
+            <td>Lesa inn n, skrifa út fyrstu n veldin af 2.</td>
+        </tr>
+        <tr>
+            <td><b>fullkomintala</b></td>
+            <td>Fullkomin tala</td>
+            <td>Ákvarða hvort að tala sé fullkomin eða ekki. (ad-hoc, math)</td>
+        </tr>
+        <tr>
+            <td><b>fizzbuzz</b></td>
+            <td>Fizz Buzz</td>
+            <td>Herma eftir Fizz Buzz drykkjuleiknum.</td>
         </tr>
     </tbody>
 </table>
@@ -359,6 +384,11 @@ Föll.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><b>namundun</b></td>
+            <td>Námundun</td>
+            <td>Námunda tölu að næstu heiltölu.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -519,6 +549,21 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td>Pattern matching in a matrix</td>
             <td>Leita að mynstri í fylki.</td>
         </tr>
+        <tr>
+            <td><b>stigatafla</b></td>
+            <td>Stigatafla</td>
+            <td>Teikna tölur.</td>
+        </tr>
+        <tr>
+            <td><b>talnaspirall</b></td>
+            <td>Talnaspírall</td>
+            <td>Teikna út talnaspíral. (ad-hoc, 2d array)</td>
+        </tr>
+        <tr>
+            <td><b>compression</b></td>
+            <td>Þjöppun</td>
+            <td>Finna runur af samliggjandi tölum í lista og þjappa þeim niður í bil. (ad-hoc, array)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -592,6 +637,36 @@ C strengir. String klasinn. Vektorar. Skilaverkefni IV lagt fyrir.
             <td><b>breytunafn</b></td>
             <td>Breytunafn</td>
             <td></td>
+        </tr>
+        <tr>
+            <td><b>translate</b></td>
+            <td>Þýða texta</td>
+            <td>Gefið dictionary og texta. Þýða textann orð fyrir orð. (map, string)</td>
+        </tr>
+        <tr>
+            <td><b>tveirstrengir</b></td>
+            <td>Tveir strengir</td>
+            <td>Telja hversu margir stafir eru mismunandi í tveimur strengjum. (ad-hoc, string)</td>
+        </tr>
+        <tr>
+            <td><b>ofugur_texti</b></td>
+            <td>Öfugur texti</td>
+            <td>Lesa inn setningu. Snúa hverju orði við og skrifa út. (string)</td>
+        </tr>
+        <tr>
+            <td><b>happy_birthday</b></td>
+            <td>Afmælissöngurinn</td>
+            <td>Skrifa út afmælissönginn. (ad-hoc, if-else, string)</td>
+        </tr>
+        <tr>
+            <td><b>fjoldi_stafa</b></td>
+            <td>Fjöldi stafa</td>
+            <td>Telja fjölda bókstafi í texta.</td>
+        </tr>
+        <tr>
+            <td><b>decompression</b></td>
+            <td>Afþjöppun</td>
+            <td>Afþjappa runur af samliggjandi tölum. (ad-hoc, strings)</td>
         </tr>
     </tbody>
 </table>
@@ -992,6 +1067,86 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td><b>connect</b></td>
             <td>Connect</td>
             <td>Tengja víra á prentplötu á sem ódýrastan hátt. (bfs)</td>
+        </tr>
+        <tr>
+            <td><b>bmi_sort</b></td>
+            <td>BMI</td>
+            <td>Raða manneskjum eftir BMI. (sorting)</td>
+        </tr>
+        <tr>
+            <td><b>stysta_leid_skak</b></td>
+            <td>Stysta leið í skák</td>
+            <td>Finna stystu leið fyrir riddara á skákborði. (bfs)</td>
+        </tr>
+        <tr>
+            <td><b>stae_pusl</b></td>
+            <td>Stærðfræðipúsl</td>
+            <td>Leysa stærðfræði-orða-púsl. (backtracking)</td>
+        </tr>
+        <tr>
+            <td><b>slongu_texti</b></td>
+            <td>Slöngutexti</td>
+            <td>Teikna texta út þannig að hann líti út eins og slanga. (ad-hoc, array, 2d-array, string)</td>
+        </tr>
+        <tr>
+            <td><b>oradad</b></td>
+            <td>Óraðað</td>
+            <td>Umraða lista af tölum þannig að hann sé ekki raðaður. (ad-hoc, sorting)</td>
+        </tr>
+        <tr>
+            <td><b>lykilord</b></td>
+            <td>Lykilorð</td>
+            <td>Ákvarða hversu sterkt gefið lykilorð er (ad-hoc, string)</td>
+        </tr>
+        <tr>
+            <td><b>lodrettur_texti</b></td>
+            <td>Lóðréttur texti</td>
+            <td>Skrifa út texta lóðréttan (transposed).</td>
+        </tr>
+        <tr>
+            <td><b>kula_i_kassa</b></td>
+            <td>Kúla í kassa</td>
+            <td>Finna radíus á stærstu kúlu sem kemst í kassa. (math)</td>
+        </tr>
+        <tr>
+            <td><b>jolagjafir</b></td>
+            <td>Jólagjafir</td>
+            <td>Gefinn fjöldi fólks sem situr við matarborðið, skrifa út hversu margar gjafir eru undir jólatrénu. (math)</td>
+        </tr>
+        <tr>
+            <td><b>inniheldur_tolu</b></td>
+            <td>Inniheldur tölu</td>
+            <td>Athuga hvort að lína innihaldi heiltölu. (ad-hoc, string)</td>
+        </tr>
+        <tr>
+            <td><b>hjolalas</b></td>
+            <td>Hjólalás</td>
+            <td>Finna stystu leið til að aflæsa hjólalás. (ad-hoc, math)</td>
+        </tr>
+        <tr>
+            <td><b>hamming_distance</b></td>
+            <td>Hamming fjarlægð</td>
+            <td>Finna fjölda bita sem eru mismunandi á milli tveggja talna. (ad-hoc, bits)</td>
+        </tr>
+        <tr>
+            <td><b>freq_analaysis</b></td>
+            <td>Tíðnigreining</td>
+            <td>Telja bókstafi í texta og raða eftir fjölda. (sorting)</td>
+        </tr>
+        <tr>
+            <td><b>ex</b></td>
+            <td>e^x</td>
+            <td>Telja bókstafi í texta og raða eftir fjölda. (sorting)</td>
+        </tr>
+        <tr>
+            <td><b>deiling</b></td>
+            <td>Deiling</td>
+            <td>Finna quotient og remainder við deilingu. (math)</td>
+        </tr>
+        <tr>
+            <td><b>dagatal</b></td>
+            <td>Dagatal</td>
+            <td>Teikna út dagatal.</td>
         </tr>
     </tbody>
 </table>

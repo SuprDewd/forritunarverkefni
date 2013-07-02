@@ -1,0 +1,11 @@
+<problem name="Halló heimur">
+    <description>
+        <p>Það fyrsta sem hver forritari lærir er að búa til hið fræga &ldquo;Hello World&rdquo; forrit. Það eina sem forritið gerir er að skrifa út strenginn &ldquo;Hello World&rdquo; og hættir svo.</p>
+
+        <p>Skrifið forrit sem skrifar út strenginn &ldquo;Hello World&rdquo;.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true" input_include="tests/T0.in" output_include="tests/T0.out" />
+    </tests>
+</problem>

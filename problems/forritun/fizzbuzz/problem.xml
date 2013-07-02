@@ -1,0 +1,14 @@
+<problem name="Fizz Buzz">
+    <description>
+        <p>Skrifið forrit sem les inn töluna <eqn>n</eqn>. Forritið á að fara í gegnum allar tölur frá <eqn>1</eqn> og upp að <eqn>n</eqn>. Ef að talan sem forritið er á er deilanleg með <eqn>3</eqn>, þá á það að skrifa út &ldquo;Fizz&rdquo;, en ef talan er deilanleg með <eqn>5</eqn>, þá á forritið að skrifa út &ldquo;Buzz&rdquo;. Ef talan er bæði deilanlega með <eqn>3</eqn> og <eqn>5</eqn> á forritið að skrifa út &ldquo;FizzBuzz&rdquo; en ef hún ekki deilanleg með <eqn>3</eqn> né <eqn>5</eqn>, þá á forritið að skrifa út töluna sjálfa.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

@@ -1,0 +1,15 @@
+<problem name="Tveir strengir">
+    <description>
+        <p>Við erum með tvö <u>jafn löng</u> orð. Við viljum breyta fyrra orðinu í seinna orðið, og eina aðgerðin sem við megum framkvæma er að breyta stafi í fyrra orðinu í einhvern annan staf. Til dæmis gætum við breytt orðinu &ldquo;<tt>dagur</tt>&rdquo; í orðið &ldquo;<tt>sigur</tt>&rdquo; með því að breyta fyrst <tt>a</tt>-inu í <tt>i</tt> (og fá þá orðið <tt>digur</tt>), og svo <tt>d</tt>-inu í <tt>s</tt> (og þar með enda með <tt>sigur</tt>). Þá er fjöldi aðgerða sem við framkvæmdum <eqn>2</eqn>.</p>
+
+        <p>Skrifið forrit sem les inn tvö jafn löng orð, og skrifar út minnsta fjölda aðgerða sem þarf til að breyta fyrra orðinu í seinna orðið. Athuga skal að munur er á lágstöfum og hástöfum.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+    </tests>
+</problem>

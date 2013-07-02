@@ -1,0 +1,18 @@
+<problem name="Hamming fjarlægð">
+    <description>
+        <p>Ef við erum með tvær tvíundatölur, þá er Hamming fjarlægð á milli þeirra skilgreind sem fjöldi bita sem eru ólíkir á milli talnanna. Til dæmis ef við höfum tvíundatölurnar 1011 (sem er talan 11 í tugakerfinu) og 110 (sem er talan 6 í tugakerfinu), þá er Hamming fjarlægð á milli þeirra þrír, þar sem aftasti bitinn (þ.e. bitinn sem er lengst til hægri) er ekki eins í báðum tölum, og sama á við um þriðju- og fjórðu öftustu bitana. Það eru þrír ólíkir bitar, og því er Hamming fjarlægðin þrír.</p>
+
+        <p>Skrifið forrit sem les inn tvær jákvæðar 32-bita heiltölur sem gefnar eru á tugaformi (þ.e. í tugakerfinu), og skrifar út Hamming fjarlægðina á milli þeirra.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test example="true" input_include="tests/T6.in" output_include="tests/T6.out" />
+    </tests>
+</problem>

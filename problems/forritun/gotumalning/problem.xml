@@ -1,0 +1,16 @@
+<problem name="Götumálning">
+    <description>
+        <p>Götumálningarþjónusta Jónasar hefur nýlega fengið mikið af verkefnum þar sem þeir eiga að mála línur á misstórum bílastæðum. Verst er að mikill tími fer í að búa til teikningar fyrir hvert bílastæði, svo þú ert beðinn um að búa til forrit sem flýtir fyrir gerð þessa teikninga.</p>
+
+        <p>Skrifið forrit sem spyr notanda um fjölda raða og fjölda dálka á bílastæði. Forritið á svo að teikna út hvernig bílastæðið á að líta út. Athuga skal að hvert bílastæði er alltaf <eqn>6 \times 4</eqn> stafir að stærð (málning ekki með talin), aðeins fjöldi bílastæða breytist.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

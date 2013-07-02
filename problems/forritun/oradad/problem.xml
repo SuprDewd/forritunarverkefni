@@ -1,0 +1,21 @@
+<problem name="Óraðað">
+    <description>
+        <p>Dæmi í forritunarkeppnum segja oft keppendum nákvæmlega hvað þeir eiga að gera. Þetta finnst okkur ekki alveg nógu sniðugt. Í þessu dæmi ætlum við gera hið gagnstæða. Við ætlum að segja ykkur hvað þið megið ekki gera:
+
+            <div style="text-align:center;">Þið megið ekki raða listanum af heiltölunum sem þið lesið inn.</div>
+        </p>
+
+        <p>Skrifið forrit sem les inn eina línu sem inniheldur lista af ólíkum heiltölum, aðskildum með bili. Gera má ráð fyrir að listinn innihaldi að minnsta kosti þrjár tölur.</p>
+
+        <p>Forritið á að skrifa listann aftur út, á sama formi, með stökunum í hvaða röð sem er. Eina skilyrðið er að listinn sé ekki raðaður, hvorki í hækkandi né lækkandi röð.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

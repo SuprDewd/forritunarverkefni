@@ -1,0 +1,27 @@
+<problem name="Lykilorð">
+    <description>
+        <p>Þegar maður velur sér lykilorð er mikilvægt að það hafi ákveðna eiginleika svo það sé öruggt. Við skulum segja að &ldquo;sterkt&rdquo; lykilorð hafi alla þrjá af eftirtöldum eiginleikum:
+
+        <ul>
+            <li>Sé að minnsta kosti átta stafir að lengd (dæmi: &ldquo;<tt>lykilord</tt>&rdquo;)</li>
+            <li>Innihaldi bæði há- og lágstafi (dæmi: &ldquo;<tt>lykiLORD</tt>&rdquo;)</li>
+            <li>Innihaldi bókstafi og að minnsta kosti einn tölustaf eða tákn (dæmi: &ldquo;<tt>lyk1L0RD</tt>&rdquo; eða &ldquo;<tt>lykiL#RD</tt>&rdquo;)</li>
+        </ul>
+        </p>
+
+        <p>Við skulum kalla lykilorð &ldquo;gott&rdquo; ef það hefur tvo af eiginleikunum, en &ldquo;ásættanlegt&rdquo; ef það hefur aðeins einn af eiginleikunum. Lykilorð sem hefur enga af eiginleikunum skulum við kalla &ldquo;veikt&rdquo;.</p>
+
+        <p>Skrifið forrit sem les inn lykilorð og tilgreinir hvort það sé &ldquo;sterkt&rdquo;, &ldquo;gott&rdquo;, &ldquo;ásættanlegt&rdquo;, eða &ldquo;veikt&rdquo;.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test example="true" input_include="tests/T6.in" output_include="tests/T6.out" />
+    </tests>
+</problem>

@@ -1,0 +1,16 @@
+<problem name="Slöngutexti">
+    <description>
+        <p>Skrifið forrit sem les inn eina línu af texta. Forritið skrifar svo textann út á eftirfarandi hátt. Fyrsta stafinn skal skrifa út í fyrsta dálknum í línunni sem við skulum kalla miðlínuna. Staðsetning fylgjandi stafa fer eftir stafnum sem kemur á undan. Ef stafurinn sem verið er að skrifa út er minni en stafurinn á undan, þá á að skrifa hann út í næsta dálk í næstu línu að ofan. Ef stafurinn er sá sami og stafurinn á undan, þá á að skrifa hann út í næsta dálk í sömu línu. Ef stafurinn er stærri en stafurinn á undan, þá á að skrifa hann út í næsta dálk í næstu línu að neðan.</p>
+
+        <p>Til að bera saman tvo stafi á að bera saman ASCII gildi þeirra. Flest forritunarmál gera það sjálfkrafa þegar verið er að bera saman tvo stafi, svo líklega þarf ekki að huga sérstaklega að því.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

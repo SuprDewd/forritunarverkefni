@@ -1,0 +1,15 @@
+<problem name="Kúla í kassa">
+    <description>
+        <p>Við erum með ferðatösku af stærð <eqn>w\times l \times h</eqn>, þar sem <eqn>w</eqn> er breidd, <eqn>l</eqn> er lengd, og <eqn>h</eqn> er hæð töskunnar. Við erum að pakka ofan í töskuna, en við þurfum að setja stóra kúlu (eða bolta) ofan í töskuna.</p>
+
+        <p>Skrifið forrit sem les inn kommutölurnar <eqn>w, l, h</eqn>, og skrifar út radíus <eqn>r</eqn> á stærstu kúlu sem kemst ofan í töskuna.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

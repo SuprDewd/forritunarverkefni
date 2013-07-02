@@ -1,0 +1,17 @@
+<problem name="Þýða texta">
+    <description>
+        <p>Mikið er til af (misgóðum) forritum til að þýða texta af einu tungumáli yfir á annað. Í þessu dæmi eigið þið að útfæra mjög einfalda útgáfu af svona þýðanda, en hann þýðir textann orð fyrir orð með notkun orðabókar sem hann les inn.</p>
+
+        <p>Skrifið forrit sem les inn orðabók og texta. Orðabókin er listi af línum á forminu &ldquo;<tt>XXX=YYY</tt>&rdquo;, þar sem <tt>XXX</tt> er orð á upphaflega tungumálinu, og <tt>YYY</tt> er samsvarandi orð á tungumálinu sem þýða á yfir í. Gera má ráð fyrir að hvert orð komi aðeins einu sinni fyrir, og að hvert orð í textanum komi fyrir í orðabókinni. Síðasta lína orðabókarinnar inniheldur aðeins &ldquo;<tt>text:</tt>&rdquo;. Eftir að orðabókin hefur verið lesin inn á að lesa eina línu sem inniheldur textann sem á að þýða. Forritið skrifar svo út þýdda textann. Gera má ráð fyrir að allir stafir séu lágstafir, bæði í orðabókinni og í textanum, og að engin tákn önnur en bókstafir og bil komi fyrir.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

@@ -1,0 +1,20 @@
+<problem name="Fullkomin Tala">
+    <description>
+        <p>Tala er fullkomin ef að summa deila tölunnar (talan sjálf ekki tekin með) er jöfn tölunni. Tökum sem dæmi töluna <eqn>6</eqn>. Deilar hennar eru 1, 2 og 3 (við sleppum deilinum <eqn>6</eqn>). Summa deilanna er <eqn>1 + 2 + 3 = 6</eqn> og þar af leiðandi er talan <eqn>6</eqn> fullkomin.</p>
+        <p>Gríski stærðfræðingurinn Evklíður sem var uppi 300 f.kr. fann formúlu fyrir fullkomnar <i>sléttar</i> tölur. Ekki er enn vitað hvort til séu fullkomnar oddatölur. Formúlan var <eqn>2^{p - 1} \times \left(2^p - 1\right)</eqn> og skilar hún fullkomnum tölum þegar bæði <eqn>p</eqn> er frumtala og <eqn>2^p - 1</eqn> er frumtala. Frumtala er heiltala, stærri en <eqn>0</eqn>, sem hefur enga deila nema <eqn>1</eqn> og sjálfa sig.</p>
+
+        <p>Skrifið forrit sem les inn eina heiltölu <eqn>n</eqn> (<eqn>1 &lt; n &lt; 10^8</eqn>), og skrifar út &ldquo;<tt>Fullkomin</tt>&rdquo;, ef talan er fullkomin, en &ldquo;<tt>Ekki fullkomin</tt>&rdquo;, ef talan er ekki fullkomin.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test example="true" input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test example="true" input_include="tests/T7.in" output_include="tests/T7.out" />
+    </tests>
+</problem>

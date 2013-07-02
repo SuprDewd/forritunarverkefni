@@ -1,0 +1,16 @@
+<problem name="BMI">
+    <description>
+        <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>. Forritið á svo að lesa inn nafn, hæð (í metrum), og þyngd (í kílóum) á <eqn>n</eqn> manneskjum. Forritið á svo, fyrir hverja manneskju, að skrifa út nafn hennar og BMI stig. Þessi listi á að vera raðaður í hækkandi röð eftir BMI stigi. Ef manneskja hefur hæð <eqn>h</eqn> og þyngd <eqn>w</eqn>, þá er BMI stig hennar reiknað með formúlunni
+<ceqn>\mathrm{BMI} = \frac{w}{h^2}</ceqn>
+    </p>
+
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+    </tests>
+</problem>

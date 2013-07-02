@@ -1,0 +1,18 @@
+<problem name="Talnaspírall">
+    <description>
+        <p>Skrifið forrit sem teiknar spíral af tölum af stærð <eqn>n</eqn> (<eqn>n</eqn> raðir og <eqn>n</eqn> dálkar), þar sem <eqn>n</eqn> er hvaða oddatala sem er á bilinu <eqn>1</eqn> til <eqn>19</eqn>. Spírallinn byrjar í miðjunni með tölunni núll, og spíralast rangsælis út til hægri. Tölurnar í hverjum dálki í spíralnum eiga að vera hægri jafnaðar.</p>
+
+        <p>Forritið á að spyrja notandann um töluna <eqn>n</eqn>, og skrifa út villuskilaboð og hætta ef talan er ekki á bilinu <eqn>1</eqn> til <eqn>19</eqn> eða er ekki oddatala. Annars á forritið að teikna út spíralinn.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test example="true" input_include="tests/T6.in" output_include="tests/T6.out" />
+    </tests>
+</problem>

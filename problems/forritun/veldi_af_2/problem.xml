@@ -1,0 +1,14 @@
+<problem name="Veldi af 2">
+    <description>
+        <p>Skrifið forrit sem spyr um jákvæða heiltölu <eqn>n</eqn>. Forritið á svo, fyrir hverja tölu <eqn>i</eqn> frá <eqn>0</eqn> upp í <eqn>n</eqn>, að skrifa út línu á forminu &ldquo;<tt>2^<eqn>i</eqn></tt>&rdquo; og svo útkomuna úr formúlunni.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

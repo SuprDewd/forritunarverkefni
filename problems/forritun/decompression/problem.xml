@@ -1,0 +1,21 @@
+<problem name="Afþjöppun">
+    <description>
+        <p>Gagnaþjöppun snýst um að taka gögn á einhverju formi og færa þau yfir á annað form sem tekur minna pláss. Þetta er til dæmis gert til að minnka fjölda bæta sem þarf að senda yfir netið þegar verið er að senda gögn frá einum aðila til annars.</p>
+
+        <p>Segjum að gögnin sem við erum að vinna með sé runa af jákvæðum heiltölum í hækkandi röð, og oftar en ekki eru heiltölurnar samliggjandi (t.d. eru heiltölurnar 4, 5 og 6 samliggjandi). Þá er ein leið til að þjappa gögnin að taka runur af samliggjandi tölum og breyta þeim í bil á forminu &ldquo;<tt>fyrsta tala-síðasta tala</tt>&rdquo;. Þá getum við til dæmis þjappað rununni 1, 5, 6, 7, 10 í 1, 5-7, 10.</p>
+
+        <p>Ekki er þó nóg að geta bara þjappað gögnin, heldur verður viðtakandi gagnanna að geta afþjappað þjöppuðu gögnin til að fá upprunalegu gögnin.</p>
+
+        <p>Skrifið forrit sem les inn eina línu sem inniheldur runu af jákvæðum heiltölum á þjappað forminu sem skilgreint er að ofan. Forritið á svo að skrifa út upprunalegu rununa af heiltölunum.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="false" input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test example="false" input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test example="false" input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test example="true" input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test example="true" input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test example="true" input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

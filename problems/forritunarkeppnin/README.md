@@ -7,6 +7,7 @@ Hugmyndir
     - Hvaða umraðanir er hægt að fá úr stack sort
     - Finna n-tu pósitífu töluna á forminu 2^i * 3^j * 5^k. Hugsanlega best að nota priority-queue til að búa þær til
     - Forðast/inniheldur gefin umröðun ákveðið mynstur
+    - Ghost leg aðferðin til að randomizea hluti.
 
 - Geometría
     - Er punktur í polygon? Hugsanlega léttara ef grid er square lattice
@@ -22,3 +23,5 @@ Hugmyndir
     - Taka inn scoreboard, svipað og er fyrir aftan dæmi á UVa, og dagsetningu. Skrifa út hvernig scoreboardið leit út á gefinni tímasetningu.
     - Snúa tening eftir borði. Skila hvernig teningurinn snýr.
     - Speglasalur. 2D grid með speglum, gera eitthvað sniðugt.
+    - Kenny vs. Spenny weight swapping.
+
