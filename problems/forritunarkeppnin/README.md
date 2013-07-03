@@ -16,6 +16,7 @@ Hugmyndir
 
 - Netafræði
     - Vinir vina minna eru vinir mínir. Nota Union-Find tir að finna tengda þætti
+    - Hogwarts stigarnir færast. Finna stystu leið á einhverja hæð.
 
 - Annað
     - Finna periodicity á einföldum psuedorandom number generator
