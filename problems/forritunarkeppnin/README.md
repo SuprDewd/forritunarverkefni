@@ -26,3 +26,6 @@ Hugmyndir
     - Speglasalur. 2D grid með speglum, gera eitthvað sniðugt.
     - Kenny vs. Spenny weight swapping.
 
+- Linkar
+    - Mörg snilldar dæmi: http://coj.uci.cu/contest/cproblems.xhtml?cid=1301
+
