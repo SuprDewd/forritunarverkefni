@@ -130,6 +130,11 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
     </thead>
     <tbody>
         <tr>
+            <td><b>annad_veldi</b></td>
+            <td>Annað veldi</td>
+            <td>Lesa inn tölu og skrifa hana út í öðru veldi.</td>
+        </tr>
+        <tr>
             <td><b>peningaupphaed</b></td>
             <td>Peningaupphæð</td>
             <td>Taka inn fjölda 5 þúsund króna seðla, fjölda þúsund króna seðla, &hellip;, og skrifa út heildarupphæð í krónum.</td>
@@ -143,6 +148,11 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
             <td><b>vegalengd<b></td>
             <td>Vegalengd</td>
             <td>Lesa inn tíma í sekúndum og reikna út vegalengd sem hlutur ferðast á gefnum tíma (bara heiltölur).</td>
+        </tr>
+        <tr>
+            <td><b>sphere_volume</b></td>
+            <td>Rúmmál kúlu</td>
+            <td>Taka inn þvermál á kúlu, skrifa út rúmmál hennar.</td>
         </tr>
     </tbody>
 </table>
@@ -388,6 +398,11 @@ Föll.
             <td><b>namundun</b></td>
             <td>Námundun</td>
             <td>Námunda tölu að næstu heiltölu.</td>
+        </tr>
+        <tr>
+            <td><b>lograr</b></td>
+            <td>Lograr</td>
+            <td>Lesa inn kommutölurnar a, b. Skrifa út x þannig að a^x = b gangi upp.</td>
         </tr>
     </tbody>
 </table>

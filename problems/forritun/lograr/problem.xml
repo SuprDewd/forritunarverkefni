@@ -1,0 +1,25 @@
+<problem name="Lograr">
+    <description>
+        <p>Skrifið forrit sem les inn tvær kommutölur <eqn>a</eqn> og <eqn>b</eqn>. Forritið á að skrifa út kommutöluna <eqn>x</eqn> þannig að eftirfarandi jafna gangi upp.
+            <ceqn>a^x = b</ceqn>
+        </p>
+        <p>Skekkja má ekki vera meiri en <eqn>10^3</eqn>.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[9 27]]></input>
+            <output><![CDATA[1.5]]></output>
+            <explanation>Svarið er <eqn>1.5</eqn> vegna þess að <eqn>9^{1.5} = 27</eqn>.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[3.6 2.8]]></input>
+            <output><![CDATA[0.803803]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+    </tests>
+</problem>

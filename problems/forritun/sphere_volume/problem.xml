@@ -1,0 +1,29 @@
+<problem name="Rúmmál kúlu">
+    <description>
+        <p>Skrifið forrit sem les inn eina kommutölu <tt>c</tt> sem táknar þvermál kúlu. Forritið á að skrifa út rúmmál kúlunnar.</p>
+        <p>Rúmmál kúlu, <eqn>V</eqn>, er skilgreint sem
+            <ceqn>V = \frac{3}{4} \pi r^3</ceqn>
+            þar sem <eqn>r</eqn> táknar radíus kúlunnar (sem er auðvitað helmingurinn af þvermál kúlunnar). Gerið ráð fyrir að <eqn>\pi = 3.1415926535</eqn>.
+        </p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2]]></input>
+            <output><![CDATA[2.356194]]></output>
+            <explanation>Kúla með þvermál <eqn>2</eqn> er um það bil <eqn>2.356194</eqn> að rúmmáli.</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[5]]></input>
+            <output><![CDATA[36.815538]]></output>
+            <explanation>Kúla með þvermál <eqn>5</eqn> er um það bil <eqn>36.815538</eqn> að rúmmáli.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+    </tests>
+</problem>
