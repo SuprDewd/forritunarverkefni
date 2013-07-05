@@ -18,6 +18,9 @@ Hugmyndir
     - Vinir vina minna eru vinir mínir. Nota Union-Find tir að finna tengda þætti
     - Hogwarts stigarnir færast. Finna stystu leið á einhverja hæð.
 
+- Önnur stærðfræði
+    - Lesa inn a, b, og n. Skrifa út a/b með n tölustöfum á eftir kommu.
+
 - Annað
     - Finna periodicity á einföldum psuedorandom number generator
     - Subway bátar. Taka inn lista af pöntunum (stærð og brauð) og skrifa út minnsta fjölda brauða af hverri týpu þarf að nota. Hálf brauð eru nýtt.
