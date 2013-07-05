@@ -1,0 +1,29 @@
+<problem name="Heiltöludeiling">
+    <description>
+        <p>Mikill munur er á heiltöludeilingu og venjulegri deilingu. Þegar heiltöludeiling er framkvæmd eru allir aukastafir á svarinu fjarlægðir. Tökum dæmi. Segðin <eqn>5/2</eqn> skilar <eqn>2.5</eqn> með venjulegri deilingu, en skilar bara <eqn>2</eqn> með heiltöludeilingu.</p>
+        <p>Skrifið forrit sem les inn tvær heiltölur <eqn>a</eqn> og <eqn>b</eqn>. Forritið á að skrifa út eina kommutölu og eina heiltölu, hvor í sinni línu. Kommutalan á að vera svarið þegar beitt er venjulegri deilingu á <eqn>a/b</eqn>, en heiltalan á að vera svarið þegar beitt er heiltöludeilingu á <eqn>a/b</eqn>.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[5 3]]></input>
+            <output><![CDATA[1.666667
+1]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[93 -34]]></input>
+            <output><![CDATA[-2.735294
+-2]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+    </tests>
+</problem>

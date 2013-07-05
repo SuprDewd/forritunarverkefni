@@ -404,6 +404,16 @@ Föll.
             <td>Lograr</td>
             <td>Lesa inn kommutölurnar a, b. Skrifa út x þannig að a^x = b gangi upp.</td>
         </tr>
+        <tr>
+            <td><b>pythagorean_theorem</b></td>
+            <td>Setning Pýþagórasar</td>
+            <td>Nota setningu Pýþagórasar til að finna langhlið þríhyrnings.</td>
+        </tr>
+        <tr>
+            <td><b>heiltöludeiling</b></td>
+            <td>Heiltöludeiling</td>
+            <td>Lesa inn heiltölurnar a, b. Skrifa út a/b bæði með venjulegri deilingu og heiltöludeilingu.</td>
+        </tr>
     </tbody>
 </table>
 

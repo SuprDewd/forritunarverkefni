@@ -1,0 +1,27 @@
+<problem name="Setning Pýþagórasar">
+    <description>
+        <p>Setning Pýþagórasar er víðfræg setning sem segir að ef <eqn>a, b</eqn> eru lengdir skammhliðanna tveggja í rétthyrndum þríhyrning og <eqn>c</eqn> er lengd langhliðar sama þríhyrnings, að þá gildi eftirfarandi jafna.
+            <ceqn>a^2 + b^2 = c^2</ceqn>
+        </p>
+        <p>Skrifið forrit sem les inn tvær kommutölur <eqn>a</eqn> og <eqn>b</eqn>. Forritið á að skrifa út lengd langhliðar rétthyrnds þríhyrnings þar sem lengdir skammhliðanna eru <eqn>a</eqn> og <eqn>b</eqn>.</p>
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3 4]]></input>
+            <output><![CDATA[5]]></output>
+            <explanation>Þar sem <eqn>3</eqn> og <eqn>4</eqn> er skammhliðar í rétthyrndum þríhyrning, þá gildir <eqn>3^2 + 4^2 = c^2</eqn>. Við sjáum að <eqn>c = 5</eqn> er eina jákvæða lausnin á jöfnunni, og hlítur <eqn>c</eqn> því að vera lengd langhliðarinnar (<eqn>c=-5</eqn> er líka lausn, en lengd getur ekki verið neikvæð).</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[1.5 1.9]]></input>
+            <output><![CDATA[2.420744]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>
+
