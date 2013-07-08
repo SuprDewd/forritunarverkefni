@@ -560,11 +560,6 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td></td>
         </tr>
         <tr>
-            <td><b>klukkadur</b></td>
-            <td>Klukkaður</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><b>maurar</b></td>
             <td>Maurar</td>
             <td></td>
@@ -588,6 +583,16 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td><b>compression</b></td>
             <td>Þjöppun</td>
             <td>Finna runur af samliggjandi tölum í lista og þjappa þeim niður í bil. (ad-hoc, array)</td>
+        </tr>
+        <tr>
+            <td><b>lestir</b></td>
+            <td>Lestir</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>sort</b></td>
+            <td>Sort</td>
+            <td></td>
         </tr>
     </tbody>
 </table>
@@ -883,6 +888,11 @@ Fjölbinding virkja. Fylki og klasar. Skilaverkefni V skilað. Skilaverkefni VI 
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>brotarodun</td>
+            <td>Brotaröðun</td>
+            <td>Raða brotum eftir stærð.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -994,11 +1004,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td></td>
         </tr>
         <tr>
-            <td><b>lestir</b></td>
-            <td>Lestir</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><b>sjalfsalastud</b></td>
             <td>Sjálfsalastuð</td>
             <td></td>
@@ -1031,11 +1036,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
         <tr>
             <td><b>bitmask</b></td>
             <td>Bitmask</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><b>sort</b></td>
-            <td>Sort</td>
             <td></td>
         </tr>
         <tr>
@@ -1172,6 +1172,11 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td><b>dagatal</b></td>
             <td>Dagatal</td>
             <td>Teikna út dagatal.</td>
+        </tr>
+        <tr>
+            <td><b>klukkadur</b></td>
+            <td>Klukkaður</td>
+            <td></td>
         </tr>
     </tbody>
 </table>
