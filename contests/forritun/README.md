@@ -540,11 +540,6 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td>Skrifa forrit sem les inn tvívítt fylki og segir hvort það sé magic square.</td>
         </tr>
         <tr>
-            <td><b>flisalagnir</b></td>
-            <td>Flísalagnir</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><b>sierpinski_triangle</b></td>
             <td>Sierpinski Triangle</td>
             <td></td>
@@ -568,11 +563,6 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td><b>pattern_matching_in_a_matrix</b></td>
             <td>Pattern matching in a matrix</td>
             <td>Leita að mynstri í fylki.</td>
-        </tr>
-        <tr>
-            <td><b>stigatafla</b></td>
-            <td>Stigatafla</td>
-            <td>Teikna tölur.</td>
         </tr>
         <tr>
             <td><b>talnaspirall</b></td>
@@ -1009,11 +999,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td></td>
         </tr>
         <tr>
-            <td><b>tengdur_listi</b></td>
-            <td>Tengdur Listi</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><b>oendanleg_runa</b></td>
             <td>Óendanleg Runa</td>
             <td></td>
@@ -1054,16 +1039,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td></td>
         </tr>
         <tr>
-            <td><b>brackets</b></td>
-            <td>Brackets</td>
-            <td>Segja til um hvort strengur af svigum sé balanced.</td>
-        </tr>
-        <tr>
-            <td><b>brackets_and_parentheses</b></td>
-            <td>Brackets and Parentheses</td>
-            <td>Segja til um hvort strengur af mismunandi svigum sé balanced.</td>
-        </tr>
-        <tr>
             <td><b>max_min_average</b></td>
             <td>Max-Min-Average</td>
             <td>Finn max/min/average af gefnum tölum.</td>
@@ -1072,11 +1047,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td><b>marvelous_mazes</b></td>
             <td>Marvelous Mazes</td>
             <td>Lesa inn þjappaða útgáfu af völundarhúsi. Teikna svo út völundarhúsið.</td>
-        </tr>
-        <tr>
-            <td><b>card_trick</b></td>
-            <td>Card Trick</td>
-            <td>Herma eftir spilatrikki afturábak. (double-ended queue)</td>
         </tr>
         <tr>
             <td><b>flags</b></td>
@@ -1109,11 +1079,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td>Leysa stærðfræði-orða-púsl. (backtracking)</td>
         </tr>
         <tr>
-            <td><b>slongu_texti</b></td>
-            <td>Slöngutexti</td>
-            <td>Teikna texta út þannig að hann líti út eins og slanga. (ad-hoc, array, 2d-array, string)</td>
-        </tr>
-        <tr>
             <td><b>oradad</b></td>
             <td>Óraðað</td>
             <td>Umraða lista af tölum þannig að hann sé ekki raðaður. (ad-hoc, sorting)</td>
@@ -1122,11 +1087,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td><b>lykilord</b></td>
             <td>Lykilorð</td>
             <td>Ákvarða hversu sterkt gefið lykilorð er (ad-hoc, string)</td>
-        </tr>
-        <tr>
-            <td><b>lodrettur_texti</b></td>
-            <td>Lóðréttur texti</td>
-            <td>Skrifa út texta lóðréttan (transposed).</td>
         </tr>
         <tr>
             <td><b>kula_i_kassa</b></td>
@@ -1172,11 +1132,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td><b>dagatal</b></td>
             <td>Dagatal</td>
             <td>Teikna út dagatal.</td>
-        </tr>
-        <tr>
-            <td><b>klukkadur</b></td>
-            <td>Klukkaður</td>
-            <td></td>
         </tr>
     </tbody>
 </table>

@@ -1,0 +1,51 @@
+<problem name="Tower of Hanoi">
+    <description>
+
+        <p>In 1883, Edouard Lucas invented, or perhaps reinvented, one of the most popular puzzles of all times - the Tower of Hanoi, as he called it - which is still used today in many computer science textbooks to demonstrate how to write a recursive algorithm or program. First of all, we will make a list of the rules of the puzzle:
+
+            <ul>
+                <li>There are three pegs: A, B and C.</li>
+                <li>There are n disks. The number <eqn>n</eqn> is constant while working the puzzle.</li>
+                <li>All disks are different in size.</li>
+                <li>The disks are initially stacked on peg A so that they increase in size from the top to the bottom.</li>
+                <li>The goal of the puzzle is to transfer the entire tower from the peg A to peg C.</li>
+                <li>One disk at a time can be moved from the top of a stack either to an empty peg or to a peg with a larger disk than itself on the top of its stack.</li>
+            </ul>
+        </p>
+
+        <p>In this problem, your task is to write a program that solves the Tower of Hanoi problem in the minimum number of moves. The program should input <eqn>n</eqn>, the number of disks, and then output a sequence of instructions that solves the puzzle. Each instruction is on a line of its own, and is of the form &ldquo;Move from <tt>X</tt> to <tt>Y</tt>&rdquo;, which represents moving the topmost disk from peg <i>X</i> to peg <i>Y</i>. In order for the program to be considered correct, it should output the solution that uses the minimum number of moves. Note that <eqn>n</eqn>, the number of disks, will be in the range 1 to 16, inclusive.</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[2]]></input>
+            <output><![CDATA[Move from A to B
+Move from A to C
+Move from B to C]]></output>
+        </test>
+        <test example="true">
+            <input><![CDATA[3]]></input>
+            <output><![CDATA[Move from A to C
+Move from A to B
+Move from C to B
+Move from A to C
+Move from B to A
+Move from B to C
+Move from A to C]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+    </tests>
+</problem>
