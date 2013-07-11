@@ -274,7 +274,7 @@ Endurkvæm forritun. Lesefni: http://en.wikipedia.org/wiki/Tower_of_Hanoi , htt
     </thead>
     <tbody>
         <tr>
-            <td><i>tower_of_hanoi</i></td>
+            <td><b>tower_of_hanoi</b></td>
             <td>Towers of Hanoi</td>
             <td>Leysa Towers of Hanoi með n skífum.</td>
         </tr>
