@@ -16,3 +16,4 @@ def check(obtained, expected):
         return len({ x < y for (x, y) in zip(o_vals, o_vals[1:]) }) == 2
     except:
         return False
+

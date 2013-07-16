@@ -154,6 +154,11 @@ C++ grunnur (inntak, úttak, reikningur, int, double), aflúsun. Skilaverkefni I
             <td>Rúmmál kúlu</td>
             <td>Taka inn þvermál á kúlu, skrifa út rúmmál hennar.</td>
         </tr>
+        <tr>
+            <td><b>deiling</b></td>
+            <td>Deiling</td>
+            <td>Finna quotient og remainder við deilingu. (math)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -349,6 +354,11 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
             <td>Fizz Buzz</td>
             <td>Herma eftir Fizz Buzz drykkjuleiknum.</td>
         </tr>
+        <tr>
+            <td><b>margfeldi_3_5</b></td>
+            <td>Margfeldi af 3 og 5</td>
+            <td>Finna summu af tölum á bilinu 1 upp í n sem eru margfeldi af 3 eða 5.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -413,6 +423,16 @@ Föll.
             <td><b>heiltöludeiling</b></td>
             <td>Heiltöludeiling</td>
             <td>Lesa inn heiltölurnar a, b. Skrifa út a/b bæði með venjulegri deilingu og heiltöludeilingu.</td>
+        </tr>
+        <tr>
+            <td><b>max_min_average</b></td>
+            <td>Max-Min-Average</td>
+            <td>Finn max/min/average af gefnum tölum.</td>
+        </tr>
+        <tr>
+            <td><b>hjolalas</b></td>
+            <td>Hjólalás</td>
+            <td>Finna stystu leið til að aflæsa hjólalás. (ad-hoc, math)</td>
         </tr>
     </tbody>
 </table>
@@ -584,6 +604,16 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td>Sort</td>
             <td></td>
         </tr>
+        <tr>
+            <td><b>bmi_sort</b></td>
+            <td>BMI</td>
+            <td>Raða manneskjum eftir BMI. (sorting)</td>
+        </tr>
+        <tr>
+            <td><b>oradad</b></td>
+            <td>Óraðað</td>
+            <td>Umraða lista af tölum þannig að hann sé ekki raðaður. (ad-hoc, sorting)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -687,6 +717,16 @@ C strengir. String klasinn. Vektorar. Skilaverkefni IV lagt fyrir.
             <td><b>decompression</b></td>
             <td>Afþjöppun</td>
             <td>Afþjappa runur af samliggjandi tölum. (ad-hoc, strings)</td>
+        </tr>
+        <tr>
+            <td><b>lykilord</b></td>
+            <td>Lykilorð</td>
+            <td>Ákvarða hversu sterkt gefið lykilorð er (ad-hoc, string)</td>
+        </tr>
+        <tr>
+            <td><b>inniheldur_tolu</b></td>
+            <td>Inniheldur tölu</td>
+            <td>Athuga hvort að lína innihaldi heiltölu. (ad-hoc, string)</td>
         </tr>
     </tbody>
 </table>
@@ -1014,11 +1054,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td></td>
         </tr>
         <tr>
-            <td><b>fatahengi_sveins_litla</b></td>
-            <td>Fatahengi Sveins Litla</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><b>bitmask</b></td>
             <td>Bitmask</td>
             <td></td>
@@ -1039,16 +1074,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td></td>
         </tr>
         <tr>
-            <td><b>max_min_average</b></td>
-            <td>Max-Min-Average</td>
-            <td>Finn max/min/average af gefnum tölum.</td>
-        </tr>
-        <tr>
-            <td><b>marvelous_mazes</b></td>
-            <td>Marvelous Mazes</td>
-            <td>Lesa inn þjappaða útgáfu af völundarhúsi. Teikna svo út völundarhúsið.</td>
-        </tr>
-        <tr>
             <td><b>flags</b></td>
             <td>Flags</td>
             <td>Telja fjölda mögulegra litana í flaggi. (counting, dp)</td>
@@ -1064,11 +1089,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td>Tengja víra á prentplötu á sem ódýrastan hátt. (bfs)</td>
         </tr>
         <tr>
-            <td><b>bmi_sort</b></td>
-            <td>BMI</td>
-            <td>Raða manneskjum eftir BMI. (sorting)</td>
-        </tr>
-        <tr>
             <td><b>stysta_leid_skak</b></td>
             <td>Stysta leið í skák</td>
             <td>Finna stystu leið fyrir riddara á skákborði. (bfs)</td>
@@ -1077,16 +1097,6 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td><b>stae_pusl</b></td>
             <td>Stærðfræðipúsl</td>
             <td>Leysa stærðfræði-orða-púsl. (backtracking)</td>
-        </tr>
-        <tr>
-            <td><b>oradad</b></td>
-            <td>Óraðað</td>
-            <td>Umraða lista af tölum þannig að hann sé ekki raðaður. (ad-hoc, sorting)</td>
-        </tr>
-        <tr>
-            <td><b>lykilord</b></td>
-            <td>Lykilorð</td>
-            <td>Ákvarða hversu sterkt gefið lykilorð er (ad-hoc, string)</td>
         </tr>
         <tr>
             <td><b>kula_i_kassa</b></td>
@@ -1099,39 +1109,15 @@ Samantekt og umræða um próf. Skilaverkefni VI skilað.
             <td>Gefinn fjöldi fólks sem situr við matarborðið, skrifa út hversu margar gjafir eru undir jólatrénu. (math)</td>
         </tr>
         <tr>
-            <td><b>inniheldur_tolu</b></td>
-            <td>Inniheldur tölu</td>
-            <td>Athuga hvort að lína innihaldi heiltölu. (ad-hoc, string)</td>
-        </tr>
-        <tr>
-            <td><b>hjolalas</b></td>
-            <td>Hjólalás</td>
-            <td>Finna stystu leið til að aflæsa hjólalás. (ad-hoc, math)</td>
-        </tr>
-        <tr>
             <td><b>hamming_distance</b></td>
             <td>Hamming fjarlægð</td>
             <td>Finna fjölda bita sem eru mismunandi á milli tveggja talna. (ad-hoc, bits)</td>
         </tr>
         <tr>
-            <td><b>freq_analaysis</b></td>
-            <td>Tíðnigreining</td>
-            <td>Telja bókstafi í texta og raða eftir fjölda. (sorting)</td>
-        </tr>
-        <tr>
             <td><b>ex</b></td>
             <td>e^x</td>
-            <td>Telja bókstafi í texta og raða eftir fjölda. (sorting)</td>
-        </tr>
-        <tr>
-            <td><b>deiling</b></td>
-            <td>Deiling</td>
-            <td>Finna quotient og remainder við deilingu. (math)</td>
-        </tr>
-        <tr>
-            <td><b>dagatal</b></td>
-            <td>Dagatal</td>
-            <td>Teikna út dagatal.</td>
+            <td>Reikna e^x með iterative aðferð.</td>
         </tr>
     </tbody>
 </table>
+

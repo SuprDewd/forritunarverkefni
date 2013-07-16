@@ -69,6 +69,21 @@ Kynning á námskeiði. Margvíð fylki (upprifjun). Kvikleg fylki (upprifjun).
             <td>Flísalagnir</td>
             <td></td>
         </tr>
+        <tr>
+            <td><b>fjoldi_leida_i_neti</b></td>
+            <td>Fjöldi leiða í neti</td>
+            <td>Gefið net sem hnútafylki. Finna fjölda leiða frá einum hnút til annars. (graph theory, matrix multiplication)</td>
+        </tr>
+        <tr>
+            <td><b>dagatal</b></td>
+            <td>Dagatal</td>
+            <td>Teikna út dagatal.</td>
+        </tr>
+        <tr>
+            <td><b>marvelous_mazes</b></td>
+            <td>Marvelous Mazes</td>
+            <td>Lesa inn þjappaða útgáfu af völundarhúsi. Teikna svo út völundarhúsið.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -115,6 +130,11 @@ Hnútar og tengdir listar. Skilaverkefni I lagt fyrir.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><b>fatahengi_sveins_litla</b></td>
+            <td>Fatahengi Sveins Litla</td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
 
@@ -275,7 +295,7 @@ Endurkvæm forritun. Lesefni: http://en.wikipedia.org/wiki/Tower_of_Hanoi , htt
     <tbody>
         <tr>
             <td><b>tower_of_hanoi</b></td>
-            <td>Towers of Hanoi</td>
+            <td>Tower of Hanoi</td>
             <td>Leysa Towers of Hanoi með n skífum.</td>
         </tr>
     </tbody>
@@ -462,6 +482,11 @@ Standard Template Library. Aukalesefni: http://www.oreillynet.com/network/2005/1
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><b>freq_analaysis</b></td>
+            <td>Tíðnigreining</td>
+            <td>Telja bókstafi í texta og raða eftir fjölda. (sorting)</td>
+        </tr>
     </tbody>
 </table>
 

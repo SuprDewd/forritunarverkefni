@@ -1,0 +1,47 @@
+<problem name="Fjöldi leiða í neti">
+    <description>
+
+        <p>Skrifið forrit sem les inn grannfylki (e. adjacency matrix) fyrir net (e. graph), númer tweggja hnúta í netinu <eqn>a, b</eqn>, og heiltöluna <eqn>k</eqn>. Forritið á að skrifa út fjölda leiða (e. paths) frá hnúti <eqn>a</eqn> til hnúts <eqn>b</eqn> að lengd <eqn>k</eqn>.</p>
+
+        <h2>Inntak</h2>
+        <p>Fyrsta lína inniheldur heiltöluna <eqn>2 \leq n \leq 20</eqn>. Næstu <eqn>n</eqn> línur lýsa grannfylkinu, en hver þeirra inniheldur <eqn>n</eqn> heiltölur. Þá er röð <eqn>i</eqn>, dálkur <eqn>j</eqn> heiltalan <eqn>1</eqn> ef netið inniheldur áttaðan legg frá hnúti <eqn>i</eqn> til hnúts <eqn>j</eqn>, en <eqn>0</eqn> annars. Næst kemur ein lína í viðbót, sem inniheldur þrjár heiltölur <eqn>0 \leq k \leq 10, 0 \leq a, b &lt; n</eqn>, en þeim er lýst að ofan.</p>
+
+        <hint>Þetta er þekkt vandamál í netafræði. Lausnin er að setja grannfylkið í <eqn>k</eqn>ta veldi. Þá er svarið staðsett í röð <eqn>a</eqn>, dálki <eqn>b</eqn>.</hint>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[3
+1 1 1
+0 1 0
+0 1 0
+2
+0 1]]></input>
+            <output><![CDATA[3]]></output>
+            <explanation>Netið inniheldur fimm leggi: 0->0, 0->1, 0->2, 1->1, 2->1. Það eru þrjár leiðir af lengd 2 frá hnúti 0 til hnúts 1: 0->0->2, 0->1->1, 0->2->1</explanation>
+        </test>
+        <test example="true">
+            <input><![CDATA[2
+0 1
+1 0
+0
+0 0]]></input>
+            <output><![CDATA[1]]></output>
+            <explanation>Það er ein leið frá hnúti 0 til hnúts 0 af lengd 0, en það er einfaldlega leiðin sem byrjar á hnúti 0 og fer ekkert.</explanation>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+        <test input_include="tests/T6.in" output_include="tests/T6.out" />
+        <test input_include="tests/T7.in" output_include="tests/T7.out" />
+        <test input_include="tests/T8.in" output_include="tests/T8.out" />
+        <test input_include="tests/T9.in" output_include="tests/T9.out" />
+        <test input_include="tests/T10.in" output_include="tests/T10.out" />
+        <test input_include="tests/T11.in" output_include="tests/T11.out" />
+        <test input_include="tests/T12.in" output_include="tests/T12.out" />
+    </tests>
+</problem>
