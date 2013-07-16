@@ -490,12 +490,12 @@ Meira um föll. Straumar og grunnatriði skráarvinnslu. Skilaverkefni II skila�
     </thead>
     <tbody>
         <tr>
-            <td><i>celebrity_jeopardy</i></td>
+            <td><b>celebrity_jeopardy</b></td>
             <td>Celebrity jeopardy</td>
             <td>Skrifa allt input yfir í output (echo).</td>
         </tr>
         <tr>
-            <td><i>tex_quotes</i></td>
+            <td><b>tex_quotes</b></td>
             <td>TeX Quotes</td>
             <td>Breyta venjulegum gæsalöppum í TeX gæsalappir.</td>
         </tr>
