@@ -28,6 +28,7 @@ Hugmyndir
     - Snúa tening eftir borði. Skila hvernig teningurinn snýr.
     - Speglasalur. 2D grid með speglum, gera eitthvað sniðugt.
     - Kenny vs. Spenny weight swapping.
+    - Jón ætlar að fara frá heimili sínu og út í búð. Taka inn meðal-gönguhraða, meðal-keyrsluhraða, og lengd frá heimilinu hans til búðarinnar. Taka svo inn lista af tölum, sem hver merkir lengd frá bílastæði til búðarinnar. Skila hvaða bílastæði á að leggja í svo að heildartíminn sé lágmarkaður.
 
 - Linkar
     - Mörg snilldar dæmi: http://coj.uci.cu/contest/cproblems.xhtml?cid=1301
