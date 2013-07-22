@@ -29,6 +29,7 @@ Hugmyndir
     - Speglasalur. 2D grid með speglum, gera eitthvað sniðugt.
     - Kenny vs. Spenny weight swapping.
     - Jón ætlar að fara frá heimili sínu og út í búð. Taka inn meðal-gönguhraða, meðal-keyrsluhraða, og lengd frá heimilinu hans til búðarinnar. Taka svo inn lista af tölum, sem hver merkir lengd frá bílastæði til búðarinnar. Skila hvaða bílastæði á að leggja í svo að heildartíminn sé lágmarkaður.
+    - Self describing sentences. Fallið describe(s) tekur inn streng og lýsir honum á eitthvern hátt (t.d. describe("Hello hello world") = "This string contains two words, two hello, and one world."). Skrifa forrit sem ítrar describe á gefinn upphafsstreng s þangað til að describe^(x)(s) = describe^(x+1)(s), eða segja til um að það gerist aldrei.
 
 - Linkar
     - Mörg snilldar dæmi: http://coj.uci.cu/contest/cproblems.xhtml?cid=1301
