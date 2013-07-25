@@ -220,10 +220,11 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
                                   '.py3' if problem.solution.language.title().startswith('Python 3') else
                                   '.py' if problem.solution.language.title().startswith('Python') else
                                   '')
-    checker_file = 'checker' +  ('.cpp' if problem.solution.language.title() == 'C++' else
-                                  '.py3' if problem.solution.language.title().startswith('Python 3') else
-                                  '.py' if problem.solution.language.title().startswith('Python') else
-                                  '')
+    if problem.checker:
+        checker_file = 'checker' +  ('.cpp' if problem.checker.language.title() == 'C++' else
+                                    '.py3' if problem.checker.language.title().startswith('Python 3') else
+                                    '.py' if problem.checker.language.title().startswith('Python') else
+                                    '')
 
     os.mkdir(os.path.join(path, 'images'))
 
@@ -250,7 +251,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
 \begin{displaymath}
 %(eqn)s
 \end{displaymath}
-\end{document}""" % {'eqn': ''.join([ to_html(m, img_count, False, entities=True) for m in n.children])}, img_path)
+\end{document}""" % {'eqn': ''.join([ to_html(m, img_count, entities=True) for m in n.children])}, img_path)
                     args = [TEX_TO_GIF, '-png', '-dpi', '200' if centered else '150', '%d.tex' % cur_img]
                     p = subprocess.Popen(args, cwd=img_path, stderr=subprocess.PIPE)
                     (_, pout) = p.communicate()
@@ -368,6 +369,10 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
         xml += """<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 """
 
+    dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector regex_corrector(True,'checker.py')"
+    if problem.checker:
+        dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector problem_specific_corrector(diff=True,checker='%(checker_file_name)s')" % {'checker_file_name': os.path.basename(checker_file) }
+
     xml += """<Problem %(xmlns)s
           Fatal=""
           Warning=""
@@ -406,7 +411,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
         'solution': solution_file,
         'timelimit': (timelimit or 60*1000) / 1000,
         'static_corrector': "/usr/bin/python $home/correctors/megacorrector.py !cppcheck_corrector korea_corrector('$home/bin/nsiqcppstyle/mooshak_filter.txt') vera_corrector('mooshak')",
-        'dynamic_corrector': "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector regex_corrector(True)",
+        'dynamic_corrector': dynamic_corrector,
         'tests': tests
         }
 
@@ -524,7 +529,7 @@ def export_contest(contest, path):
                Extension="zip"
                Compiler="gcc"
                Version="2.96"
-               Compile="$home/data/contests/gagnaskipan/languages/CppSeparateCompilation/compiler $home/$environment $file"
+               Compile="$home/bin/CppSeparateCompilation/compiler $home/$environment $file"
                Execute="$home/bin/valgrind_time_limitor 10 --log-file=.valgrind_log --leak-check=full --show-reachable=yes ./a.out"
                Omit="^removed .*"/>
         </Languages>
