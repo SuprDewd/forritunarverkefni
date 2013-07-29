@@ -30,6 +30,9 @@ Hugmyndir
     - Kenny vs. Spenny weight swapping.
     - Jón ætlar að fara frá heimili sínu og út í búð. Taka inn meðal-gönguhraða, meðal-keyrsluhraða, og lengd frá heimilinu hans til búðarinnar. Taka svo inn lista af tölum, sem hver merkir lengd frá bílastæði til búðarinnar. Skila hvaða bílastæði á að leggja í svo að heildartíminn sé lágmarkaður.
     - Self describing sentences. Fallið describe(s) tekur inn streng og lýsir honum á eitthvern hátt (t.d. describe("Hello hello world") = "This string contains two words, two hello, and one world."). Skrifa forrit sem ítrar describe á gefinn upphafsstreng s þangað til að describe^(x)(s) = describe^(x+1)(s), eða segja til um að það gerist aldrei.
+    - Look and say sequence. Annaðhvort búa til n-tu röðina, eða taka inn x og segja í hvaða röð x kemur fyrst fyrir.
+    - Contract. Leikur þar sem maður byrjar með streng af characterum eins og "CBAABCCDA". Maður getur contractað strenginn með því að velja tvo eins stafi, og eyða öllum stöfum á milli þeirra ásamt öðrum af stöfunum sem maður valdi. T.d. væri hægt að contracta dæmið í "CCDA". Dæmið getur verið mismunandi. T.d. væri hægt að spyrja hvað væri mesti fjöldi contracta sem maður gæti gert á strenginn, eða hver væri minnsta lengd sem maður gæti endað með, eða ef tveir eru að spila á móti hvorum öðrum og þeir skiptast á að contracta einu sinni og sá tapar sem getur ekki contractað oftar, hver vinnur?
+    - Fermat's Margin - Ákvarða hvort að texti passi í spássíu af stærð w x h. (DP)
 
 - Linkar
     - Mörg snilldar dæmi: http://coj.uci.cu/contest/cproblems.xhtml?cid=1301
