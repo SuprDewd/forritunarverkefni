@@ -1,2 +1,15 @@
 <contest name="Forritun - V09" email="bjarkig12@ru.is">
+    <problem include="forritun/count_words_chars" />
+    <problem include="forritun/radhverfur" />
+    <problem include="forritun/help_a_phd_candidate" />
+    <problem include="forritun/skemmtilegar_setningar" />
+    <problem include="forritun/breytunafn" />
+    <problem include="forritun/translate" />
+    <problem include="forritun/tveirstrengir" />
+    <problem include="forritun/ofugur_texti" />
+    <problem include="forritun/happy_birthday" />
+    <problem include="forritun/fjoldi_stafa" />
+    <problem include="forritun/decompression" />
+    <problem include="forritun/lykilord" />
+    <problem include="forritun/inniheldur_tolu" />
 </contest>

@@ -1,4 +1,4 @@
-<problem name="nidurteljari">
+<problem name="Niðurteljari">
     <description>
         <p>Skrifið forrit sem les inn eina jákvæða heiltölu. Forritið á svo að telja frá uppgefinni heiltölu og niður í 1, og skrifa þá út &ldquo;<tt>BÚMM!</tt>&rdquo;.</p>
 

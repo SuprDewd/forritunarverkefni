@@ -1,7 +1,16 @@
 <contest name="Forritun - V04" email="bjarkig12@ru.is">
-    <problem enabled="false" name="Dæmatímaverkefni: Pascal þríhyrningurinn" include="forritun/pascal_triangle" />
-    <problem enabled="false" name="Dæmatímaverkefni: Frumtölur" include="forritun/prime_numbers" />
+    <problem name="Dæmatímaverkefni: Pascal þríhyrningurinn" include="forritun/pascal_triangle" />
+    <problem name="Dæmatímaverkefni: Frumtölur" include="forritun/prime_numbers" />
 
-    <problem enabled="false" name="Aukaverkefni: Factorial" include="forritun/factorial" />
-    <problem enabled="false" name="Aukaverkefni: Fibonacci runan" include="forritun/fibonacci" />
+    <problem include="forritun/nidurteljari" />
+    <problem include="forritun/factorial" />
+    <problem include="forritun/fibonacci" />
+    <problem include="forritun/lodari" />
+    <problem include="forritun/malt_guzzler" />
+    <problem include="forritun/margfeldi_3_5" />
+    <problem include="forritun/pyramidi" />
+    <problem include="forritun/frumtolur" />
+    <problem include="forritun/veldi_af_2" />
+    <problem include="forritun/fullkomintala" />
+    <problem include="forritun/fizzbuzz" />
 </contest>

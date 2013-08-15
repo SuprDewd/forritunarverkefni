@@ -1,0 +1,43 @@
+<problem name="Kindergarten Counting Game">
+    <description>
+
+<p>
+Everybody sit down in a circle. Ok. Listen to me carefully.
+<p>
+``Woooooo, you scwewy wabbit!''
+</p>
+Now, could someone tell me how many words I just said?
+</p>
+
+<h2>Input and Output</h2>
+<p>
+Input to your program will consist of a series of lines, each line containing multiple words (at least one).
+A ``word'' is defined as a consecutive sequence of letters (upper and/or lower case).
+</p>
+
+<p>
+Your program should output a word count for each line of input. Each word count should be printed on
+a separate line.
+</p>
+
+    </description>
+    <solution include="solution.cpp" language="C++" />
+    <tests timelimit="3s" memorylimit="64MB">
+        <test example="true">
+            <input><![CDATA[Meep Meep!
+I tot I taw a putty tat.
+I did! I did! I did taw a putty tat.
+Shsssssssssh ... I am hunting wabbits. Heh Heh Heh Heh ...]]></input>
+            <output><![CDATA[2
+7
+10
+9]]></output>
+        </test>
+        <test input_include="tests/T0.in" output_include="tests/T0.out" />
+        <test input_include="tests/T1.in" output_include="tests/T1.out" />
+        <test input_include="tests/T2.in" output_include="tests/T2.out" />
+        <test input_include="tests/T3.in" output_include="tests/T3.out" />
+        <test input_include="tests/T4.in" output_include="tests/T4.out" />
+        <test input_include="tests/T5.in" output_include="tests/T5.out" />
+    </tests>
+</problem>

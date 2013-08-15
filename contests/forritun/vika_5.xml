@@ -1,2 +1,8 @@
 <contest name="Forritun - V05" email="bjarkig12@ru.is">
+    <problem include="forritun/namundun" />
+    <problem include="forritun/lograr" />
+    <problem include="forritun/pythagorean_theorem" />
+    <problem include="forritun/heiltoludeiling" />
+    <problem include="forritun/max_min_average" />
+    <problem include="forritun/hjolalas" />
 </contest>

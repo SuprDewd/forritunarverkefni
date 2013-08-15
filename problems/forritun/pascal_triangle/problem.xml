@@ -2,7 +2,16 @@
     <description>
         <p>Pascal-þríhyrningurinn er óendanlega stór þríhyrningur af heiltölum, skilgreindur þannig að efst í þríhyrningnum er talan 1, og er talan 1 svo í fyrsta og síðasta dálki hverrar raðar. Tölur annarstaðar í þríhyrningnum eru fengnar með því að leggja saman tölurnar tvær fyrir ofan hana. Fyrstu fimm raðirnar í þríhyrningnum líta þá svona út:
 
-            <ceqn>\begin{tabular}{ccccccccc} &amp; &amp; &amp; &amp; 1\\noalign{\smallskip\smallskip} $n=1$:&amp; &amp; &amp; &amp; 1 &amp; &amp; 1\\noalign{\smallskip\smallskip} &amp; &amp; 1 &amp; &amp; 2 &amp; &amp; 1\\noalign{\smallskip\smallskip} &amp; 1 &amp; &amp; 3 &amp; &amp; 3 &amp; &amp; 1\\noalign{\smallskip\smallskip} 1 &amp; &amp; 4 &amp; &amp; 6 &amp; &amp; 4 &amp; &amp; 1\\noalign{\smallskip\smallskip} \end{tabular}</ceqn>
+
+            <table class="pascal">
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class="odd">1</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td class="odd">1</td><td></td><td class="odd">1</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td class="odd">1</td><td></td><td>2</td><td></td><td class="odd">1</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td class="odd">1</td><td></td><td class="odd">3</td><td></td><td class="odd">3</td><td></td><td class="odd">1</td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td class="odd">1</td><td></td><td>4</td><td></td><td>6</td><td></td><td>4</td><td></td><td class="odd">1</td><td></td><td></td></tr>
+                    <tr><td></td><td class="odd">1</td><td></td><td class="odd">5</td><td></td><td>10</td><td></td><td>10</td><td></td><td class="odd">5</td><td></td><td class="odd">1</td><td></td></tr>
+                <tr><td class="odd">1</td><td></td><td>6</td><td></td><td class="odd">15</td><td></td><td>20</td><td></td><td class="odd">15</td><td></td><td>6</td><td></td><td class="odd">1</td></tr>
+            </table>
     </p>
 
         <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>. Forritið á að skrifa út fyrstu <eqn>n</eqn> raðirnar í Pascal þríhyrningnum.</p>

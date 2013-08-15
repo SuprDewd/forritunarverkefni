@@ -1,2 +1,4 @@
 <contest name="Forritun - V13" email="bjarkig12@ru.is">
+    <problem include="forritun/brotarodun" />
+    <problem include="forritun/bmi_sort" />
 </contest>

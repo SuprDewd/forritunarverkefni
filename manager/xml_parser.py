@@ -63,13 +63,14 @@ def decode_entities(s):
 def encode_entities(s):
     return ''.join(map(lambda c: '&%s;' % ENTITIES_rev[c] if c in ENTITIES_rev else c, s))
 
-def parse_xml(s, text_nodes=[], decode=False):
+def parse_xml(s, text_nodes=[], decode=False, decode_nodes=[]):
     tnodes = set(text_nodes)
+    dnodes = set(decode_nodes)
 
     def is_whitespace(c):
         return c in [ ' ', '\n' ]
 
-    def rec(s, at, is_text):
+    def rec(s, at, is_text, decode=False):
         res = []
         while True:
             buff = ''
@@ -80,6 +81,7 @@ def parse_xml(s, text_nodes=[], decode=False):
 
             if is_text:
                 res.append(Text(decode_entities(buff) if decode else buff))
+                # print(res[-1])
 
             if at >= len(s) or s[at+1] == '/':
                 break
@@ -116,7 +118,7 @@ def parse_xml(s, text_nodes=[], decode=False):
 
                 if s[at] == '>':
                     at += 1
-                    at, children = rec(s, at, is_text or tag in tnodes or '*' in tnodes)
+                    at, children = rec(s, at, is_text or tag in tnodes or '*' in tnodes, decode or tag in decode_nodes)
                     close = '</%s>' % tag
                     assert s[at:at + len(close)] == close
                     at += len(close)
@@ -153,4 +155,4 @@ def parse_xml(s, text_nodes=[], decode=False):
 
         return at, res
 
-    return rec(s, 0, False)[1]
+    return rec(s, 0, False, decode)[1]

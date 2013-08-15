@@ -1,4 +1,10 @@
 <contest name="Forritun - V06" email="bjarkig12@ru.is">
-    <problem enabled="false" name="Dæmatímaverkefni: Time notation" include="forritun/time_notation" />
-    <problem enabled="false" name="Dæmatímaverkefni: Hefja í veldi" include="forritun/hefja_i_veldi" />
+    <problem name="Dæmatímaverkefni: Time notation" include="forritun/time_notation" />
+    <problem name="Dæmatímaverkefni: Hefja í veldi" include="forritun/hefja_i_veldi" />
+
+    <problem include="forritun/average_speed" />
+    <problem include="forritun/celebrity_jeopardy" />
+    <problem include="forritun/tex_quotes" />
+    <problem include="forritun/kindergarten_counting_game" />
+    <problem enabled="false" include="forritun/high_school_physics" />
 </contest>

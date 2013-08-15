@@ -3,7 +3,10 @@
     <problem name="Dæmatímaverkefni: Body-Mass Index" include="forritun/bmi" />
     <problem name="Dæmatímaverkefni: Myntir" include="forritun/myntir" />
 
-    <problem name="Aukaverkefni: Peningaupphæð" include="forritun/peningaupphaed" />
-    <problem name="Aukaverkefni: Einföld formúla" include="forritun/einfold_formula" />
-    <problem name="Aukaverkefni: Vegalengd" include="forritun/vegalengd" />
+    <problem include="forritun/annad_veldi" />
+    <problem include="forritun/peningaupphaed" />
+    <problem include="forritun/einfold_formula" />
+    <problem include="forritun/vegalengd" />
+    <problem include="forritun/sphere_volume" />
+    <problem include="forritun/deiling" />
 </contest>

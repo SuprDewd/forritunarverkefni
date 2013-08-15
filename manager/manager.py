@@ -162,7 +162,7 @@ def load_problem(pid):
                  os.path.join(PROBLEM_DIR, pid, pid + '.xml') ]:
         if os.path.exists(loc):
             p_dir = os.path.dirname(loc)
-            tree = parse_xml(get_contents(loc), TEXT_ELEMS)
+            tree = parse_xml(get_contents(loc), TEXT_ELEMS, decode_nodes=['eqn', 'ceqn'])
             break
 
     if not p_dir:
@@ -179,7 +179,7 @@ def load_contest(cid):
                  os.path.join(CONTEST_DIR, cid, cid + '.xml') ]:
         if os.path.exists(loc):
             c_dir = os.path.dirname(loc)
-            tree = parse_xml(get_contents(loc), TEXT_ELEMS, decode=False)
+            tree = parse_xml(get_contents(loc), TEXT_ELEMS, decode_nodes=['eqn', 'ceqn'])
             break
 
     if not c_dir:
@@ -251,7 +251,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
 \begin{displaymath}
 %(eqn)s
 \end{displaymath}
-\end{document}""" % {'eqn': ''.join([ to_html(m, img_count, entities=True) for m in n.children])}, img_path)
+\end{document}""" % {'eqn': ''.join([ to_html(m, img_count, entities=False) for m in n.children])}, img_path)
                     args = [TEX_TO_GIF, '-png', '-dpi', '200' if centered else '150', '%d.tex' % cur_img]
                     p = subprocess.Popen(args, cwd=img_path, stderr=subprocess.PIPE)
                     (_, pout) = p.communicate()
@@ -369,9 +369,15 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
         xml += """<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 """
 
-    dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector regex_corrector(True,'checker.py')"
+    # dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector regex_corrector(True,'checker.py')"
+    # static_corrector = "/usr/bin/python $home/correctors/megacorrector.py !cppcheck_corrector korea_corrector('$home/bin/nsiqcppstyle/mooshak_filter.txt') vera_corrector('mooshak')"
+    static_corrector = "/usr/bin/python $home/correctors/megacorrector.py !cppcheck_corrector !vera_corrector('mooshak') korea_corrector('$home/bin/nsiqcppstyle/mooshak_filter.txt')"
+    dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector regex_corrector(True)"
     if problem.checker:
-        dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector problem_specific_corrector(diff=True,checker='%(checker_file_name)s')" % {'checker_file_name': os.path.basename(checker_file) }
+        # dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector problem_specific_corrector(True,'%(checker_file_name)s')" % {'checker_file_name': os.path.basename(checker_file) }
+        # dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py problem_specific_corrector(True,'%(checker_file_name)s')" % {'checker_file_name': os.path.basename(checker_file) }
+        # dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py problem_specific_corrector(True,'%(checker_file_name)s')" % {'checker_file_name': os.path.basename(checker_file) }
+        dynamic_corrector = "/usr/bin/python $home/correctors/megacorrector.py tle_corrector valgrind_corrector problem_specific_corrector(True,'%(checker_file_name)s')" % {'checker_file_name': os.path.basename(checker_file) }
 
     xml += """<Problem %(xmlns)s
           Fatal=""
@@ -410,7 +416,7 @@ def export_problem(problem, path, add_xmlns=True, add_xml_header=True, xml_path=
         'description': description_file,
         'solution': solution_file,
         'timelimit': (timelimit or 60*1000) / 1000,
-        'static_corrector': "/usr/bin/python $home/correctors/megacorrector.py !cppcheck_corrector korea_corrector('$home/bin/nsiqcppstyle/mooshak_filter.txt') vera_corrector('mooshak')",
+        'static_corrector': static_corrector,
         'dynamic_corrector': dynamic_corrector,
         'tests': tests
         }
@@ -485,7 +491,7 @@ def export_contest(contest, path):
                Run_all_tests="yes"
                Show_own_code="yes"
                Give_feedback="report"
-               Show_errors="{} Accepted {Presentation Error} {Wrong Answer} {Output Limit Exceeded} {Memory Limit Exceeded} {Time Limit Exceeded} {Invalid Function} {Runtime Error} {Compile Time Error} {Invalid Submission} {Program Size Exceeded} {Requires Reevaluation} Evaluating"
+               Show_errors="{} Accepted {Presentation Error} {Wrong Answer} {Output Limit Exceeded} {Memory Limit Exceeded} {Time Limit Exceeded} {Invalid Function} {Runtime Error} {Compile Time Error} {Invalid Submission} {Program Size Exceeded} {Requires Reevaluation} {Memory Error} {Static Analysis Error} {Correct Output With Errors}"
                Feedback_delay=""
                Minimum_interval=""
                Maximum_pending="">

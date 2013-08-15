@@ -2,8 +2,11 @@
     <problem name="Dæmatímaverkefni: Sum of positive integers" include="forritun/sum_positive" />
     <problem name="Dæmatímaverkefni: The Babylonian algorithm" include="forritun/babylonian_algorithm" />
 
-    <problem name="Aukaverkefni: Ekki svarið" include="forritun/ekki_svarid" />
-    <problem enabled="false" name="Aukaverkefni: Tölugildi" include="forritun/tolugildi" />
-    <problem enabled="false" name="Aukaverkefni: Samanburður" include="forritun/samanburdur" />
-    <problem enabled="false" name="Aukaverkefni: Finnum svarið" include="forritun/finnum_svarid" />
+    <problem include="forritun/ekki_svarid" />
+    <problem include="forritun/tolugildi" />
+    <problem include="forritun/samanburdur" />
+    <problem include="forritun/finnum_svarid" />
+    <problem include="forritun/hashmat_the_brave_warrior" />
+    <problem include="forritun/margfoldun" />
+    <problem include="forritun/thyngdarflokkur" />
 </contest>

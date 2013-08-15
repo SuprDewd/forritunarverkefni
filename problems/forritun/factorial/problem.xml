@@ -1,7 +1,7 @@
-<problem name="Frumtölur">
+<problem name="Factorial">
     <description>
         <p>Skrifið forrit sem les inn heiltöluna <eqn>n</eqn>, og skrifar út <eqn>n!</eqn> (<eqn>n</eqn> hrópmerkt). Notið eftirfarandi skilgreiningu á <eqn>n!</eqn>:
-            <ceqn>n! = 1 \times 2 \times 3 \times \dotsm \times (n-1) \times n</ceqn>
+            <div style="text-align: center"><tt>n! = 1 &times; 2 &times; 3 &times; &hellip; &times; (n-1) &times; n</tt></div>
         </p>
     </description>
     <solution include="solution.cpp" language="C++" />

@@ -1,5 +1,13 @@
 <contest name="Forritun - V07" email="bjarkig12@ru.is">
     <problem name="Dæmatímaverkefni: Hækkandi röð" include="forritun/haekkandi_rod" />
     <problem name="Dæmatímaverkefni: Standard deviation" include="forritun/standard_deviation" />
-    <problem name="Aukaverkefni: Galdraferningur" include="forritun/magic_square" />
+
+    <problem include="forritun/sierpinski_triangle" />
+    <problem include="forritun/magic_square" />
+    <problem include="forritun/tic_tac_toe" />
+    <problem include="forritun/befunge_loop" />
+    <problem include="forritun/talnaspirall" />
+    <problem include="forritun/maurar" />
+    <problem include="forritun/sort" />
+    <problem include="forritun/pattern_matching_in_a_matrix" />
 </contest>

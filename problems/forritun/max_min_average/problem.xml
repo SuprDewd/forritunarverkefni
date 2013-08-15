@@ -33,7 +33,6 @@ Max: 4
 Min: 1
 Average: 2.67]]></output>
         </test>
-        <test input_include="tests/T0.in" output_include="tests/T0.out" />
         <test input_include="tests/T1.in" output_include="tests/T1.out" />
         <test input_include="tests/T2.in" output_include="tests/T2.out" />
         <test input_include="tests/T3.in" output_include="tests/T3.out" />

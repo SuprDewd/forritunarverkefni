@@ -1,6 +1,5 @@
 <problem name="Sierpinski Triangle">
     <description>
-        
 
 		<p>Pascal-þríhyrningurinn er óendanlega stór þríhyrningur af heiltölum, skilgreindur þannig að efst í þríhyrningnum er talan 1, og er talan 1 svo í fyrsta og síðasta dálki hverrar raðar. Tölur annarstaðar í þríhyrningnum eru fengnar með því að leggja saman tölurnar tvær fyrir ofan hana. Fyrstu sjö raðirnar í þríhyrningnum líta þá svona út:</p>
 

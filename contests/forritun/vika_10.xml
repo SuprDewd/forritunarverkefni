@@ -1,2 +1,7 @@
 <contest name="Forritun - V10" email="bjarkig12@ru.is">
+    <problem include="forritun/integer_inquiry" />
+    <problem include="forritun/counting_inversions" />
+    <problem include="forritun/lestir" />
+    <problem include="forritun/compression" />
+    <problem include="forritun/oradad" />
 </contest>

@@ -1,6 +1,7 @@
 <contest name="Forritun - V01" email="bjarkig12@ru.is">
-    <problem name="Aukaverkefni: Halló heimur" include="forritun/hallo_heimur" />
-    <problem name="Aukaverkefni: Svarið" include="forritun/svarid" />
-    <problem name="Aukaverkefni: A + B" include="forritun/a_plus_b" />
-    <problem enabled="false" name="Aukaverkefni: Gæsalappir" include="forritun/gaesalappir" />
+    <problem enabled="false" include="forritun/hallo_heimur" />
+    <problem include="forritun/hallo_heimur_2" />
+    <problem include="forritun/a_plus_b" />
+    <problem include="forritun/svarid" />
+    <problem include="forritun/gaesalappir" />
 </contest>

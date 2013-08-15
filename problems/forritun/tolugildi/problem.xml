@@ -1,14 +1,7 @@
 <problem name="Tölugildi">
     <description>
         <p>Skrifið forrit sem finnur les inn eina heiltölu <eqn>n</eqn>. Forritið á að skrifa út tölugildi <tt>n</tt>. </p>
-        <p>Tölugildi tölunnar <eqn>n</eqn> er táknað með <eqn>|n|</eqn> og er skilgreint sem
-            <ceqn>|n| = \left{
-\begin{array}{ll}
-n  &amp; \mbox{if } n \geq 0 \
--n &amp; \mbox{if } n &lt; 0
-\end{array}
-\right.</ceqn>
-        </p>
+        <p>Tölugildi tölunnar <eqn>n</eqn> er táknað með <eqn>|n|</eqn> og er skilgreint sem <eqn>|n| = n \textrm{ ef } n \geq 0</eqn>, en <eqn>|n| = -n \textrm{ ef } n &lt; 0</eqn>.</p>
     </description>
     <solution include="solution.cpp" language="C++" />
     <tests timelimit="3s" memorylimit="64MB">

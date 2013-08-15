@@ -54,14 +54,14 @@ Kynning á námskeiði. Kynning á tölvum og C++ forritun. C++ grunnur.
             <td>Skrifa út "Halló heimur".</td>
         </tr>
         <tr>
-            <td><b>svarid<b></td>
-            <td>Svarið</td>
-            <td>Lesa inn tölu og skrifa út setningu sem inniheldur töluna.</td>
-        </tr>
-        <tr>
             <td><b>a_plus_b</b></td>
             <td>A + B</td>
             <td>Lesa inn tvær heiltölur og skrifa út summu þeirra.</td>
+        </tr>
+        <tr>
+            <td><b>svarid<b></td>
+            <td>Svarið</td>
+            <td>Lesa inn tölu og skrifa út setningu sem inniheldur töluna.</td>
         </tr>
         <tr>
             <td><b>gaesalappir</b></td>
@@ -242,12 +242,12 @@ C++ grunnur. Flæðisstýring.
         <tr>
             <td><b>margfoldun</b></td>
             <td>Margfoldun</td>
-            <td></td>
+            <td>Lesa inn þrjár tölur a,b,c og segja hvort a*b=c sé satt eða ekki.</td>
         </tr>
         <tr>
             <td><b>thyngdarflokkur</b></td>
             <td>Þyngdarflokkur</td>
-            <td></td>
+            <td>Les inn þyngd á lyftingakappa og segja í hvaða þyngdarflokk hann er í.</td>
         </tr>
     </tbody>
 </table>
@@ -322,7 +322,7 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
         <tr>
             <td><b>lodari</b></td>
             <td>Lóðarí</td>
-            <td></td>
+            <td>Lesa inn töluna n, skrifa út n*n - (n-1)*(n-1). Formúlan er falin í dæminu, þannig það gerir dæmið aðeins erfiðara.</td>
         </tr>
         <tr>
             <td><b>malt_guzzler</b></td>
@@ -330,14 +330,19 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
             <td>Finna hversu marga drykki maðurinn drekkur ef hann fer með tómu drykkina í endurvinnslu. (ad-hoc, simulation, math)</td>
         </tr>
         <tr>
+            <td><b>margfeldi_3_5</b></td>
+            <td>Margfeldi af 3 og 5</td>
+            <td>Finna summu af tölum á bilinu 1 upp í n sem eru margfeldi af 3 eða 5.</td>
+        </tr>
+        <tr>
             <td><b>pyramidi</b></td>
             <td>Pýramídi</td>
-            <td></td>
+            <td>Lesa inn fjölda manns, og segja hversu háan mannlegan pýramída er hægt að búa til.</td>
         </tr>
         <tr>
             <td><b>frumtolur</b></td>
             <td>Frumtolur</td>
-            <td></td>
+            <td>Skrifa út n-tu frumtöluna.</td>
         </tr>
         <tr>
             <td><b>veldi_af_2</b></td>
@@ -353,11 +358,6 @@ Flæðisstýring. Föll. Skilaverkefni I skilað. Skilaverkefni II lagt fyrir.
             <td><b>fizzbuzz</b></td>
             <td>Fizz Buzz</td>
             <td>Herma eftir Fizz Buzz drykkjuleiknum.</td>
-        </tr>
-        <tr>
-            <td><b>margfeldi_3_5</b></td>
-            <td>Margfeldi af 3 og 5</td>
-            <td>Finna summu af tölum á bilinu 1 upp í n sem eru margfeldi af 3 eða 5.</td>
         </tr>
     </tbody>
 </table>
@@ -420,7 +420,7 @@ Föll.
             <td>Nota setningu Pýþagórasar til að finna langhlið þríhyrnings.</td>
         </tr>
         <tr>
-            <td><b>heiltöludeiling</b></td>
+            <td><b>heiltoludeiling</b></td>
             <td>Heiltöludeiling</td>
             <td>Lesa inn heiltölurnar a, b. Skrifa út a/b bæði með venjulegri deilingu og heiltöludeilingu.</td>
         </tr>
@@ -490,6 +490,11 @@ Meira um föll. Straumar og grunnatriði skráarvinnslu. Skilaverkefni II skila�
     </thead>
     <tbody>
         <tr>
+            <td><b>average_speed</b></td>
+            <td>Average Speed</td>
+            <td>Set speed of a car and then query how far the car has come on a given time.</td>
+        </tr>
+        <tr>
             <td><b>celebrity_jeopardy</b></td>
             <td>Celebrity jeopardy</td>
             <td>Skrifa allt input yfir í output (echo).</td>
@@ -498,6 +503,16 @@ Meira um föll. Straumar og grunnatriði skráarvinnslu. Skilaverkefni II skila�
             <td><b>tex_quotes</b></td>
             <td>TeX Quotes</td>
             <td>Breyta venjulegum gæsalöppum í TeX gæsalappir.</td>
+        </tr>
+        <tr>
+            <td><b>kindergarten_counting_game</b></td>
+            <td>Kindergarten Counting Game</td>
+            <td>Input a sequence of lines. For each line, output the number of words in the line.</td>
+        </tr>
+        <tr>
+            <td><i>high_school_physics</i></td>
+            <td>Back to High School Physics</td>
+            <td></td>
         </tr>
     </tbody>
 </table>
@@ -555,34 +570,24 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
     </thead>
     <tbody>
         <tr>
+            <td><b>sierpinski_triangle</b></td>
+            <td>Sierpinski Triangle</td>
+            <td>Teikna út Sierpinski þríhyrninginn.</td>
+        </tr>
+        <tr>
             <td><b>magic_square</b></td>
             <td>Galdraferningur</td>
             <td>Skrifa forrit sem les inn tvívítt fylki og segir hvort það sé magic square.</td>
         </tr>
         <tr>
-            <td><b>sierpinski_triangle</b></td>
-            <td>Sierpinski Triangle</td>
-            <td></td>
-        </tr>
-        <tr>
             <td><b>tic_tac_toe</b></td>
             <td>Tic Tac Toe</td>
-            <td></td>
+            <td>Segja til um stöðu í NxN Tic Tac Toe. Segja hver er að vinna eða hvort það sé jafntefli.</td>
         </tr>
         <tr>
             <td><b>befunge_loop</b></td>
             <td>Befunge Loop</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><b>maurar</b></td>
-            <td>Maurar</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><b>pattern_matching_in_a_matrix</b></td>
-            <td>Pattern matching in a matrix</td>
-            <td>Leita að mynstri í fylki.</td>
+            <td>Athuga hvort að einfaldur kóði í forritunarmálinu Befunge innihaldi óendanlega lykkju.</td>
         </tr>
         <tr>
             <td><b>talnaspirall</b></td>
@@ -590,29 +595,19 @@ Kynning á fylkjum og fylki í föllum, Forritun með fylkjum og margvíð fylki
             <td>Teikna út talnaspíral. (ad-hoc, 2d array)</td>
         </tr>
         <tr>
-            <td><b>compression</b></td>
-            <td>Þjöppun</td>
-            <td>Finna runur af samliggjandi tölum í lista og þjappa þeim niður í bil. (ad-hoc, array)</td>
-        </tr>
-        <tr>
-            <td><b>lestir</b></td>
-            <td>Lestir</td>
-            <td></td>
+            <td><b>maurar</b></td>
+            <td>Maurar</td>
+            <td>Ákvarða hversu lengi það tekur fyrir maura að labba fram af stöng. Smá erfitt að fatta trikk til að einfalda dæmið, en annars einfalt.</td>
         </tr>
         <tr>
             <td><b>sort</b></td>
             <td>Sort</td>
-            <td></td>
+            <td>Gá hvort að einn listi sé raðaða útgáfan af öðrum lista.</td>
         </tr>
         <tr>
-            <td><b>bmi_sort</b></td>
-            <td>BMI</td>
-            <td>Raða manneskjum eftir BMI. (sorting)</td>
-        </tr>
-        <tr>
-            <td><b>oradad</b></td>
-            <td>Óraðað</td>
-            <td>Umraða lista af tölum þannig að hann sé ekki raðaður. (ad-hoc, sorting)</td>
+            <td><b>pattern_matching_in_a_matrix</b></td>
+            <td>Pattern matching in a matrix</td>
+            <td>Leita að mynstri í fylki.</td>
         </tr>
     </tbody>
 </table>
@@ -671,7 +666,7 @@ C strengir. String klasinn. Vektorar. Skilaverkefni IV lagt fyrir.
         <tr>
             <td><b>radhverfur</b></td>
             <td>Raðhverfur</td>
-            <td></td>
+            <td>Gá hvort að eitt orð sé raðhverfa af öðru.</td>
         </tr>
         <tr>
             <td><b>help_a_phd_candidate</b></td>
@@ -681,12 +676,12 @@ C strengir. String klasinn. Vektorar. Skilaverkefni IV lagt fyrir.
         <tr>
             <td><b>skemmtilegar_setningar</b></td>
             <td>Skemmtilegar Setningar</td>
-            <td></td>
+            <td>Gá hvort að hvert par af samliggjandi orðum í lista af orðum hafi þann eiginleika að fyrra orðið endi á sama staf og seinna orðið byrjar á.</td>
         </tr>
         <tr>
             <td><b>breytunafn</b></td>
             <td>Breytunafn</td>
-            <td></td>
+            <td>Ákvarða hvort orð sé löglegt breytunafn.</td>
         </tr>
         <tr>
             <td><b>translate</b></td>
@@ -782,6 +777,21 @@ Bendar. Kvikleg fylki.
             <td><b>counting_inversions</b></td>
             <td>Counting Inversions</td>
             <td>Telja fjölda inversions í fylki.</td>
+        </tr>
+        <tr>
+            <td><b>lestir</b></td>
+            <td>Lestir</td>
+            <td>Minnsti fjöldi swappa til að raða lestum í rétta röð. (inversion count)</td>
+        </tr>
+        <tr>
+            <td><b>compression</b></td>
+            <td>Þjöppun</td>
+            <td>Finna runur af samliggjandi tölum í lista og þjappa þeim niður í bil. (ad-hoc, array)</td>
+        </tr>
+        <tr>
+            <td><b>oradad</b></td>
+            <td>Óraðað</td>
+            <td>Umraða lista af tölum þannig að hann sé ekki raðaður. (ad-hoc, sorting)</td>
         </tr>
     </tbody>
 </table>
@@ -922,6 +932,11 @@ Fjölbinding virkja. Fylki og klasar. Skilaverkefni V skilað. Skilaverkefni VI 
             <td>brotarodun</td>
             <td>Brotaröðun</td>
             <td>Raða brotum eftir stærð.</td>
+        </tr>
+        <tr>
+            <td><b>bmi_sort</b></td>
+            <td>BMI</td>
+            <td>Raða manneskjum eftir BMI. (sorting)</td>
         </tr>
     </tbody>
 </table>
