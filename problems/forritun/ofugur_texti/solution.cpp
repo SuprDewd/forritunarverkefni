@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <ciso646>
 using namespace std;
 
 int main()

@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<climits>
-
+#include <ciso646>
 using namespace std;
 
 #ifndef ONLINE_JUDGE

@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <cstring>
+#include <ciso646>
 using namespace std;
 
 map<char, int> assoc;

@@ -1,5 +1,5 @@
 #include<iostream>
-
+#include <ciso646>
 using namespace std;
 
 #ifndef ONLINE_JUDGE

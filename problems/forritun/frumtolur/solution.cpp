@@ -17,6 +17,7 @@
 #include <cstring>
 #include <fstream>
 #include <cassert>
+#include <ciso646>
 using namespace std;
 
 #define all(o) (o).begin(), (o).end()

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <ciso646>
 using namespace std;
 
 int main()

@@ -2,6 +2,7 @@
 #include <stack>
 #include <queue>
 #include <cmath>
+#include <ciso646>
 using namespace std;
 
 typedef pair<int, int> ii;

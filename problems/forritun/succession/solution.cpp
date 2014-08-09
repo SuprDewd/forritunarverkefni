@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <map>
-
+#include <ciso646>
 using namespace std;
 
 typedef long long LL;

@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <ciso646>
 using namespace std;
 
 vector<string> split(string s, char c)

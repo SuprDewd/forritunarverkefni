@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+#include <ciso646>
 using namespace std;
 
 int main()

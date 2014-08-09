@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <ciso646>
 using namespace std;
 
 int main()

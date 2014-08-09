@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ciso646>
 
 const int errorDistance = 0x3fffffff;
 

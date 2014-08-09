@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ciso646>
 using namespace std;
 
 int sumr(int **arr, int n, int x, int y, int dx, int dy)

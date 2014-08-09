@@ -1,7 +1,7 @@
 #include<iostream>
 #include<iomanip>
 #include<limits.h>
-
+#include <ciso646>
 using namespace std;
 
 int main()

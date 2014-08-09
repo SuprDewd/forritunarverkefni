@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ciso646>
 using namespace std;
 
 int mod(int a, int b)

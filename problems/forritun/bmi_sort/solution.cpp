@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <ciso646>
 using namespace std;
 
 class person

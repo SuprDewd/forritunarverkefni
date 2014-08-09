@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include <ciso646>
 using namespace std;
 
 int dx[4] = {-1, 0, 1, 0};

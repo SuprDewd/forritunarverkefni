@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-
+#include <ciso646>
 using namespace std;
 
 #ifndef ONLINE_JUDGE

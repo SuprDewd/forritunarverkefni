@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ciso646>
 using namespace std;
 
 bool is_prime(int n)

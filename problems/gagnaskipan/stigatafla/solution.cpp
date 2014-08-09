@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <ciso646>
 using namespace std;
 
 int arr[10][5][3] = {
